@@ -13,11 +13,11 @@ export class Home extends Component {
     return (
       <>
         <Landing />
-        <Navbar />
+        {/* <Navbar />
         <Skills />
         <Portfolio />
         <Background />
-        <Footer />
+        <Footer /> */}
       </>
     );
   }

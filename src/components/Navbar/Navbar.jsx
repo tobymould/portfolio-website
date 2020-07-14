@@ -6,7 +6,7 @@ import { Link } from '@reach/router';
 export class Navbar extends Component {
   render() {
     return (
-      <nav id="navbar">
+      <nav className={styles.navbarWrapper}>
         <ul>
           <li>
             <Link to="https://drive.google.com/file/d/13sQbPE_cf6EKGc_Xn6ppMWdQJPMgzR7o/view?usp=sharing" target="_blank">

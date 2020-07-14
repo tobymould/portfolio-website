@@ -2,7 +2,7 @@
 //------------------------------------//
 //--------1. LANDING SECTION--------//
 //------------------------------------//
-#home {
+.homeWrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   background: url('../../assets/img/SpaceSelfie.png') no-repeat 25% 100% / cover;
   // background-attachment: fixed; //This solved nothing?
 
-  #home-overlay {
+  .homeOverlay {
     position: absolute;
     // height: 92.5vh;
     height: 100vh;
@@ -24,7 +24,7 @@
     z-index: 1;
   }
 
-  #home-content {
+  .homeContent {
     position: absolute;
     top: 7%;
     display: flex;

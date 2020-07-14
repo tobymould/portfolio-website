@@ -1,4 +1,11 @@
-import { library } from '@fontawesome/fontawesome-svg-core';
-import { fahtml5, facss, fasass, fajssquare, fareact, fanode, fayarn, fagit, fagithub, faspaceshuttle, faconnectdevelop, faflask } from '@fontawesome/free-solid-svg-icons';
+// IMPORT THE LIBRARY
+import { library } from '@fortawesome/fontawesome-svg-core';
 
-export default library.add(fahtml5, facss, fasass, fajssquare, fareact, fanode, fayarn, fagit, fagithub, faspaceshuttle, faconnectdevelop, faflask);
+// IMPORT MY ICONS
+import { faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faNode, faYarn, faGit, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faPassport, faHome, faMicrochip, faCode, faUserCircle, faFlask, faSpaceShuttle, faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
+
+// EXPORT MY ICONS
+export default library.add(faHtml5, faCss3Alt, faSass, faJsSquare, faReact, faNode, faYarn, faGit, faGithub, faPassport, faHome, faMicrochip, faCode, faUserCircle, faFlask, faSpaceShuttle, faProjectDiagram);
+
+// faConnectDevelop,

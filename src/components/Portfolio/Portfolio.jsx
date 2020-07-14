@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './Portfolio.module.scss';
 
 import Card from './Card/Card';
-import projects, { skillsIcons } from '../../data';
+import projects, { skillsIcons } from '../../data/data';
 
 export class Portfolio extends Component {
   state = {};

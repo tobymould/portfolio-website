@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Navbar.module.scss';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from '@reach/router';
 
 export class Navbar extends Component {
@@ -10,27 +10,32 @@ export class Navbar extends Component {
         <ul>
           <li>
             <Link to="https://drive.google.com/file/d/13sQbPE_cf6EKGc_Xn6ppMWdQJPMgzR7o/view?usp=sharing" target="_blank">
-              <i className="fas fa-passport"></i>Resume
+              <FontAwesomeIcon icon={['fas', 'passport']} />
+              Resume
             </Link>
           </li>
           <li>
             <Link to="#home">
-              <i className="fas fa-home"></i>Home
+              <FontAwesomeIcon icon={['fas', 'home']} />
+              Home
             </Link>
           </li>
           <li>
             <Link to="#skills">
-              <i className="fas fa-microchip"></i>Skills
+              <FontAwesomeIcon icon={['fas', 'microchip']} />
+              Skills
             </Link>
           </li>
           <li>
             <Link to="#portfolio">
-              <i className="fas fa-code"></i>Portfolio
+              <FontAwesomeIcon icon={['fas', 'code']} />
+              Portfolio
             </Link>
           </li>
           <li>
             <Link to="#background">
-              <i className="fas fa-user-circle"></i>Background
+              <FontAwesomeIcon icon={['fas', 'user-circle']} />
+              Background
             </Link>
           </li>
         </ul>

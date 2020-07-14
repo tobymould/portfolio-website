@@ -40,13 +40,13 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 //-----------------------------------//
 //
 /* Now to deal with the content! */
-.modal-content-wrapper {
+.modalContentWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 
-  .modal-content {
+  .modalContent {
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
@@ -76,7 +76,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
       // background: purple;
 
-      #column-1 {
+      .column1 {
         // background: rgba(255, 255, 255, 0.9);
         display: flex;
         flex-direction: column;
@@ -85,14 +85,14 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         // max-width: 25vw;
         // background: yellow;
 
-        #summary {
+        .summary {
           // background: rgba(255, 0, 0, 0.1);
           @extend %margin-padding;
           // @extend %modal-overview-section-images;
           background: $section-background-colours;
           // width: 100%;
 
-          .image-section {
+          .imageSection {
             position: relative;
             display: flex;
             align-items: center;
@@ -169,7 +169,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           }
         }
 
-        #tech {
+        .tech {
           @extend %margin-padding;
           @extend %icon-colours;
 
@@ -178,7 +178,41 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 
           // background: rgba(0, 255, 0, 0.1);
 
-          .lang-percent {
+          .table {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // background: purple;
+
+            .fa-ul {
+              display: flex;
+              flex-direction: row;
+              padding: 10px;
+              margin: 0;
+              // background: green;
+              // width: 100%;
+
+              i {
+                padding: 0 10px;
+              }
+
+              // li {
+              //   padding: 5px 0;
+              //   background: blue;
+              //   i {
+              //     margin: 0px 20px;
+              //     // margin-bottom: 5px;
+              //     padding: 0;
+              //     background: red;
+              //   }
+              // }
+            }
+          }
+
+          .langPercent {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -221,44 +255,10 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
             //   width: 10%;
             // }
           }
-
-          .table {
-            // display: grid;
-            // grid-template-columns: 1fr 1fr;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            // background: purple;
-
-            ul {
-              display: flex;
-              flex-direction: row;
-              padding: 10px;
-              margin: 0;
-              // background: green;
-              // width: 100%;
-
-              i {
-                padding: 0 10px;
-              }
-
-              // li {
-              //   padding: 5px 0;
-              //   background: blue;
-              //   i {
-              //     margin: 0px 20px;
-              //     // margin-bottom: 5px;
-              //     padding: 0;
-              //     background: red;
-              //   }
-              // }
-            }
-          }
         }
       }
 
-      #column-2 {
+      .column2 {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -270,7 +270,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         // max-width: 55vw;
         // background: red;
 
-        #role {
+        .role {
           @extend %margin-padding;
           background: $section-background-colours;
           // width: 100%;
@@ -278,21 +278,21 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           // background: rgba(0, 0, 255, 0.1);
         }
 
-        #diff {
+        .diff {
           @extend %margin-padding;
           background: $section-background-colours;
           // width: 100%;
           // background: rgba(255, 255, 0, 0.1);
         }
 
-        #sol {
+        .sol {
           @extend %margin-padding;
           background: $section-background-colours;
           // width: 100%;
           // background: rgba(255, 0, 255, 0.1);
         }
 
-        #feat {
+        .feat {
           @extend %margin-padding;
           background: $section-background-colours;
           // width: 100%;

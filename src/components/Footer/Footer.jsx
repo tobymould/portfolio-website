@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import styles from './Footer.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export class Footer extends Component {
   render() {
     return (
-      <footer id="footer" className="text-center">
-        <div className="container">
+      <footer className={styles.footerWrapper}>
+        <div className={styles.container}>
           <div>
             <p>toby.mould@icloud.com</p>
             <p>email: _____</p>
             <p>phone: _____</p>
           </div>
-          <i className="fab fa-linkedin fa-2x" href="https://uk.linkedin.com/in/tobymould"></i>
+          <FontAwesomeIcon icon={['fab', 'linkedin']} href="https://uk.linkedin.com/in/tobymould" />
         </div>
       </footer>
     );

@@ -15,25 +15,25 @@ export class Navbar extends Component {
             </Link>
           </li>
           <li>
-            <Link to="#home">
+            <Link to="/">
               <FontAwesomeIcon icon={['fas', 'home']} />
               Home
             </Link>
           </li>
           <li>
-            <Link to="#skills">
+            <Link to="/">
               <FontAwesomeIcon icon={['fas', 'microchip']} />
               Skills
             </Link>
           </li>
           <li>
-            <Link to="#portfolio">
+            <Link to="/">
               <FontAwesomeIcon icon={['fas', 'code']} />
               Portfolio
             </Link>
           </li>
           <li>
-            <Link to="#background">
+            <Link to="/">
               <FontAwesomeIcon icon={['fas', 'user-circle']} />
               Background
             </Link>

@@ -3,6 +3,7 @@ import styles from './Portfolio.module.scss';
 
 import Card from './Card/Card';
 import projects, { skillsIcons } from '../../data/data';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export class Portfolio extends Component {
   state = {};
@@ -20,16 +21,16 @@ export class Portfolio extends Component {
     // console.log(this.addPortfolioButtonsToHTMLFromDataFile());
 
     return (
-      <section id="portfolio">
-        <div className="container">
+      <section className={styles.portfolioWrapper}>
+        <div className={styles.container}>
           <h2>Portfolio</h2>
           <div>
-            <i className="fas fa-search"></i>
+            <FontAwesomeIcon icon={['fas', 'search']} />
             <input type="search" placeholder="Search projects..." />
           </div>
-          <section className="items"></section>
+          <section className={styles.items}></section>
           <div>
-            <div id="simpleModal" className="modal">
+            <div className={`${styles.simpleModal} ${styles.modal}`}>
               {this.addPortfolioButtonsToHTMLFromDataFile()}
               {/* <Card /> */}
             </div>

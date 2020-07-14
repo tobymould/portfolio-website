@@ -1,0 +1,343 @@
+@import '../../sass/variables';
+$section-background-colours: rgba(0, 0, 0, 0.1);
+
+// //
+// //------------------------------------
+// //--------MIX-INS--------//
+// //------------------------------------
+//
+%margin-padding {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+// %text-adjust {
+//   font-size: 1rem;
+//   line-height: 1.5rem;
+// }
+
+//
+//-----------------------------------------//
+//-----------MODAL OVERLAY BLACK-----------//
+//-----------------------------------------//
+//
+.modal {
+  /* This is the class for the dark background around the modal. */
+  display: none; /*This makes the modal hide until button click*/
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  // overflow: auto; /*enables the scrollbar if needed */
+  background: rgba(0, 0, 0, 0.5);
+}
+//
+//-----------------------------------//
+//-----------MODAL CONTENT-----------//
+//-----------------------------------//
+//
+/* Now to deal with the content! */
+.modal-content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .modal-content {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // height: 98vh;
+    width: 80vw;
+    // margin: 2.5vh auto;
+    margin: 0 auto;
+    overflow-y: scroll;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    // margin: 20px 0;
+
+    article {
+      // background: rgba(255, 255, 255, 0.9);
+      height: 95vh;
+      width: 80vw;
+      // overflow-y: scroll;
+
+      // width: 80vw;
+      // max-height: 200vh;
+      // display: grid;
+      // grid-template-columns: 1fr;
+      // min-width: 20vw;
+      // max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+      // background: purple;
+
+      #column-1 {
+        // background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        min-height: 50%;
+        // max-width: 25vw;
+        // background: yellow;
+
+        #summary {
+          // background: rgba(255, 0, 0, 0.1);
+          @extend %margin-padding;
+          // @extend %modal-overview-section-images;
+          background: $section-background-colours;
+          // width: 100%;
+
+          .image-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // height: 100px;
+
+            .image {
+              width: 100%;
+              // min-height: 90px;
+              // max-height: 150px;
+              // min-width: 10px;
+              // max-width: 350px;
+              border-radius: 15px;
+              cursor: pointer;
+              // o: $linear-grad;
+              filter: brightness(50%);
+
+              &:hover {
+                background: green;
+              }
+            }
+
+            // h4 {
+            //   position: absolute;
+            //   top: 0px;
+            //   min-width: 250px;
+            //   display: flex;
+            //   align-items: center;
+            //   justify-content: center;
+            //   min-height: 150px;
+            //   border-radius: 15px;
+            //   background: rgba(0, 0, 0, 0.5) no-repeat center center/cover;
+            //   transition: all 0.5s ease-out;
+            //   color: set-h4-color($light-colour);
+
+            //   // &:hover {
+            //   //   border: 1px solid orange;
+            //   //   background: rgba(0, 0, 0, 0.9);
+            //   // }
+            // }
+          }
+
+          .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            // background: red;
+
+            a {
+              // width: 50%;
+              font-size: 0.5rem;
+              // padding: 5px 10px;
+              // margin-left: 5px;
+              display: flex;
+              // grid-template-columns: 1fr 2fr;
+              // gap-left: 20px;
+              justify-content: center;
+              align-items: center;
+              // background: yellow;
+
+              i {
+                margin: 0 10px 0 0;
+                padding: 5px;
+                font-size: 1rem;
+                // display: inline-block;
+                // background: blue;
+              }
+
+              p {
+                padding: 0 5px;
+                // background: green;
+              }
+            }
+          }
+        }
+
+        #tech {
+          @extend %margin-padding;
+          @extend %icon-colours;
+
+          background: $section-background-colours;
+          // @extend %text-adjust;
+
+          // background: rgba(0, 255, 0, 0.1);
+
+          .lang-percent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // width: 100%;
+            padding-top: 10px;
+
+            div {
+              height: 10px;
+
+              &:first-of-type {
+                background: turquoise;
+                border-radius: 20px 0 0 20px;
+                width: 40%;
+              }
+
+              &:nth-of-type(2) {
+                background: green;
+                width: 30%;
+              }
+
+              &:nth-of-type(3) {
+                background: yellow;
+                width: 20%;
+              }
+
+              &:nth-of-type(4) {
+                background: red;
+                width: 10%;
+              }
+
+              &:last-of-type {
+                // background: red;
+                background: blue;
+                width: 20%;
+                border-radius: 0 20px 20px 0;
+              }
+            }
+
+            // &:nth-child(0){
+            //   width: 10%;
+            // }
+          }
+
+          .table {
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // background: purple;
+
+            ul {
+              display: flex;
+              flex-direction: row;
+              padding: 10px;
+              margin: 0;
+              // background: green;
+              // width: 100%;
+
+              i {
+                padding: 0 10px;
+              }
+
+              // li {
+              //   padding: 5px 0;
+              //   background: blue;
+              //   i {
+              //     margin: 0px 20px;
+              //     // margin-bottom: 5px;
+              //     padding: 0;
+              //     background: red;
+              //   }
+              // }
+            }
+          }
+        }
+      }
+
+      #column-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        min-height: 30%;
+        // background: rgba(255, 255, 255, 0.9);
+        // width: 100%;
+        // margin: 10px;
+        // min-width: 100%;
+        // max-width: 55vw;
+        // background: red;
+
+        #role {
+          @extend %margin-padding;
+          background: $section-background-colours;
+          // width: 100%;
+          // max-height: 180px;
+          // background: rgba(0, 0, 255, 0.1);
+        }
+
+        #diff {
+          @extend %margin-padding;
+          background: $section-background-colours;
+          // width: 100%;
+          // background: rgba(255, 255, 0, 0.1);
+        }
+
+        #sol {
+          @extend %margin-padding;
+          background: $section-background-colours;
+          // width: 100%;
+          // background: rgba(255, 0, 255, 0.1);
+        }
+
+        #feat {
+          @extend %margin-padding;
+          background: $section-background-colours;
+          // width: 100%;
+          // background: rgba(0, 255, 255, 0.1);
+
+          ul {
+            display: flex;
+            flex-direction: column;
+
+            li {
+              margin: 0 0 0 20px;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//
+//--------------------------------------//
+//-----------MODAL ANIMATIONS-----------//
+//--------------------------------------//
+//
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+//Desktop-widescreen[PORTFOLIO]
+// @media (min-width: 1201px) {
+//   #simpleModal {
+//     .modal {
+//       .modal-content {
+//         article {
+//           display: grid !important;
+//           grid-template-columns: 1fr 2fr !important;
+//         }
+//       }
+//     }
+//   }
+// }

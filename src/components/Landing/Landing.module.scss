@@ -1,0 +1,48 @@
+@import '../../sass/variables';
+//------------------------------------//
+//--------1. LANDING SECTION--------//
+//------------------------------------//
+#home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // height: 92.5vh;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url('../../assets/img/SpaceSelfie.png') no-repeat 25% 100% / cover;
+  // background-attachment: fixed; //This solved nothing?
+
+  #home-overlay {
+    position: absolute;
+    // height: 92.5vh;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+
+  #home-content {
+    position: absolute;
+    top: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    margin: 0 auto;
+    // background: purple;
+    z-index: 2;
+
+    h2 {
+      border: none;
+      text-align: center;
+    }
+
+    span {
+      color: $colour1;
+    }
+  }
+}

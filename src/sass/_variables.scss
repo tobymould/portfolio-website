@@ -1,0 +1,306 @@
+//------------------------------------//
+//--------------VARIABLES--------------//
+//------------------------------------//
+// GENERAL COLOURS
+$dark-colour: #111;
+$light-colour: #f4f4f4;
+$colour1: #5fa4dc;
+$colour1-50: rgba(95, 164, 220, 0.7);
+$colour2: #4f5b66;
+$colour4: #a7adba;
+$white: #c0c5ce;
+$grey: rgba(52, 58, 64, 1);
+$grey-50: rgba(52, 58, 64, 0.5);
+$white-50: rgba(255, 255, 255, 0.5);
+$black-90: rgba(0, 0, 0, 0.9);
+
+// ICON COLOURS
+$html5: #f06529;
+$css3: #2965f1;
+$sass: #cd6799;
+$js: #f0db4f;
+$git: #f1502f;
+$npm: #cc3534;
+$react: #61dbfb;
+$bootstrap: #563d7c;
+$node: #3c873a;
+$java: #5382a1;
+$yarn: #117cad;
+$python: #306998;
+$github: #2b3137;
+
+%icon-colours {
+  .html {
+    color: $html5;
+  }
+
+  .css {
+    color: $css3;
+  }
+
+  .sass {
+    color: $sass;
+  }
+
+  .javascript {
+    color: $js;
+  }
+
+  .react {
+    color: $react;
+  }
+
+  .bootstrap {
+    color: $bootstrap;
+  }
+
+  .git {
+    color: $git;
+  }
+
+  .github {
+    color: black;
+  }
+
+  .npm {
+    color: $npm;
+  }
+
+  .node {
+    color: $node;
+    // background: blue;
+  }
+
+  .python {
+    color: $python;
+  }
+
+  .yarn {
+    color: $yarn;
+  }
+
+  .github {
+    color: $github;
+  }
+
+  .firebase {
+    width: 60px;
+    height: 60px;
+
+    &-modal {
+      width: 35px;
+      height: 40px;
+      // background: yellow;
+    }
+  }
+
+  .mongodb {
+    width: 60px;
+    height: 70px;
+
+    &-modal {
+      width: 40px;
+      height: 50px;
+    }
+  }
+
+  .postman {
+    width: 65px;
+    height: 65px;
+    // width: 80px;
+    // height: 100%;
+  }
+}
+
+.software {
+  color: $github;
+}
+
+.space {
+  color: $python;
+}
+
+.chemistry {
+  color: $git;
+}
+
+// LINEAR GRADIENTS
+// $linear-grad-3d: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+// $linear-grad: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+
+// IMAGES
+// $project1-image: url('https://source.unsplash.com/1600x900/?portfolio,website');
+// $project2-image: url('https://source.unsplash.com/1600x900/?application,form');
+// $project3-image: url('https://source.unsplash.com/1600x900/?cinema');
+// $project4-image: url('https://source.unsplash.com/1600x900/?news');
+// $project5-image: url('https://source.unsplash.com/1600x900/?gold');
+// $project6-image: url('https://source.unsplash.com/1600x900/?calculator');
+// $project7-image: url('https://source.unsplash.com/1600x900/?ship');
+// $project8-image: url('https://source.unsplash.com/1600x900/?games');
+// $project9-image: url('https://source.unsplash.com/1600x900/?morse');
+// $project10-image: url('https://source.unsplash.com/1600x900/?human,resources');
+// $project11-image: url('https://source.unsplash.com/1600x900/?arduino');
+// $project12-image: url('https://source.unsplash.com/1600x900/?social,media');
+// $project13-image: url('https://source.unsplash.com/1600x900/?space');
+
+// %portfolio-button-images {
+//   &:nth-of-type(1) {
+//     background: $linear-grad, $project1-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project1-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(2) {
+//     background: $linear-grad, $project2-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project2-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(3) {
+//     background: $linear-grad, $project3-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project3-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(4) {
+//     background: $linear-grad, $project4-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project4-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(5) {
+//     background: $linear-grad, $project5-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project5-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(6) {
+//     background: $linear-grad, $project6-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project6-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(7) {
+//     background: $linear-grad, $project7-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project7-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(8) {
+//     background: $linear-grad, $project8-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project8-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(9) {
+//     background: $linear-grad, $project9-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project9-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(10) {
+//     background: $linear-grad, $project10-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project10-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(11) {
+//     background: $linear-grad, $project11-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project11-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(12) {
+//     background: $linear-grad, $project12-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project12-image no-repeat center center/cover;
+//     }
+//   }
+
+//   &:nth-of-type(13) {
+//     background: $linear-grad, $project13-image no-repeat center center/cover;
+
+//     &:hover {
+//       background: $linear-grad-3d, $project13-image no-repeat center center/cover;
+//     }
+//   }
+// }
+
+// %modal-overview-section-images {
+//   .image {
+//     &-0 {
+//       background: $project1-image no-repeat center center/cover;
+//     }
+
+//     &-1 {
+//       background: $project2-image no-repeat center center/cover;
+//     }
+
+//     &-2 {
+//       background: $project3-image no-repeat center center/cover;
+//     }
+
+//     &-3 {
+//       background: $project4-image no-repeat center center/cover;
+//     }
+
+//     &-4 {
+//       background: $project5-image no-repeat center center/cover;
+//     }
+
+//     &-5 {
+//       background: $project6-image no-repeat center center/cover;
+//     }
+
+//     &-6 {
+//       background: $project7-image no-repeat center center/cover;
+//     }
+
+//     &-7 {
+//       background: $project8-image no-repeat center center/cover;
+//     }
+
+//     &-8 {
+//       background: $project9-image no-repeat center center/cover;
+//     }
+
+//     &-9 {
+//       background: $project10-image no-repeat center center/cover;
+//     }
+
+//     &-10 {
+//       background: $project11-image no-repeat center center/cover;
+//     }
+
+//     &-11 {
+//       background: $project12-image no-repeat center center/cover;
+//     }
+
+//     &-12 {
+//       background: $project13-image no-repeat center center/cover;
+//     }
+//   }
+// }

@@ -1,0 +1,28 @@
+@import '../../sass/variables';
+//------------------------------------//
+//--------3. SKILLS SECTION--------//
+//------------------------------------//
+#skills {
+  background: white;
+  padding: 10px;
+  width: 100vw;
+  // clip-path: polygon(3% 10%, 97% 0, 97% 90%, 3% 100%);
+
+  h2 {
+    width: 70px;
+    margin: 0 auto 20px;
+  }
+
+  .items {
+    @extend %icon-colours;
+    display: grid;
+    gap: 20px 0;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, 80px);
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,67 @@
+@import './variables';
+// @import './modal';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+//------------------------------------//
+//--------0. GENERAL STYLES--------//
+//------------------------------------//
+body {
+  // font-family: 'Dosis', sans-serif;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Lato', sans-serif;
+  background: $grey;
+
+  .container {
+    margin: 0 10vw;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 3rem;
+    color: #c0c5ce;
+  }
+
+  h2 {
+    display: block;
+    // margin: 0 auto 0 auto;
+    // background: blue;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid $colour1;
+    color: set-h2-color($dark-colour);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+    // margin-top: 10px;
+    border-bottom: 2px solid $colour1;
+    display: inline-block;
+    color: set-h3-color($dark-colour);
+  }
+
+  h4 {
+    color: white;
+  }
+
+  p {
+    text-align: justify;
+    line-height: 1.5rem;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@import './responsive';

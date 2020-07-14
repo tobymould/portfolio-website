@@ -1,0 +1,50 @@
+@import '../../sass/variables';
+//------------------------------------//
+//--------4. PORTFOLIO SECTION--------//
+//------------------------------------//
+#portfolio {
+  // padding: 60px 0px;
+  background: $colour4;
+  padding-bottom: 30px;
+  // clip-path: polygon(3% 10%, 97% 0, 97% 90%, 3% 100%);
+
+  h2 {
+    width: 120px;
+    margin: 0 auto 20px;
+  }
+
+  div {
+    text-align: center;
+  }
+
+  input[type='search'] {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    border-radius: 20px;
+
+    &:focus {
+      border: 2px solid grey;
+      border-radius: 60px;
+    }
+  }
+
+  .items {
+    // background: blue;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 10px;
+
+    .item {
+      min-height: 200px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
+
+      // &:hover {
+      //   background: $linear-grad-3d;
+      // }
+    }
+  }
+}

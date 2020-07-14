@@ -1,0 +1,28 @@
+@import '../../sass/variables';
+//------------------------------------
+//--------6. FOOTER--------//
+//------------------------------------
+//
+#footer {
+  background: $colour2;
+  padding: 10px 0;
+  // background: blue;
+  .container {
+    div {
+      display: flex;
+      // grid-template-columns: 2fr 1fr;
+
+      // min-width: 90vw;
+      justify-content: space-between;
+      align-items: center;
+      color: $colour1;
+      // p {
+      //   // margin: 0 100px;
+      //   // padding: 1rem;
+      //   // background: yellow;
+      // }
+      // a {
+      // }
+    }
+  }
+}

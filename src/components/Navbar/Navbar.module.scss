@@ -1,0 +1,63 @@
+@import '../../sass/variables';
+//------------------------------------//
+//--------2. NAVBAR SECTION--------//
+//------------------------------------//
+
+#navbar {
+  position: sticky;
+  top: 0;
+  background: $grey-50;
+  z-index: 4;
+  font-size: 0.65rem;
+  color: $white-50;
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+    // background: $white-50;
+    // background: blue;
+
+    li {
+      display: flex;
+      // border-radius: 80px;
+
+      &:nth-child(1) {
+        background: $colour1-50;
+
+        &:hover {
+          background: $dark-colour;
+        }
+        // background: yellow;
+      }
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        border-right: 3px solid $black-90;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 5px;
+        width: 100%;
+
+        // background: green;
+        i {
+          padding-right: 5px;
+          // padding-right: 15px;
+          // font-size: 1.5rem;
+        }
+
+        &:hover {
+          background: $white-50;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import '../../sass/variables';
+//------------------------------------
+//--------5. ABOUT SECTION--------//
+//------------------------------------
+//
+#background {
+  background: white;
+  padding-bottom: 30px;
+  // clip-path: polygon(3% 10%, 97% 0, 97% 90%, 3% 100%);
+
+  // height: 100vh;   -  SMOOTH SCROLL
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // padding-bottom: 50px;
+  // h2 {
+  //   color: set-h2-color($light-colour);
+  // }
+
+  h2 {
+    width: 165px;
+    margin: 0 auto 20px;
+  }
+
+  p {
+    // text-align: center;
+    padding-bottom: 10px;
+  }
+
+  .items {
+    display: grid;
+    gap: 40px;
+    // background: blue;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: 1fr;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      // h3 {
+      //   color: set-h3-color($dark-colour);
+      // }
+      i {
+        padding-bottom: 10px;
+      }
+
+      p {
+        // color: set-text-color($dark-colour);
+        line-height: 1.8rem;
+        padding: 0 10px;
+        text-align: justify;
+      }
+
+      // i {
+      //   // &:nth-of-type(1) {
+      //   //   color: rgb(165, 165, 1);
+      //   // }
+      //   &:nth-of-type(1) {
+      //     color: red;
+      //   }
+      // }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styles from "./Modal.module.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 export class Modal extends Component {
   render() {

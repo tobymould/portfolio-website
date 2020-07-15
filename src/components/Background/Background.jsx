@@ -12,7 +12,7 @@ export class Background extends Component {
           <br />
           <div className={styles.items}>
             <div className={styles.item}>
-              <FontAwesomeIcon icon={['fab', 'connect-develop']} className={styles.software} />
+              {/* <FontAwesomeIcon icon={['fab', 'connect-develop']} className={styles.software} /> */}
               <h3>Software Development</h3>
               <p>Currently, I am teaching myself to code so to transition my career path toward becoming a professional Software Developer.</p>
             </div>

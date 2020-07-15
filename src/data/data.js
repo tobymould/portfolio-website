@@ -184,7 +184,19 @@ export const projects = [
 ];
 
 // export default data;
-export const skillsIcons = ['<FontAwesomeIcon className="html" icon={["fab", "html5"]} />', '<FontAwesomeIcon className="sass" icon={["fab", "sass"]} />', '<FontAwesomeIcon className="javascript" icon={["fab", "js-square"]} />', '<FontAwesomeIcon className="react" icon={["fab", "react"]} />', '<FontAwesomeIcon className="node" icon={["fab", "node"]} />', '<img className="firebase-modal" src="../assets/icons/firebase.png" alt="firebase logo" />'];
+export const skills = {
+  icons: [
+    { className: 'html', icon: ['fab', 'html5'] },
+    { className: 'css', icon: ['fab', 'css3-alt'] },
+    { className: 'sass', icon: ['fab', 'sass'] },
+    { className: 'javascript', icon: ['fab', 'js-square'] },
+    { className: 'react', icon: ['fab', 'react'] },
+    { className: 'node', icon: ['fab', 'node'] }
+  ],
+  images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+};
+
+//  '<img className="firebase-modal" src="../assets/icons/firebase.png" alt="firebase logo" />'];
 
 // export default projects;
 export default projects;

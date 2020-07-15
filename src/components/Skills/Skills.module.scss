@@ -26,3 +26,47 @@
     justify-content: center;
   }
 }
+
+// IPad[PORTFOLIO]
+
+@media (min-width: 670px) and (max-width: 769px) {
+  .skillsWrapper {
+    p {
+      padding: 0 70px;
+    }
+
+    .items {
+      padding: 10px 0;
+      grid-template-columns: repeat(auto-fit, 100px);
+    }
+  }
+}
+
+// IPad Pro[PORTFOLIO]
+@media (min-width: 769px) and (max-width: 1200px) {
+  .skillsWrapper {
+    p {
+      padding: 0 70px;
+    }
+
+    .items {
+      padding: 20px 0;
+      grid-template-columns: repeat(auto-fit, 70px);
+    }
+  }
+}
+
+//Desktop-widescreen[PORTFOLIO]
+@media (min-width: 1201px) {
+  .skillsWrapper {
+    p {
+      padding: 0 200px;
+    }
+
+    .items {
+      // width: 80vw;
+      padding: 20px 0;
+      grid-template-columns: repeat(auto-fit, 70px);
+    }
+  }
+}

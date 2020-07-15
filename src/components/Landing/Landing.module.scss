@@ -46,3 +46,40 @@
     }
   }
 }
+
+// IPad[PORTFOLIO]
+@media (min-width: 670px) and (max-width: 769px) {
+  .homeWrapper {
+    .homeContent {
+      top: 12%;
+
+      h1 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+// IPad Pro[PORTFOLIO]
+@media (min-width: 769px) and (max-width: 1200px) {
+  .homeWrapper {
+    .homeContent {
+      top: 15%;
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+}
+
+//Desktop-widescreen[PORTFOLIO]
+@media (min-width: 1201px) {
+  .homeWrapper {
+    background: url('../../assets/img/SpaceSelfie.png') no-repeat 75% 70% / cover;
+
+    .homeContent {
+      top: 5%;
+    }
+  }
+}

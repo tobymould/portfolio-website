@@ -65,3 +65,54 @@
     }
   }
 }
+
+// IPad[PORTFOLIO]
+
+@media (min-width: 670px) and (max-width: 769px) {
+  .backgroundWrapper {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+
+      .item {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+// IPad Pro[PORTFOLIO]
+@media (min-width: 769px) and (max-width: 1200px) {
+  .backgroundWrapper {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+
+      .item {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .backgroundWrapper {
+    p {
+      text-align: center;
+    }
+
+    .items {
+      grid-template-columns: repeat(3, 1fr);
+
+      .item {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

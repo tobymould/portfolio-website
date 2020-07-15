@@ -1,17 +1,29 @@
 import React, { Component } from 'react';
 import styles from './Portfolio.module.scss';
 
-import Card from './Card/Card';
+// import Card from './Card/Card';
 import projects from '../../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export class Portfolio extends Component {
-  state = {};
+  state = { modalOpen: false };
+
+  modalToggle = () => {
+    this.setState({ modalOpen: !this.state.modalOpen });
+  };
+
+  modalOpen = event => {
+    const buttonClicked = event;
+    console.log(buttonClicked);
+    // if (modalOpen == true) {
+    //   return <Modal value={buttonClicked} />;
+    // }
+  };
 
   addPortfolioButtons = () => {
     return projects.map((project, index) => {
       return (
-        <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }}>
+        <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={this.modalToggle}>
           <h4>{project.name}</h4>
         </button>
       );
@@ -20,9 +32,6 @@ export class Portfolio extends Component {
   };
 
   render() {
-    // console.log(projects);
-    // console.log(this.addPortfolioButtonsToHTMLFromDataFile());
-
     return (
       <section className={styles.portfolioWrapper}>
         <div className={styles.container}>

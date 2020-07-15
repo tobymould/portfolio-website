@@ -1,228 +1,228 @@
 // ------DIFFERENT SIZE RANGES TO CONSIDER------//
 
 // IPad[PORTFOLIO]
-@media (min-width: 670px) and (max-width: 769px) {
-  //------------------------------------//
-  //--------1. LANDING SECTION(IPAD)--------//
-  //-------------------------------------//
-  #home {
-    #home-content {
-      top: 12%;
+// @media (min-width: 670px) and (max-width: 769px) {
+//------------------------------------//
+//--------1. LANDING SECTION(IPAD)--------//
+//-------------------------------------//
+// .homeWrapper {
+//   .homeContent {
+//     top: 12%;
 
-      h1 {
-        font-size: 4rem;
-      }
-    }
-  }
+//     h1 {
+//       font-size: 4rem;
+//     }
+//   }
+// }
 
-  #navbar {
-    font-size: 1.2rem;
-  }
+// .navbarWrapper {
+//   font-size: 1.2rem;
+// }
 
-  #skills {
-    p {
-      padding: 0 70px;
-    }
+// .skillsWrapper {
+//   p {
+//     padding: 0 70px;
+//   }
 
-    .items {
-      padding: 10px 0;
-      grid-template-columns: repeat(auto-fit, 100px);
-    }
-  }
+//   .items {
+//     padding: 10px 0;
+//     grid-template-columns: repeat(auto-fit, 100px);
+//   }
+// }
 
-  #portfolio {
-    // p {
-    //   text-align: center;
-    // }
+// .portfolioWrapper {
+//   // p {
+//   //   text-align: center;
+//   // }
 
-    .items {
-      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+//   .items {
+//     // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-      .item {
-        height: 20px;
+//     .item {
+//       height: 20px;
 
-        h4 {
-          font-size: 1.2rem;
-        }
-      }
-    }
+//       h4 {
+//         font-size: 1.2rem;
+//       }
+//     }
+//   }
 
-    .modal {
-      .modal-content {
-        // height: 100%;
-        margin: 22vh auto;
-        overflow-y: scroll;
+//   .modal {
+//     .modalContent {
+//       // height: 100%;
+//       margin: 22vh auto;
+//       overflow-y: scroll;
 
-        article {
-          height: 100%;
-          // background: red;
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-        }
-      }
-    }
-  }
+//       article {
+//         height: 100%;
+//         // background: red;
+//         display: grid;
+//         grid-template-columns: 1fr 2fr;
+//       }
+//     }
+//   }
+// }
 
-  #background {
-    p {
-      text-align: center;
-    }
+//   .backgroundWrapper {
+//     p {
+//       text-align: center;
+//     }
 
-    .items {
-      grid-template-columns: repeat(3, 1fr);
+//     .items {
+//       grid-template-columns: repeat(3, 1fr);
 
-      .item {
-        justify-content: flex-start;
-      }
-    }
-  }
-}
+//       .item {
+//         justify-content: flex-start;
+//       }
+//     }
+//   }
+// }
 
 // IPad Pro[PORTFOLIO]
-@media (min-width: 769px) and (max-width: 1200px) {
-  //---------------------------------------//
-  //--------1. LANDING SECTION (PRO)--------//
-  //---------------------------------------//
-  #home {
-    #home-content {
-      top: 15%;
+// @media (min-width: 769px) and (max-width: 1200px) {
+//---------------------------------------//
+//--------1. LANDING SECTION (PRO)--------//
+//---------------------------------------//
+// .homeWrapper {
+//   .homeContent {
+//     top: 15%;
 
-      h1 {
-        font-size: 5rem;
-      }
-    }
-  }
+//     h1 {
+//       font-size: 5rem;
+//     }
+//   }
+// }
 
-  #navbar {
-    font-size: 1.2rem;
-  }
+// .navbarWrapper {
+//   font-size: 1.2rem;
+// }
 
-  #skills {
-    p {
-      padding: 0 70px;
-    }
+// .skillsWrapper {
+//   p {
+//     padding: 0 70px;
+//   }
 
-    .items {
-      padding: 20px 0;
-      grid-template-columns: repeat(auto-fit, 70px);
-    }
-  }
+//   .items {
+//     padding: 20px 0;
+//     grid-template-columns: repeat(auto-fit, 70px);
+//   }
+// }
 
-  #portfolio {
-    .items {
-      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+// .portfolioWrapper {
+//   .items {
+//     // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-      h4 {
-        font-size: 1.2rem;
-      }
-    }
+//     h4 {
+//       font-size: 1.2rem;
+//     }
+//   }
 
-    .modal {
-      // background: blue;
-      .modal-content-wrapper {
-        .modal-content {
-          // display: flex;
-          // align-items: center;
-          // justify-content: center;
-          // background: yellow;
-          // height: 100%;
-          // margin: 35vh auto;
-          article {
-            height: 100%;
-            // background: red;
-            display: grid !important;
-            grid-template-columns: 1fr 3fr !important;
-          }
-        }
-      }
-    }
-  }
+//   .modal {
+//     // background: blue;
+//     .modal-content-wrapper {
+//       .modal-content {
+//         // display: flex;
+//         // align-items: center;
+//         // justify-content: center;
+//         // background: yellow;
+//         // height: 100%;
+//         // margin: 35vh auto;
+//         article {
+//           height: 100%;
+//           // background: red;
+//           display: grid !important;
+//           grid-template-columns: 1fr 3fr !important;
+//         }
+//       }
+//     }
+//   }
+// }
 
-  #background {
-    p {
-      text-align: center;
-    }
+// .backgroundWrapper {
+//   p {
+//     text-align: center;
+//   }
 
-    .items {
-      grid-template-columns: repeat(3, 1fr);
+//   .items {
+//     grid-template-columns: repeat(3, 1fr);
 
-      .item {
-        justify-content: flex-start;
-      }
-    }
-  }
-}
+//     .item {
+//       justify-content: flex-start;
+//     }
+//   }
+// }
+// }
 
 //Desktop-widescreen[PORTFOLIO]
-@media (min-width: 1201px) {
-  //-----------------------------------------//
-  //--------1. LANDING SECTION (WIDE)--------//
-  //----------------------------------------//
-  #home {
-    background: url('../assets/img/SpaceSelfie.png') no-repeat 75% 70% / cover;
+// @media (min-width: 1201px) {
+//-----------------------------------------//
+//--------1. LANDING SECTION (WIDE)--------//
+//----------------------------------------//
+// .homeWrapper {
+//   background: url('../assets/img/SpaceSelfie.png') no-repeat 75% 70% / cover;
 
-    #home-content {
-      top: 5%;
-    }
-  }
+//   .homeContent {
+//     top: 5%;
+//   }
+// }
 
-  #navbar {
-    font-size: 1.2rem;
-  }
+// .navbarWrapper {
+//   font-size: 1.2rem;
+// }
 
-  #skills {
-    p {
-      padding: 0 200px;
-    }
+// .skillsWrapper {
+//   p {
+//     padding: 0 200px;
+//   }
 
-    .items {
-      // width: 80vw;
-      padding: 20px 0;
-      grid-template-columns: repeat(auto-fit, 70px);
-    }
-  }
+//   .items {
+//     // width: 80vw;
+//     padding: 20px 0;
+//     grid-template-columns: repeat(auto-fit, 70px);
+//   }
+// }
 
-  #portfolio {
-    .items {
-      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+// .portfolioWrapper {
+//   .items {
+//     // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-      .item {
-        height: 20px;
+//     .item {
+//       height: 20px;
 
-        h4 {
-          font-size: 1.2rem;
-        }
-      }
-    }
+//       h4 {
+//         font-size: 1.2rem;
+//       }
+//     }
+//   }
 
-    .modal {
-      .modal-content-wrapper {
-        .modal-content {
-          // height: 100%;
-          margin: 20vh auto;
+//   .modal {
+//     .modalContentWrapper {
+//       .modalContent {
+//         // height: 100%;
+//         margin: 20vh auto;
 
-          article {
-            height: 100%;
-            // background: red;
-            display: grid !important;
-            grid-template-columns: 1fr 3fr !important;
-          }
-        }
-      }
-    }
-  }
+//         article {
+//           height: 100%;
+//           // background: red;
+//           display: grid !important;
+//           grid-template-columns: 1fr 3fr !important;
+//         }
+//       }
+//     }
+//   }
+// }
 
-  #background {
-    p {
-      text-align: center;
-    }
+//   .backgroundWrapper {
+//     p {
+//       text-align: center;
+//     }
 
-    .items {
-      grid-template-columns: repeat(3, 1fr);
+//     .items {
+//       grid-template-columns: repeat(3, 1fr);
 
-      .item {
-        justify-content: flex-start;
-      }
-    }
-  }
-}
+//       .item {
+//         justify-content: flex-start;
+//       }
+//     }
+//   }
+// }

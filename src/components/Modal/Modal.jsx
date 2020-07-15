@@ -1,9 +1,45 @@
 import React, { Component } from 'react';
 import styles from './Modal.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import projects from '../../data/data';
 
 export class Modal extends Component {
+  addTechIcons = () => {
+    const { project } = this.props;
+    // console.log(project);
+    return project.technology.icons.map((item, index) => {
+      return <FontAwesomeIcon className={item.className} icon={[item.icon[0], item.icon[1]]} key={index} />;
+    });
+  };
+
+  addTechImages = () => {
+    const { project } = this.props;
+    console.log(project.technology.images);
+    return project.technology.images.map((item, index) => {
+      return <img className={item.className} src={item.url} alt={item.className} key={index} />;
+    });
+  };
+
+  notableFeatures = () => {
+    const { project } = this.props;
+    console.log(project.features);
+    return project.features.map((feature, index) => {
+      return (
+        <li>
+          {index + 1}. {feature}
+        </li>
+      );
+    });
+  };
+
+  addTech = () => {
+    this.addTechIcons();
+    this.addTechImages();
+  };
+
   render() {
+    const { project } = this.props;
+    // const project = projects[0];
     return (
       <section className={styles.modalContentWrapper}>
         <div className={styles.modalContent}>
@@ -13,37 +49,37 @@ export class Modal extends Component {
             <div className={styles.column1}>
               {/* <!-- Summary Section --> */}
               <div className={styles.summary}>
-                <h3>${project.name}</h3>
+                <h3>{project.name}</h3>
                 <div className={styles.imageSection}>
-                  <a href="${project.live}">
-                    <img src="${project.image}" alt="${project.name}" className={styles.image}></a>
-                  </div>
-                  <div className={styles.buttons}>
-                    <a href="${project.live}" target="_blank">
-                      <FontAwesomeIcon icon={['fas', 'desktop']} />
-                      <p>Live Preview</p>
-                    </a>
-                    <a href="${project.github}" target="_blank">
-                      <FontAwesomeIcon icon={['fas', 'code-branch']} />
-                      <p>Source Private</p>
-                    </a>
-                  </div>
-                  <p>${project.overview}</p>
+                  <a href={project.live}>
+                    <img src={project.image} alt={project.name} className={styles.image} />
+                  </a>
                 </div>
+                <div className={styles.buttons}>
+                  <a href={project.live} target="_blank">
+                    <FontAwesomeIcon icon={['fas', 'desktop']} />
+                    <p>Live Preview</p>
+                  </a>
+                  <a href={project.github} target="_blank">
+                    <FontAwesomeIcon icon={['fas', 'code-branch']} />
+                    <p>Source Private</p>
+                  </a>
+                </div>
+                <p>{project.overview}</p>
+              </div>
 
-                {/* <!-- Technology Section --> */}
-                <div className={styles.tech}>
-                  <h4>Technologies Used</h4>
-                  <div className={styles.table}>
-                    <ul className={styles.fa - ul}>${project.technology.join('')}</ul>
-                  </div>
-                  <div className={styles.langPercent}>
-                    <div> </div>
-                    <div> </div>
-                    <div> </div>
-                    <div> </div>
-                    <div> </div>
-                  </div>
+              {/* <!-- Technology Section --> */}
+              <div className={styles.tech}>
+                <h4>Technologies Used</h4>
+                <div className={styles.table}>
+                  <ul className={styles.langList}>{this.addTech()}</ul>
+                </div>
+                <div className={styles.langPercent}>
+                  <div> </div>
+                  <div> </div>
+                  <div> </div>
+                  <div> </div>
+                  <div> </div>
                 </div>
               </div>
             </div>
@@ -53,25 +89,25 @@ export class Modal extends Component {
               {/* <!-- Role Content --> */}
               <div className={styles.role}>
                 <h4>My Role</h4>
-                <p>${project.role}</p>
+                <p>{project.role}</p>
               </div>
 
               {/* <!-- Difficulties Content --> */}
               <div className={styles.diff}>
                 <h4>Project Difficulties</h4>
-                <p>${project.difficult}</p>
+                <p>{project.difficult}</p>
               </div>
 
               {/* <!-- Solution Content --> */}
               <div className={styles.sol}>
                 <h4>My Solution</h4>
-                <p>${project.solution}</p>
+                <p>{project.solution}</p>
               </div>
 
               {/* <!-- Notable Features Content --> */}
               <div className={styles.feat}>
                 <h4>Notable Features</h4>
-                <ul>${project.features.join('')}</ul>
+                <ul>{this.notableFeatures()}</ul>
               </div>
             </div>
           </article>

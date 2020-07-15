@@ -13,12 +13,12 @@
 body {
   // font-family: 'Dosis', sans-serif;
   // font-family: 'Montserrat', sans-serif;
-  font-family: 'Lato', sans-serif;
+  font-family: $lato-font;
   background: $grey;
 
-  .container {
-    margin: 0 10vw;
-  }
+  // .container {
+  //   margin: 0 40vw;
+  // }
 
   h1 {
     margin-bottom: 0;

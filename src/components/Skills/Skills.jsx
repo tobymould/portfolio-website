@@ -19,6 +19,11 @@ export class Skills extends Component {
     });
   };
 
+  addSkills = () => {
+    this.addSkillIcons();
+    this.addSkillImages();
+  };
+
   render() {
     return (
       <section className={styles.skillsWrapper}>
@@ -28,10 +33,7 @@ export class Skills extends Component {
             I am a self-taught Front-End Web Developer looking for opportunties to transfer into the industry full-time to become a<span> Full Stack Web Developer</span>. I have a basis of knowledge and practice in the following:
           </p>
 
-          <section className={styles.items}>
-            {this.addSkillIcons()}
-            {this.addSkillImages()}
-          </section>
+          <section className={styles.items}>{this.addSkills()}</section>
         </div>
       </section>
     );

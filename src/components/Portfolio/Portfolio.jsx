@@ -2,18 +2,21 @@ import React, { Component } from 'react';
 import styles from './Portfolio.module.scss';
 
 import Card from './Card/Card';
-import projects, { skillsIcons } from '../../data/data';
+import projects from '../../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export class Portfolio extends Component {
   state = {};
 
-  addPortfolioButtonsToHTMLFromDataFile = () => {
-    projects.map((project, index) => {
-      return <Card object={project} key={index} />;
+  addPortfolioButtons = () => {
+    return projects.map((project, index) => {
+      return (
+        <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }}>
+          <h4>{project.name}</h4>
+        </button>
+      );
+      // return <Card object={project} key={index} />;
     });
-
-    //   // portfolioGridGlobal.innerHTML += buttons.join('');
   };
 
   render() {
@@ -31,7 +34,7 @@ export class Portfolio extends Component {
           <section className={styles.items}></section>
           <div>
             <div className={`${styles.simpleModal} ${styles.modal}`}>
-              {this.addPortfolioButtonsToHTMLFromDataFile()}
+              {this.addPortfolioButtons()}
               {/* <Card /> */}
             </div>
           </div>

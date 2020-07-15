@@ -40,12 +40,9 @@ export class Portfolio extends Component {
             <FontAwesomeIcon icon={['fas', 'search']} />
             <input type="search" placeholder="Search projects..." />
           </div>
-          <section className={styles.items}></section>
+          <section className={styles.items}>{this.addPortfolioButtons()}</section>
           <div>
-            <div className={`${styles.simpleModal} ${styles.modal}`}>
-              {this.addPortfolioButtons()}
-              {/* <Card /> */}
-            </div>
+            <div className={`${styles.simpleModal} ${styles.modal}`}>{/* <Card /> */}</div>
           </div>
         </div>
       </section>

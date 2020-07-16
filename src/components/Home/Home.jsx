@@ -49,7 +49,7 @@ export class Home extends Component {
 
     // return project.map(item => {
     if (this.state.modalState == true) {
-      return <Modal project={this.state.projectState} modalState={this.state.modalState} modalOpenFunction={this.modalOpenFunction} />;
+      return <Modal project={this.state.projectState} modalState={this.state.modalState} modalOpenFunction={this.modalOpenFunction} modalToggle={this.modalToggle} />;
     } else {
       return null;
     }

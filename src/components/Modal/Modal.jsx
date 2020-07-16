@@ -38,11 +38,11 @@ export class Modal extends Component {
   };
 
   render() {
-    const { modalState, project, modalOpenFunction } = this.props;
+    const { modalState, project, modalOpenFunction, modalToggle } = this.props;
     // const project = projects[0];
     return (
       // style={{ display: modalState ? 'block' : 'none' }}
-      <div className={styles.modalOverlayWrapper}>
+      <div className={styles.modalOverlayWrapper} onClick={modalToggle}>
         <section className={styles.modalContentWrapper}>
           <div className={styles.modalContent}>
             {/* <!-- Modal Content on Project --> */}

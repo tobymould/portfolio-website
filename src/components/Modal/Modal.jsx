@@ -33,7 +33,7 @@ export class Modal extends Component {
   };
 
   addTech = () => {
-    this.addTechIcons();
+    // this.addTechIcons();
     this.addTechImages();
   };
 
@@ -41,7 +41,6 @@ export class Modal extends Component {
     const { modalState, project, modalOpenFunction, modalToggle } = this.props;
     // const project = projects[0];
     return (
-      // style={{ display: modalState ? 'block' : 'none' }}
       <div className={styles.modalOverlayWrapper} onClick={modalToggle}>
         <section className={styles.modalContentWrapper}>
           <div className={styles.modalContent}>
@@ -73,9 +72,7 @@ export class Modal extends Component {
                 {/* <!-- Technology Section --> */}
                 <div className={styles.tech}>
                   <h4>Technologies Used</h4>
-                  <div className={styles.table}>
-                    <ul className={styles.langList}>{this.addTech()}</ul>
-                  </div>
+                  <div className={styles.table}>{/* <ul className={styles.langList}>{this.addTech()}</ul> */}</div>
                   <div className={styles.langPercent}>
                     <div> </div>
                     <div> </div>

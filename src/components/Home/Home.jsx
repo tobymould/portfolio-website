@@ -22,9 +22,11 @@ export class Home extends Component {
     // console.log(buttonClicked);
     this.setButtonPressed(event.target.value);
     this.setModalProject(event.target.value);
-    this.modalOpenFunction(event.target.value);
     this.setState({ modalState: !this.state.modalState });
+    this.modalOpenFunction(event.target.value);
   };
+
+  // , eventSet: event.target.value, projectState: event.target.value
 
   setButtonPressed = projectButtonClicked => {
     // console.log(`Button pressed: ${projectButtonClicked}`);

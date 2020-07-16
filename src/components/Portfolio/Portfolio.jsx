@@ -26,9 +26,8 @@ export class Portfolio extends Component {
     console.log(term);
 
     return projects.map((project, index) => {
+      // Project Name Search:
       const projectName = project.name.toLowerCase();
-      console.log(projectName);
-
       if (projectName.includes(term)) {
         return (
           <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
@@ -36,8 +35,20 @@ export class Portfolio extends Component {
           </button>
         );
       }
+
+      // Project Language Search:
+      let singularLanguageArray = project.languages.map(language => {
+        return language.toLowerCase().includes(term) ? true : false;
+      });
+
+      if (singularLanguageArray.includes(true)) {
+        return (
+          <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
+            <h4>{project.name}</h4>
+          </button>
+        );
+      }
     });
-    console.log(this.state.searchterm);
   };
 
   render() {
@@ -51,10 +62,7 @@ export class Portfolio extends Component {
             <input type="search" placeholder="Search projects..." onChange={setSearchTerm} />
           </div>
           <section className={styles.items}>{searchTerm ? this.searchProjects() : this.addPortfolioButtons()}</section>
-          <div>
-            {modalState ? modalOpenFunction() : null}
-            {/* <Modal project={projectState} modalState={modalState} modalOpenFunction={modalOpenFunction} /> */}
-          </div>
+          <div>{modalState ? modalOpenFunction() : null}</div>
         </div>
       </section>
     );

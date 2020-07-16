@@ -57,26 +57,6 @@ export class Home extends Component {
     console.log(event.target.value);
   };
 
-  searchProjects = () => {
-    const { searchTerm } = this.state;
-    const term = searchTerm.toLowerCase();
-    console.log(term);
-
-    return projects.filter((project, index) => {
-      const projectName = project.name.toLowerCase();
-      console.log(projectName);
-
-      if (projectName.includes(term)) {
-        return (
-          <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={this.modalToggle}>
-            <h4>{project.name}</h4>
-          </button>
-        );
-      }
-    });
-    console.log(this.state.searchterm);
-  };
-
   render() {
     return (
       <>

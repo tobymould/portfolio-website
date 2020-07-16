@@ -42,12 +42,6 @@ export class Home extends Component {
     const project = projects[projectButtonClicked];
     console.log(project);
 
-    // this.modalToggle();
-
-    // const project = projects[{ buttonClicked }];
-    // this.setModalProject(project);
-
-    // return project.map(item => {
     if (this.state.modalState == true) {
       return <Modal project={this.state.projectState} modalState={this.state.modalState} modalOpenFunction={this.modalOpenFunction} modalToggle={this.modalToggle} />;
     } else {

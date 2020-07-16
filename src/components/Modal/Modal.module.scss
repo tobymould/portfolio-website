@@ -23,9 +23,10 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 //-----------MODAL OVERLAY BLACK-----------//
 //-----------------------------------------//
 //
-.modal {
+.modalOverlayWrapper {
   /* This is the class for the dark background around the modal. */
-  display: none; /*This makes the modal hide until button click*/
+  // display: none; /*This makes the modal hide until button click*/
+  display: 'block';
   position: fixed;
   z-index: 10;
   left: 0;

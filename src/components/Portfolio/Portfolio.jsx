@@ -9,9 +9,10 @@ import Modal from '../Modal';
 export class Portfolio extends Component {
   //
   addPortfolioButtons = () => {
+    const { modalOpenFunction, modalToggle } = this.props;
     return projects.map((project, index) => {
       return (
-        <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={this.props.modalOpenFunction}>
+        <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
           <h4>{project.name}</h4>
         </button>
       );
@@ -31,9 +32,8 @@ export class Portfolio extends Component {
           </div>
           <section className={styles.items}>{this.addPortfolioButtons()}</section>
           <div>
-            <div className={(styles.simpleModal, styles.modal)}>
-              <Modal project={projectState} modalState={modalState} modalOpenFunction={modalOpenFunction} />
-            </div>
+            {modalState ? modalOpenFunction() : null}
+            {/* <Modal project={projectState} modalState={modalState} modalOpenFunction={modalOpenFunction} /> */}
           </div>
         </div>
       </section>

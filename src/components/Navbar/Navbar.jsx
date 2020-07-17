@@ -10,31 +10,41 @@ export class Navbar extends Component {
         <ul>
           <li>
             <Link to="https://drive.google.com/file/d/13sQbPE_cf6EKGc_Xn6ppMWdQJPMgzR7o/view?usp=sharing" target="_blank">
-              <FontAwesomeIcon icon={['fas', 'passport']} />
+              <div>
+                <FontAwesomeIcon icon={['fas', 'passport']} />
+              </div>
               Resume
             </Link>
           </li>
           <li>
             <Link to="/">
-              <FontAwesomeIcon icon={['fas', 'home']} />
+              <div>
+                <FontAwesomeIcon icon={['fas', 'home']} />
+              </div>
               Home
             </Link>
           </li>
           <li>
             <Link to="/">
-              <FontAwesomeIcon icon={['fas', 'microchip']} />
+              <div>
+                <FontAwesomeIcon icon={['fas', 'microchip']} />
+              </div>
               Skills
             </Link>
           </li>
           <li>
             <Link to="/">
-              <FontAwesomeIcon icon={['fas', 'code']} />
+              <div>
+                <FontAwesomeIcon icon={['fas', 'code']} />
+              </div>
               Portfolio
             </Link>
           </li>
           <li>
             <Link to="/">
-              <FontAwesomeIcon icon={['fas', 'user-circle']} />
+              <div>
+                <FontAwesomeIcon icon={['fas', 'user-circle']} />
+              </div>
               Background
             </Link>
           </li>

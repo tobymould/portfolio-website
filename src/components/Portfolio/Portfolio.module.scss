@@ -5,6 +5,8 @@
 .portfolioWrapper {
   // padding: 60px 0px;
   background: $colour4;
+  // padding: 0 10px;
+
   padding-bottom: 30px;
   margin: 0 3vw;
   border-radius: 20px;
@@ -39,6 +41,17 @@
     gap: 10px;
     padding: 10px;
 
+    @media (min-width: 670px) and (max-width: 769px) {
+      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    // IPad Pro[PORTFOLIO]
+    @media (min-width: 769px) and (max-width: 1200px) {
+      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    @media (min-width: 1201px) {
+      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
     .item {
       // border: solid red 5px;
       min-height: 200px;
@@ -49,106 +62,28 @@
       // &:hover {
       //   background: $linear-grad-3d;
       // }
-    }
-  }
-}
 
-// IPad[PORTFOLIO]
-@media (min-width: 670px) and (max-width: 769px) {
-  .portfolioWrapper {
-    // p {
-    //   text-align: center;
-    // }
-
-    .items {
-      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-      .item {
+      // IPad[PORTFOLIO]
+      @media (min-width: 670px) and (max-width: 769px) {
         height: 20px;
 
         h4 {
           font-size: 1.2rem;
         }
       }
-    }
-
-    .modal {
-      .modalContent {
-        // height: 100%;
-        margin: 22vh auto;
-        overflow-y: scroll;
-
-        article {
-          height: 100%;
-          // background: red;
-          display: grid;
-          grid-template-columns: 1fr 2fr;
-        }
-      }
-    }
-  }
-}
-
-// IPad Pro[PORTFOLIO]
-@media (min-width: 769px) and (max-width: 1200px) {
-  .portfolioWrapper {
-    .items {
-      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-      h4 {
-        font-size: 1.2rem;
-      }
-    }
-
-    .modal {
-      // background: blue;
-      .modal-content-wrapper {
-        .modal-content {
-          // display: flex;
-          // align-items: center;
-          // justify-content: center;
-          // background: yellow;
-          // height: 100%;
-          // margin: 35vh auto;
-          article {
-            height: 100%;
-            // background: red;
-            display: grid !important;
-            grid-template-columns: 1fr 3fr !important;
-          }
-        }
-      }
-    }
-  }
-}
-
-//Desktop-widescreen[PORTFOLIO]
-@media (min-width: 1201px) {
-  .portfolioWrapper {
-    .items {
-      // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-      .item {
-        height: 20px;
-
+      // IPad Pro[PORTFOLIO]
+      @media (min-width: 769px) and (max-width: 1200px) {
         h4 {
           font-size: 1.2rem;
         }
       }
-    }
 
-    .modal {
-      .modalContentWrapper {
-        .modalContent {
-          // height: 100%;
-          margin: 20vh auto;
+      //Desktop-widescreen[PORTFOLIO]
+      @media (min-width: 1201px) {
+        height: 20px;
 
-          article {
-            height: 100%;
-            // background: red;
-            display: grid !important;
-            grid-template-columns: 1fr 3fr !important;
-          }
+        h4 {
+          font-size: 1.2rem;
         }
       }
     }

@@ -10,8 +10,8 @@
   z-index: 4;
   font-size: 0.65rem;
   color: $white-50;
-  margin: 0 3vw;
-  border-radius: 20px;
+  // margin: 0 3vw;
+  // border-radius: 20px;
 
   ul {
     display: grid;
@@ -24,11 +24,21 @@
 
     li {
       display: flex;
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+      }
       // border-radius: 80px;
 
       &:nth-child(1) {
         background: $colour1-50;
-        border-radius: 20px 0 0 20px;
+        // border-radius: 20px 0 0 20px;
 
         &:hover {
           background: $dark-colour;

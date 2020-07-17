@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Portfolio.module.scss';
 
-// import Card from './Card/Card';
+import Card from './Card/Card';
 import projects from '../../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from '../Modal';
@@ -59,6 +59,7 @@ export class Portfolio extends Component {
         {/* <Container> */}
         <div className={styles.container}>
           <h2>Portfolio</h2>
+          {/* <Card /> */}
           <div>
             <FontAwesomeIcon icon={['fas', 'search']} />
             <input type="search" placeholder="Search projects..." onChange={setSearchTerm} />

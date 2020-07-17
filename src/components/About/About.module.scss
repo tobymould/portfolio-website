@@ -1,0 +1,51 @@
+@import '../../sass/variables';
+
+.aboutWrapper {
+  h2 {
+    margin-top: 100px;
+  }
+  // background: green;
+  max-height: 100vh;
+
+  .items {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+    // justify-content: center;
+
+    .item {
+      margin: 50px;
+      background: blue;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // height: 400px;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        // height: 100%;
+        width: 80%;
+        padding: 30px;
+        background: green;
+      }
+
+      .aboutDescription {
+        padding: 30px;
+        background: yellow;
+        height: 70%;
+
+        h3 {
+          padding: 10px;
+          margin: 10px;
+          background: pink;
+        }
+
+        p {
+          background: white;
+          padding: 5px;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}

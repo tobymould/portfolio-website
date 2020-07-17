@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 import styles from './Card.module.scss';
+// import picture from '../../../assets/img/profilePicture.jpg';
 // import projects from '../../data/data';
 
 export class Card extends Component {
   render() {
-    console.log(this.props);
-    // const { } = this.props;
     return (
-      <></>
-      // /* <button className={styles.item} value={index}>
-      //     <h4>{this.props.object.name}</h4>
-      //     <p>Is this working?</p>
-      //   </button> */
+      <div className={styles.cardWrapper}>
+        <div className={styles.cardHeader}>
+          <h4>Heading</h4>
+        </div>
+        <div className={styles.cardContent}>
+          <ul>
+            <li>hello</li>
+            <li>there</li>
+            <li>you</li>
+          </ul>
+        </div>
+      </div>
     );
   }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styles from './Home.module.scss';
 
 import Landing from '../Landing';
+import About from '../About';
 import Navbar from '..//Navbar';
 import Skills from '../Skills';
 import Modal from '../Modal';
@@ -61,6 +62,7 @@ export class Home extends Component {
     return (
       <>
         <Landing />
+        {/* <About /> */}
         <Navbar />
         <Skills />
         <Portfolio modalState={this.state.modalState} projectState={this.state.projectState} modalOpenFunction={this.modalOpenFunction} modalToggle={this.modalToggle} setButtonPressed={this.setButtonPressed} setModalProject={this.setModalProject} searchTerm={this.state.searchTerm} setSearchTerm={this.setSearchTerm} searchProjects={this.searchProjects} />

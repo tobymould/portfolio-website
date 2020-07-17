@@ -53,7 +53,7 @@ export class Portfolio extends Component {
   };
 
   render() {
-    const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm } = this.props;
+    const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm, getGithubRepos, getGithubRepoLanguages } = this.props;
     return (
       <section className={styles.portfolioWrapper}>
         {/* <Container> */}

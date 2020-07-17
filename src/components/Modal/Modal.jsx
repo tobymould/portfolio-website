@@ -22,7 +22,7 @@ export class Modal extends Component {
 
   notableFeatures = () => {
     const { project } = this.props;
-    console.log(project.features);
+    // console.log(project.features);
     return project.features.map((feature, index) => {
       return (
         <li>
@@ -38,8 +38,9 @@ export class Modal extends Component {
   };
 
   render() {
-    const { modalState, project, modalOpenFunction, modalToggle } = this.props;
+    const { modalState, project, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos } = this.props;
     // const project = projects[0];
+
     return (
       <div className={styles.modalOverlayWrapper} onClick={modalToggle}>
         <section className={styles.modalContentWrapper}>

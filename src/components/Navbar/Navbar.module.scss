@@ -10,6 +10,8 @@
   z-index: 4;
   font-size: 0.65rem;
   color: $white-50;
+  margin: 0 3vw;
+  border-radius: 20px;
 
   ul {
     display: grid;
@@ -26,6 +28,7 @@
 
       &:nth-child(1) {
         background: $colour1-50;
+        border-radius: 20px 0 0 20px;
 
         &:hover {
           background: $dark-colour;

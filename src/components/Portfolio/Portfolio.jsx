@@ -5,6 +5,7 @@ import styles from './Portfolio.module.scss';
 import projects from '../../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from '../Modal';
+// import Container from '../../containers/Container';
 
 export class Portfolio extends Component {
   //
@@ -55,6 +56,7 @@ export class Portfolio extends Component {
     const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm } = this.props;
     return (
       <section className={styles.portfolioWrapper}>
+        {/* <Container> */}
         <div className={styles.container}>
           <h2>Portfolio</h2>
           <div>
@@ -64,6 +66,7 @@ export class Portfolio extends Component {
           <section className={styles.items}>{searchTerm ? this.searchProjects() : this.addPortfolioButtons()}</section>
           <div>{modalState ? modalOpenFunction() : null}</div>
         </div>
+        {/* </Container> */}
       </section>
     );
   }

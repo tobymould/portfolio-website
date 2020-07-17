@@ -6,8 +6,7 @@ class Routes extends Component {
   render() {
     return (
       <Router>
-        <Home path="/" />
-        <Home default />
+        <Home default path="/" />
       </Router>
     );
   }

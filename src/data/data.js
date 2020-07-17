@@ -326,14 +326,17 @@ export const projects = [
 // export default data;
 export const skills = {
   icons: [
-    { className: 'html', icon: ['fab', 'html5'] },
-    { className: 'css', icon: ['fab', 'css3-alt'] },
-    { className: 'sass', icon: ['fab', 'sass'] },
-    { className: 'javascript', icon: ['fab', 'js-square'] },
-    { className: 'react', icon: ['fab', 'react'] },
-    { className: 'node', icon: ['fab', 'node'] }
+    { language: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+    { language: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+    { language: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+    { language: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+    { language: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+    { language: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' },
+    { language: 'yarn', icon: ['fab', 'yarn'], colour: '#117cad', sizeGeneral: '3x', sizeModal: '2x' },
+    { language: 'git', icon: ['fab', 'git'], colour: '#f1502f', sizeGeneral: '3x', sizeModal: '2x' },
+    { language: 'github', icon: ['fab', 'github'], colour: '#2b3137', sizeGeneral: '3x', sizeModal: '2x' }
   ],
-  images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  images: [{ className: 'firebase', url: '../assets/icons/firebase.png' }]
 };
 
 //  '<img className="firebase-modal" src="../assets/icons/firebase.png" alt="firebase logo" />'];

@@ -5,7 +5,8 @@
 .skillsWrapper {
   background: white;
   padding: 10px;
-  width: 100vw;
+  %icon-colours
+  // width: 100vw;
   // clip-path: polygon(3% 10%, 97% 0, 97% 90%, 3% 100%);
 
   h2 {

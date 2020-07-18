@@ -11,7 +11,7 @@ export class Skills extends Component {
     // console.log(skills.icons);
     return skills.icons.map((item, index) => {
       // console.log(item.icon[0], item.icon[1]);
-      console.log(item.colour);
+      // console.log(item.colour);
       return <FontAwesomeIcon icon={[item.icon[0], item.icon[1]]} style={{ color: item.colour }} size={item.sizeGeneral} key={index} />;
     });
   };
@@ -31,8 +31,8 @@ export class Skills extends Component {
   // };
 
   render() {
-    console.log(skills.icons[0].icon[0]);
-    console.log(skills.icons[0].icon[1]);
+    // console.log(skills.icons[0].icon[0]);
+    // console.log(skills.icons[0].icon[1]);
     return (
       <section className={styles.skillsWrapper}>
         <div className={styles.container}>

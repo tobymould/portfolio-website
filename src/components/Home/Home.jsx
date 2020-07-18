@@ -13,23 +13,20 @@ import Footer from '../Footer';
 import projects from '../../data/data';
 
 export class Home extends Component {
-  state = { modalState: false, projectState: null, eventSet: null, searchTerm: null, projectLanguage: {} };
+  state = { modalState: false, projectState: null, eventSet: null, searchTerm: null, projectLanguage: {}, hover: false };
   //
 
   modalToggle = event => {
     console.log(`Event target value: ${event.target.value}`);
-    // console.log(event.key);
-    // console.log(event.target);
-    // console.log(buttonClicked);
     this.setButtonPressed(event.target.value);
     this.setModalProject(event.target.value);
     this.setState({ modalState: !this.state.modalState });
     this.modalOpenFunction(event.target.value);
-    // const languages = this.getGithubRepos();
-    // this.setState({ projectLanguage: languages });
-    // console.log(this.state.projectLanguage);
   };
 
+  hoverToggle = event => {
+    this.setState({ hover: !this.state.hover });
+  };
   // , eventSet: event.target.value, projectState: event.target.value
 
   setButtonPressed = projectButtonClicked => {
@@ -73,6 +70,7 @@ export class Home extends Component {
     const langdata2 = await Promise.all(promises);
     console.log(langdata2);
     console.log('2nd end');
+    return langdata2;
   };
 
   getGithubRepos = async () => {
@@ -81,14 +79,18 @@ export class Home extends Component {
     const dataJSON1 = await response1.json();
     // return dataJSON1;
     const getLang1 = await this.getGithubRepoLanguages(dataJSON1);
+    this.setState({ projectLanguage: getLang1 });
     console.log('1st end');
-    return getLang1;
-    // return getLang;
+    // return getLang1;
   };
 
-  render() {
+  componentDidMount() {
     this.getGithubRepos();
-    // .then(projectLanguages => ));
+  }
+
+  render() {
+    // const projectLanguagePercentages = this.getGithubRepos();
+    // console.log(projectLanguagePercentages);
 
     return (
       <>
@@ -96,7 +98,7 @@ export class Home extends Component {
         {/* <About /> */}
         <Navbar />
         <Skills />
-        <Portfolio modalState={this.state.modalState} projectState={this.state.projectState} modalOpenFunction={this.modalOpenFunction} modalToggle={this.modalToggle} setButtonPressed={this.setButtonPressed} setModalProject={this.setModalProject} searchTerm={this.state.searchTerm} setSearchTerm={this.setSearchTerm} searchProjects={this.searchProjects} getGithubRepoLanguages={this.getGithubRepoLanguages} getGithubRepos={this.getGithubRepos} />
+        <Portfolio modalState={this.state.modalState} projectState={this.state.projectState} modalOpenFunction={this.modalOpenFunction} modalToggle={this.modalToggle} setButtonPressed={this.setButtonPressed} setModalProject={this.setModalProject} searchTerm={this.state.searchTerm} setSearchTerm={this.setSearchTerm} searchProjects={this.searchProjects} getGithubRepoLanguages={this.getGithubRepoLanguages} getGithubRepos={this.getGithubRepos} hoverToggle={this.hoverToggle} hover={this.state.hover} />
         <Background />
         <Footer />
       </>

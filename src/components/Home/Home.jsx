@@ -13,7 +13,7 @@ import Footer from '../Footer';
 import projects from '../../data/data';
 
 export class Home extends Component {
-  state = { modalState: false, projectState: null, eventSet: null, searchTerm: null, projectLanguage: {}, hover: false };
+  state = { modalState: false, projectState: null, eventSet: null, searchTerm: null, projectLanguages: {}, hover: false };
   //
 
   modalToggle = event => {
@@ -42,11 +42,14 @@ export class Home extends Component {
   };
 
   modalOpenFunction = projectButtonClicked => {
+    const { modalState, projectState, projectLanguages } = this.state;
+    const { modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos } = this;
+
     const project = projects[projectButtonClicked];
     // console.log(project);
 
     if (this.state.modalState == true) {
-      return <Modal project={this.state.projectState} modalState={this.state.modalState} modalOpenFunction={this.modalOpenFunction} modalToggle={this.modalToggle} getGithubRepoLanguages={this.getGithubRepoLanguages} getGithubRepos={this.getGithubRepos} />;
+      return <Modal project={projectState} modalState={modalState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} />;
     } else {
       return null;
     }
@@ -73,15 +76,49 @@ export class Home extends Component {
     return langdata2;
   };
 
+  convertToPercent = getLang1 => {
+    let totals = [];
+
+    const convertsEachProjectLanguageContributionToPercent = getLang1.map((project, index) => {
+      const entries = Object.entries(project.languages);
+      let sum = 0;
+      // console.log(`initial value of Project ${index} is: ${sum}`);
+
+      //2) Work out the total sum value of all the languages together in ONE project:
+      const projectTotal = entries.map((number, index) => {
+        // console.log(`value ${index} is: ${number[1]}`);
+        console.log((sum = sum + parseFloat(number[1])));
+        return sum;
+      });
+
+      //3) Convert the individual language values to percentages of total in ONE project:
+      const percentageConversions = entries.map((number, index) => {
+        console.log(`${number}, ${index}`);
+        const percent = ((number[1] / sum) * 100).toFixed(1);
+        console.log(`Percent of: ${percent}`);
+        const replaced = (number[1] = percent);
+        console.log(`Replaced: ${number}`);
+        return replaced;
+      });
+
+      // console.log(`Summary of values for Project ${index}: ${entries}`);
+
+      let object = {};
+      object = { projectName: project.name, languages: entries };
+      totals.push(object);
+    });
+    console.log(totals);
+    return totals;
+  };
+
   getGithubRepos = async () => {
     console.log('1st start');
     const response1 = await fetch(`https://api.github.com/users/tobymould/repos`);
     const dataJSON1 = await response1.json();
-    // return dataJSON1;
     const getLang1 = await this.getGithubRepoLanguages(dataJSON1);
-    this.setState({ projectLanguage: getLang1 });
+    const percentage = this.convertToPercent(getLang1);
+    this.setState({ projectLanguage: percentage });
     console.log('1st end');
-    // return getLang1;
   };
 
   componentDidMount() {
@@ -89,16 +126,15 @@ export class Home extends Component {
   }
 
   render() {
-    // const projectLanguagePercentages = this.getGithubRepos();
-    // console.log(projectLanguagePercentages);
-
+    const { modalState, projectState, searchTerm, hover, projectLanguages } = this.state;
+    const { modalOpenFunction, modalToggle, setButtonPressed, setModalProject, setSearchTerm, searchProjects, getGithubRepoLanguages, getGithubRepos, hoverToggle } = this;
     return (
       <>
         <Landing />
         {/* <About /> */}
         <Navbar />
         <Skills />
-        <Portfolio modalState={this.state.modalState} projectState={this.state.projectState} modalOpenFunction={this.modalOpenFunction} modalToggle={this.modalToggle} setButtonPressed={this.setButtonPressed} setModalProject={this.setModalProject} searchTerm={this.state.searchTerm} setSearchTerm={this.setSearchTerm} searchProjects={this.searchProjects} getGithubRepoLanguages={this.getGithubRepoLanguages} getGithubRepos={this.getGithubRepos} hoverToggle={this.hoverToggle} hover={this.state.hover} />
+        <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} />
         <Background />
         <Footer />
       </>

@@ -70,7 +70,7 @@ export class Portfolio extends Component {
   // };
 
   render() {
-    const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm, getGithubRepos, getGithubRepoLanguages, hoverToggle, hover } = this.props;
+    const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm, getGithubRepos, getGithubRepoLanguages, hoverToggle, hover, projectLanguages } = this.props;
 
     // this.hoverEffect();
 

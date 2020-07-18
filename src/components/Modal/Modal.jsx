@@ -38,7 +38,7 @@ export class Modal extends Component {
   };
 
   render() {
-    const { modalState, project, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos } = this.props;
+    const { modalState, project, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages } = this.props;
     // const project = projects[0];
 
     return (
@@ -75,7 +75,7 @@ export class Modal extends Component {
                   <h4>Technologies Used</h4>
                   <div className={styles.table}>{/* <ul className={styles.langList}>{this.addTech()}</ul> */}</div>
                   <div className={styles.langPercent}>
-                    <div> </div>
+                    {/* <div style={{width: projectLanguages[]:, background: }}> </div> */}
                     <div> </div>
                     <div> </div>
                     <div> </div>

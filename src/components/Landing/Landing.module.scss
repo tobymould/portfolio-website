@@ -13,7 +13,7 @@
   background: url('../../assets/img/SpaceSelfie.png') no-repeat 25% 100% / cover;
   // box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
   // box-shadow: inset 5px 5px 35px 5px rgba(0, 0, 0, 1);
-  box-shadow: inset 5px 5px 35px 0px rgba(0, 0, 0, 1);
+  box-shadow: inset 5px 5px 35px -15px rgba(0, 0, 0, 1);
 
   // border-bottom: 1px solid black;
   // background-attachment: fixed; //This solved nothing?
@@ -38,7 +38,7 @@
     align-items: center;
     color: white;
     margin: 0 auto;
-    box-shadow: inset 5px 5px 35px 5px rgba(0, 0, 0, 1);
+    // box-shadow: inset 5px 5px 35px 5px rgba(0, 0, 0, 1);
 
     // background: purple;
     z-index: 2;
@@ -54,48 +54,133 @@
   }
 
   // IPad[PORTFOLIO]
-  @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-    .homeContent {
-      top: 12%;
+  @media (orientation: landscape) {
+    @media (max-width: $iphoneX-width-landscape) {
+      .homeContent {
+        top: 0;
+        right: 0;
+        margin: 0;
+        width: 60vw;
+        height: 100vh;
+        // justify-content: center;
+        padding-left: 50px;
+        // align-items: flex-end;
+        background: rgba($github, 0.5);
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 
-      h1 {
-        font-size: 4rem;
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          border: none;
+          text-align: center;
+          font-size: 1.6rem;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+          margin: 30px 0 10px;
+        }
       }
+    }
+
+    @media (min-width: 813px) and (max-width: $ipad-width-landscape) {
+      .homeContent {
+        top: 0;
+        right: 0;
+        margin: 0;
+        width: 60vw;
+        height: 100vh;
+        // justify-content: center;
+        padding-left: 50px;
+        // align-items: flex-end;
+        background: rgba($github, 0.5);
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          border: none;
+          text-align: center;
+          font-size: 1.6rem;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+          margin: 30px 0 10px;
+        }
+      }
+    }
+
+    @media (min-width: 1025px) and (max-width: $ipad-pro-width-landscape) {
+      .homeContent {
+        top: 0;
+        right: 0;
+        margin: 0;
+        width: 60vw;
+        height: 100vh;
+        // justify-content: center;
+        padding-left: 50px;
+        // align-items: flex-end;
+        background: rgba($github, 0.5);
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        h2 {
+          border: none;
+          text-align: center;
+          font-size: 1.6rem;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+          margin: 30px 0 10px;
+        }
+      }
+    }
+
+    @media (min-width: $desktop-min-width) {
+      background: url('../../assets/img/SpaceSelfie.png') no-repeat 75% 70% / cover;
+
+      .homeContent {
+        top: 0;
+        right: 0;
+        margin: 0;
+        width: 55vw;
+        height: 100vh;
+        background: rgba($github, 0.5);
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+        h4 {
+          font-size: 1.2rem;
+          margin: 50px 0 10px;
+        }
+      }
+      // .homeOverlay {
+      //   // display: none;
+      //   // background: rgba(0, 0, 0, 0.4);
+      // }
     }
   }
 
   // IPad Pro[PORTFOLIO]
-  @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-    .homeContent {
-      top: 15%;
+  @media (orientation: portrait) {
+    @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+      .homeContent {
+        top: 15%;
 
-      h1 {
-        font-size: 5rem;
+        h1 {
+          font-size: 5rem;
+        }
       }
     }
-  }
 
-  //Desktop-widescreen[PORTFOLIO]
-  @media (min-width: $desktop-min-width) {
-    background: url('../../assets/img/SpaceSelfie.png') no-repeat 75% 70% / cover;
-
-    .homeContent {
-      top: 0;
-      right: 0;
-      margin: 0;
-      width: 55vw;
-      height: 100vh;
-      background: rgba($github, 0.5);
-      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-
-      h4 {
-        font-size: 1.2rem;
-        margin: 50px 0 10px;
-      }
-    }
-    // .homeOverlay {
-    //   // display: none;
-    //   // background: rgba(0, 0, 0, 0.4);
-    // }
+    //Desktop-widescreen[PORTFOLIO]
   }
 }

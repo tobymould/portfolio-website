@@ -24,9 +24,10 @@ export class Portfolio extends Component {
   searchProjects = () => {
     const { modalToggle, searchTerm } = this.props;
     const term = searchTerm.toLowerCase();
-    console.log(term);
+    // console.log(term);
+    let nullCounter = 0;
 
-    return projects.map((project, index) => {
+    const searchResult = projects.map((project, index) => {
       // Project Name Search:
       const projectName = project.name.toLowerCase();
       if (projectName.includes(term)) {
@@ -35,6 +36,8 @@ export class Portfolio extends Component {
             <h4>{project.name}</h4>
           </button>
         );
+      } else {
+        nullCounter++;
       }
 
       // Project Language Search:
@@ -50,6 +53,13 @@ export class Portfolio extends Component {
         );
       }
     });
+
+    // Determines what to display if no positive matches:
+    if (nullCounter == searchResult.length) {
+      return <p className={styles.noResult}>Could not find the project </p>;
+    } else {
+      return searchResult;
+    }
   };
 
   // hoverEffect = event => {

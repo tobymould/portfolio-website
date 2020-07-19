@@ -60,6 +60,7 @@
   }
 
   .items {
+    min-height: 200px;
     margin-top: 20px;
     // padding-bottom: 60px;
     // margin-bottom: 60px;
@@ -91,6 +92,17 @@
       height: auto;
       // border-radius: 20px;
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+
+    .noResult {
+      justify-self: center;
+      align-self: center;
+      font-size: 3rem;
+      // background: yellow;
+      line-height: 3rem;
+      text-align: center;
+      color: white;
+      // height: 100%;
     }
 
     .item {

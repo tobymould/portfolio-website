@@ -11,7 +11,9 @@
   justify-content: center;
   align-items: center;
   background: url('../../assets/img/SpaceSelfie.png') no-repeat 25% 100% / cover;
-  box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
+  // box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
+  // box-shadow: inset 5px 5px 35px 5px rgba(0, 0, 0, 1);
+  box-shadow: inset 5px 5px 35px 0px rgba(0, 0, 0, 1);
 
   // border-bottom: 1px solid black;
   // background-attachment: fixed; //This solved nothing?
@@ -36,6 +38,8 @@
     align-items: center;
     color: white;
     margin: 0 auto;
+    box-shadow: inset 5px 5px 35px 5px rgba(0, 0, 0, 1);
+
     // background: purple;
     z-index: 2;
 

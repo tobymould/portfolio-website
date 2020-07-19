@@ -85,7 +85,7 @@ export class Portfolio extends Component {
             <div>
               <FontAwesomeIcon className={styles.searchIcon} icon={['fas', 'search']} />
             </div>
-            <input type="search" placeholder="Search projects by language or title..." onChange={setSearchTerm} />
+            <input type="search" placeholder="Search projects by language/title" onChange={setSearchTerm} />
           </div>
           <section className={styles.items}>{searchTerm ? this.searchProjects() : this.addPortfolioButtons()}</section>
           <div>{modalState ? modalOpenFunction() : null}</div>

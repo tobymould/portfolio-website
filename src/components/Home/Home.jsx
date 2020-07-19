@@ -121,9 +121,11 @@ export class Home extends Component {
     // console.log('1st end');
   };
 
-  componentDidMount() {
-    this.getGithubRepos();
-  }
+  // componentDidMount() {
+  //   this.getGithubRepos().catch(error => {
+  //     console.log(error);
+  //   });
+  // }
 
   render() {
     const { modalState, projectState, searchTerm, hover, projectLanguages } = this.state;
@@ -134,7 +136,7 @@ export class Home extends Component {
         {/* <About /> */}
         <Navbar />
         <Skills />
-        <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} />
+        <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} />
         <Background />
         <Footer />
       </>

@@ -5,7 +5,10 @@
 //
 .backgroundWrapper {
   background: white;
-  padding-bottom: 30px;
+
+  padding: 0 20px 20px;
+
+  // padding-bottom: 20px;
   margin: 6vh 3vw;
   border-radius: 20px;
 
@@ -26,18 +29,18 @@
   }
 
   p {
-    // text-align: center;
+    text-align: center;
     padding-bottom: 10px;
 
     // IPad[PORTFOLIO]
-    @media (min-width: 670px) and (max-width: 769px) {
+    @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
       text-align: center;
     }
     // IPad Pro[PORTFOLIO]
-    @media (min-width: 769px) and (max-width: 1200px) {
+    @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
       text-align: center;
     }
-    @media (min-width: 1201px) {
+    @media (min-width: $desktop-min-width) {
       text-align: center;
     }
   }
@@ -49,14 +52,14 @@
     // grid-template-columns: repeat(3, 1fr);
     // grid-template-columns: 1fr;
     // IPad[PORTFOLIO]
-    @media (min-width: 670px) and (max-width: 769px) {
+    @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
       grid-template-columns: repeat(3, 1fr);
     }
     // IPad Pro[PORTFOLIO]
-    @media (min-width: 769px) and (max-width: 1200px) {
+    @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
       grid-template-columns: repeat(3, 1fr);
     }
-    @media (min-width: 1201px) {
+    @media (min-width: $desktop-min-width) {
       grid-template-columns: repeat(3, 1fr);
     }
 
@@ -70,7 +73,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.2);
+        background: rgb(205, 205, 205);
         border-radius: 50%;
 
         height: 55px;
@@ -92,14 +95,14 @@
       }
 
       // IPad[PORTFOLIO]
-      @media (min-width: 670px) and (max-width: 769px) {
+      @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
         justify-content: flex-start;
       }
       // IPad Pro[PORTFOLIO]
-      @media (min-width: 769px) and (max-width: 1200px) {
+      @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
         justify-content: flex-start;
       }
-      @media (min-width: 1201px) {
+      @media (min-width: $desktop-min-width) {
         justify-content: flex-start;
       }
       // i {

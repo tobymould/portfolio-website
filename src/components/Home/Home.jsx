@@ -62,7 +62,7 @@ export class Home extends Component {
   };
 
   getGithubRepoLanguages = async listOfRepos => {
-    console.log('2nd start');
+    // console.log('2nd start');
     const promises = listOfRepos.map(async repo => {
       const response2 = await fetch(repo.languages_url);
       const dataJSON2 = await response2.json();
@@ -71,8 +71,8 @@ export class Home extends Component {
     });
 
     const langdata2 = await Promise.all(promises);
-    console.log(langdata2);
-    console.log('2nd end');
+    // console.log(langdata2);
+    // console.log('2nd end');
     return langdata2;
   };
 
@@ -87,17 +87,17 @@ export class Home extends Component {
       //2) Work out the total sum value of all the languages together in ONE project:
       const projectTotal = entries.map((number, index) => {
         // console.log(`value ${index} is: ${number[1]}`);
-        console.log((sum = sum + parseFloat(number[1])));
+        sum = sum + parseFloat(number[1]);
         return sum;
       });
 
       //3) Convert the individual language values to percentages of total in ONE project:
       const percentageConversions = entries.map((number, index) => {
-        console.log(`${number}, ${index}`);
+        // console.log(`${number}, ${index}`);
         const percent = ((number[1] / sum) * 100).toFixed(1);
-        console.log(`Percent of: ${percent}`);
+        // console.log(`Percent of: ${percent}`);
         const replaced = (number[1] = percent);
-        console.log(`Replaced: ${number}`);
+        // console.log(`Replaced: ${number}`);
         return replaced;
       });
 
@@ -107,18 +107,18 @@ export class Home extends Component {
       object = { projectName: project.name, languages: entries };
       totals.push(object);
     });
-    console.log(totals);
+    // console.log(totals);
     return totals;
   };
 
   getGithubRepos = async () => {
-    console.log('1st start');
+    // console.log('1st start');
     const response1 = await fetch(`https://api.github.com/users/tobymould/repos`);
     const dataJSON1 = await response1.json();
     const getLang1 = await this.getGithubRepoLanguages(dataJSON1);
     const percentage = this.convertToPercent(getLang1);
     this.setState({ projectLanguage: percentage });
-    console.log('1st end');
+    // console.log('1st end');
   };
 
   componentDidMount() {

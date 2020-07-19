@@ -80,9 +80,12 @@ export class Portfolio extends Component {
         <div className={styles.container}>
           <h2>Portfolio</h2>
           {/* <Card /> */}
-          <div>
-            <FontAwesomeIcon icon={['fas', 'search']} />
-            <input type="search" placeholder="Search projects..." onChange={setSearchTerm} />
+          <div className={styles.search}>
+            {/* <p>Filter your project search by language or title</p> */}
+            <div>
+              <FontAwesomeIcon className={styles.searchIcon} icon={['fas', 'search']} />
+            </div>
+            <input type="search" placeholder="Search projects by language or title..." onChange={setSearchTerm} />
           </div>
           <section className={styles.items}>{searchTerm ? this.searchProjects() : this.addPortfolioButtons()}</section>
           <div>{modalState ? modalOpenFunction() : null}</div>

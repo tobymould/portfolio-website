@@ -5,9 +5,10 @@
 .portfolioWrapper {
   // padding: 60px 0px;
   background: $colour4;
+  padding: 0 10px;
   // padding: 0 10px;
+  padding-bottom: 20px;
 
-  padding-bottom: 30px;
   margin: 0 3vw;
   border-radius: 20px;
 
@@ -18,18 +19,42 @@
     margin: 0 auto 20px;
   }
 
-  div {
-    text-align: center;
-  }
+  .search {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // text-align: center;
 
-  input[type='search'] {
-    background: rgba(255, 255, 255, 0.5);
-    padding: 5px 10px;
-    border-radius: 20px;
+    .searchIcon {
+      font-size: 1.5rem;
+      color: $github;
+      // padding-right: 30px;
+    }
 
-    &:focus {
-      border: 2px solid grey;
-      border-radius: 60px;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(205, 205, 205);
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+    }
+
+    input[type='search'] {
+      background: rgba(255, 255, 255, 0.5);
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-left: 5px;
+      min-width: 260px;
+      outline: none;
+      border: 2px solid $colour1;
+
+      &:focus {
+        border: 2px solid $colour1-50;
+        border-radius: 60px;
+      }
     }
   }
 
@@ -41,14 +66,14 @@
     gap: 10px;
     padding: 10px;
 
-    @media (min-width: 670px) and (max-width: 769px) {
+    @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
       // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     // IPad Pro[PORTFOLIO]
-    @media (min-width: 769px) and (max-width: 1200px) {
+    @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
       // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
-    @media (min-width: 1201px) {
+    @media (min-width: $desktop-min-width) {
       // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
@@ -63,7 +88,7 @@
       //   background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile.image}) no-repeat center center/cover;
 
       // IPad[PORTFOLIO]
-      @media (min-width: 670px) and (max-width: 769px) {
+      @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
         height: 20px;
 
         h4 {
@@ -71,14 +96,14 @@
         }
       }
       // IPad Pro[PORTFOLIO]
-      @media (min-width: 769px) and (max-width: 1200px) {
+      @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
         h4 {
           font-size: 1.2rem;
         }
       }
 
       //Desktop-widescreen[PORTFOLIO]
-      @media (min-width: 1201px) {
+      @media (min-width: $desktop-min-width) {
         height: 20px;
 
         h4 {

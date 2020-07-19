@@ -11,41 +11,41 @@ export class Navbar extends Component {
           <li>
             <Link to="https://drive.google.com/file/d/13sQbPE_cf6EKGc_Xn6ppMWdQJPMgzR7o/view?usp=sharing" target="_blank">
               <div>
-                <FontAwesomeIcon icon={['fas', 'passport']} />
+                <FontAwesomeIcon icon={['fas', 'passport']} className={styles.icon} />
               </div>
-              Resume
+              <p> Resume </p>
             </Link>
           </li>
           <li>
             <Link to="/">
               <div>
-                <FontAwesomeIcon icon={['fas', 'home']} />
+                <FontAwesomeIcon icon={['fas', 'home']} className={styles.icon} />
               </div>
-              Home
+              <p>Home</p>
             </Link>
           </li>
           <li>
             <Link to="/">
               <div>
-                <FontAwesomeIcon icon={['fas', 'microchip']} />
+                <FontAwesomeIcon icon={['fas', 'microchip']} className={styles.icon} />
               </div>
-              Skills
+              <p>Skills</p>
             </Link>
           </li>
           <li>
             <Link to="/">
               <div>
-                <FontAwesomeIcon icon={['fas', 'code']} />
+                <FontAwesomeIcon icon={['fas', 'code']} className={styles.icon} />
               </div>
-              Portfolio
+              <p>Portfolio</p>
             </Link>
           </li>
           <li>
             <Link to="/">
               <div>
-                <FontAwesomeIcon icon={['fas', 'user-circle']} />
+                <FontAwesomeIcon icon={['fas', 'user-circle']} className={styles.icon} />
               </div>
-              Background
+              <p>Background</p>
             </Link>
           </li>
         </ul>

@@ -13,6 +13,19 @@
   // margin: 0 3vw;
   // border-radius: 20px;
 
+  // IPad[PORTFOLIO]
+  @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+    font-size: 1.2rem;
+  }
+  // IPad Pro[PORTFOLIO]
+  @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    font-size: 1.2rem;
+  }
+
   ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -24,15 +37,69 @@
 
     li {
       display: flex;
+      // background: red;
 
       div {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgb(205, 205, 205);
         border-radius: 50%;
         height: 20px;
         width: 20px;
+
+        .icon {
+          color: $github;
+          font-size: 0.8rem;
+        }
+
+        // IPad[PORTFOLIO]
+        @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+          height: 2.2rem;
+          width: 2.2rem;
+          .icon {
+            font-size: 1.2rem;
+          }
+        }
+        // IPad Pro[PORTFOLIO]
+        @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+          height: 2.2rem;
+          width: 2.2rem;
+          .icon {
+            font-size: 1.2rem;
+          }
+        }
+
+        @media (min-width: $desktop-min-width) {
+          height: 2.6rem;
+          width: 2.6rem;
+          .icon {
+            font-size: 1.6rem;
+          }
+        }
+
+        // margin-right: 5px;
+      }
+
+      p {
+        // background: red;
+        color: white;
+        line-height: 1rem;
+        // IPad[PORTFOLIO]
+        @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+          font-size: 1.2rem;
+          margin-top: 5px;
+        }
+        // IPad Pro[PORTFOLIO]
+        @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+          font-size: 1.2rem;
+          margin-top: 5px;
+        }
+
+        @media (min-width: $desktop-min-width) {
+          font-size: 1.4rem;
+          margin-top: 7.5px;
+        }
       }
       // border-radius: 80px;
 
@@ -55,42 +122,23 @@
 
       a {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 15px 5px;
+        padding: 5px 5px;
         width: 100%;
 
         // background: green;
-        i {
-          padding-right: 5px;
-          // padding-right: 15px;
-          // font-size: 1.5rem;
-        }
+        // i {
+        //   // padding-right: 5px;
+        //   // padding-right: 15px;
+        //   // font-size: 1.5rem;
+        // }
 
         &:hover {
           background: $white-50;
         }
       }
     }
-  }
-}
-
-// IPad[PORTFOLIO]
-@media (min-width: 670px) and (max-width: 769px) {
-  .navbarWrapper {
-    font-size: 1.2rem;
-  }
-}
-
-// IPad Pro[PORTFOLIO]
-@media (min-width: 769px) and (max-width: 1200px) {
-  .navbarWrapper {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 1201px) {
-  .navbarWrapper {
-    font-size: 1.2rem;
   }
 }

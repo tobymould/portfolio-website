@@ -61,17 +61,17 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     // margin: 20px 0;
     // IPad[PORTFOLIO]
-    @media (min-width: 670px) and (max-width: 769px) {
+    @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
       margin: 22vh auto;
       overflow-y: scroll;
     }
 
     // IPad Pro[PORTFOLIO]
-    @media (min-width: 769px) and (max-width: 1200px) {
+    @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
     }
 
     //Desktop-widescreen[PORTFOLIO]
-    @media (min-width: 1201px) {
+    @media (min-width: $desktop-min-width) {
       margin: 20vh auto;
     }
 
@@ -91,7 +91,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3), 0 7px 20px 0 rgba(255, 255, 255, 0.3);
       // background: purple;
       // IPad[PORTFOLIO]
-      @media (min-width: 670px) and (max-width: 769px) {
+      @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
         height: 100%;
         // background: red;
         display: grid;
@@ -99,7 +99,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       }
 
       // IPad Pro[PORTFOLIO]
-      @media (min-width: 769px) and (max-width: 1200px) {
+      @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
         height: 100%;
         // background: red;
         display: grid !important;
@@ -107,7 +107,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
       }
 
       //Desktop-widescreen[PORTFOLIO]
-      @media (min-width: 1201px) {
+      @media (min-width: $desktop-min-width) {
         height: 100%;
         // background: red;
         display: grid !important;
@@ -367,7 +367,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 }
 
 // // IPad[PORTFOLIO]
-// @media (min-width: 670px) and (max-width: 769px) {
+// @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
 //   .modalContent {
 //     // height: 100%;
 //     margin: 22vh auto;
@@ -383,7 +383,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 // }
 
 // // IPad Pro[PORTFOLIO]
-// @media (min-width: 769px) and (max-width: 1200px) {
+// @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
 //   .modalContent {
 //     // display: flex;
 //     // align-items: center;
@@ -401,7 +401,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 // }
 
 // //Desktop-widescreen[PORTFOLIO]
-// @media (min-width: 1201px) {
+// @media (min-width: $desktop-min-width) {
 //   .modalContent {
 //     // height: 100%;
 //     margin: 20vh auto;

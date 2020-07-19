@@ -30,7 +30,7 @@
     top: 7%;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     color: white;
     margin: 0 auto;
@@ -46,11 +46,9 @@
       color: $colour1;
     }
   }
-}
 
-// IPad[PORTFOLIO]
-@media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-  .homeWrapper {
+  // IPad[PORTFOLIO]
+  @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
     .homeContent {
       top: 12%;
 
@@ -59,11 +57,9 @@
       }
     }
   }
-}
 
-// IPad Pro[PORTFOLIO]
-@media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-  .homeWrapper {
+  // IPad Pro[PORTFOLIO]
+  @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
     .homeContent {
       top: 15%;
 
@@ -72,15 +68,28 @@
       }
     }
   }
-}
 
-//Desktop-widescreen[PORTFOLIO]
-@media (min-width: $desktop-min-width) {
-  .homeWrapper {
+  //Desktop-widescreen[PORTFOLIO]
+  @media (min-width: $desktop-min-width) {
     background: url('../../assets/img/SpaceSelfie.png') no-repeat 75% 70% / cover;
 
     .homeContent {
-      top: 5%;
+      top: 0;
+      right: 0;
+      margin: 0;
+      width: 55vw;
+      height: 100vh;
+      background: rgba($github, 0.5);
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+      h4 {
+        font-size: 1.2rem;
+        margin: 50px 0 10px;
+      }
     }
+    // .homeOverlay {
+    //   // display: none;
+    //   // background: rgba(0, 0, 0, 0.4);
+    // }
   }
 }

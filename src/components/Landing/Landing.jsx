@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Landing.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export class Landing extends Component {
   render() {
@@ -12,6 +13,11 @@ export class Landing extends Component {
             London-based <br />
             <span>Software Developer </span>
           </h2>
+
+          <h4>toby.mould@icloud.com</h4>
+          <a href="https://uk.linkedin.com/in/tobymould">
+            <FontAwesomeIcon icon={['fab', 'linkedin']} size={'3x'} href="https://uk.linkedin.com/in/tobymould" />
+          </a>
         </div>
       </section>
     );

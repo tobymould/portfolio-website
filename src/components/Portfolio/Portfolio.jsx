@@ -36,8 +36,6 @@ export class Portfolio extends Component {
             <h4>{project.name}</h4>
           </button>
         );
-      } else {
-        nullCounter++;
       }
 
       // Project Language Search:
@@ -51,6 +49,8 @@ export class Portfolio extends Component {
             <h4>{project.name}</h4>
           </button>
         );
+      } else {
+        nullCounter++;
       }
     });
 

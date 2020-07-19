@@ -60,21 +60,36 @@
   }
 
   .items {
-    // background: blue;
     margin-top: 20px;
+    // padding-bottom: 60px;
+    // margin-bottom: 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
     padding: 10px;
+    height: 80vh;
+    overflow: scroll;
+    background: $github;
+    // background: blue;
+    border-radius: 20px;
+    border: 4px solid $github;
+    scroll-margin: 40px;
+
+    // padding-bottom: 100px;
 
     @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+      height: 82vh;
       // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     // IPad Pro[PORTFOLIO]
     @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+      height: 80vh;
       // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
     @media (min-width: $desktop-min-width) {
+      // overflow: visible;
+      height: auto;
+      // border-radius: 20px;
       // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 

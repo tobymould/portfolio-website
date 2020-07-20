@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styles from './Skills.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { skills } from '../../data/data';
+// import { firebase, postman } from '../../assets';
+
 // import variables from '../../sass/variables';
 
 export class Skills extends Component {
@@ -18,10 +20,10 @@ export class Skills extends Component {
 
   addSkillImages = () => {
     // console.log(skills.images);
-    return skills.images.map((item, index) => {
+    return skills.images.map(({ className, url }, index) => {
       // console.log(item.className);
       // console.log(item.url);
-      // return <img className={item.className} src={item.url} alt={item.className} key={index} />;
+      return <img className={className} src={url} alt={className} key={index} />;
     });
   };
 
@@ -40,7 +42,6 @@ export class Skills extends Component {
         <p>
           I am a self-taught Front-End Web Developer looking for opportunties to transfer into the industry full-time to become a<span> Full Stack Web Developer</span>. I have a basis of knowledge and practice in the following:
         </p>
-
         <section className={styles.items}>
           {this.addSkillIcons()}
           {this.addSkillImages()}

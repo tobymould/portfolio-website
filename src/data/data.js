@@ -336,7 +336,7 @@ export const skills = {
     { language: 'git', icon: ['fab', 'git'], colour: '#f1502f', sizeGeneral: '3x', sizeModal: '2x' },
     { language: 'github', icon: ['fab', 'github'], colour: '#2b3137', sizeGeneral: '3x', sizeModal: '2x' }
   ],
-  images: [{ className: 'firebase', url: '../assets/icons/firebase.png' }]
+  images: [{ className: 'firebase', url: 'require(../assets/icons/firebase.png)' }]
 };
 
 //  '<img className="firebase-modal" src="../assets/icons/firebase.png" alt="firebase logo" />'];

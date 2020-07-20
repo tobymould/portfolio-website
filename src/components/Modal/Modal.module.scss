@@ -48,6 +48,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
   height: 100vh;
 
   .modalContent {
+    box-shadow: inset 5px 5px 15px -10px rgba(0, 0, 0, 1);
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
@@ -128,6 +129,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           @extend %margin-padding;
           // @extend %modal-overview-section-images;
           background: $section-background-colours;
+          box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
           // width: 100%;
 
           .imageSection {
@@ -147,6 +150,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
               cursor: pointer;
               // o: $linear-grad;
               filter: brightness(50%);
+              box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+              // border: 1px solid rgba($github, 0.1);
 
               &:hover {
                 background: green;
@@ -210,6 +215,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         .tech {
           @extend %margin-padding;
           @extend %icon-colours;
+          box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
 
           background: $section-background-colours;
           // @extend %text-adjust;
@@ -311,6 +317,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         .role {
           @extend %margin-padding;
           background: $section-background-colours;
+          box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
           // width: 100%;
           // max-height: 180px;
           // background: rgba(0, 0, 255, 0.1);
@@ -319,6 +327,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         .diff {
           @extend %margin-padding;
           background: $section-background-colours;
+          box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
           // width: 100%;
           // background: rgba(255, 255, 0, 0.1);
         }
@@ -326,6 +336,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         .sol {
           @extend %margin-padding;
           background: $section-background-colours;
+          box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
           // width: 100%;
           // background: rgba(255, 0, 255, 0.1);
         }
@@ -333,6 +345,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         .feat {
           @extend %margin-padding;
           background: $section-background-colours;
+          box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
           // width: 100%;
           // background: rgba(0, 255, 255, 0.1);
 

@@ -68,6 +68,12 @@
     span {
       color: $colour1;
     }
+
+    a {
+      &:hover {
+        color: $colour1;
+      }
+    }
   }
 
   // IPad[PORTFOLIO]

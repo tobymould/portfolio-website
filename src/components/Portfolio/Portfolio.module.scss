@@ -8,7 +8,9 @@
   padding: 0 10px;
   // padding: 0 10px;
   padding-bottom: 20px;
-  box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
+  // box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
+  box-shadow: inset 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
   margin: 0 3vw;
   border-radius: 20px;
 
@@ -67,14 +69,16 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    padding: 10px;
+    // padding: 10px;
+    margin: 15px 10px 0;
     height: 80vh;
     overflow: scroll;
     background: $github;
     // background: blue;
     border-radius: 20px;
-    border: 4px solid $github;
+    border: 10px solid $github;
     scroll-margin: 40px;
+    box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
 
     // padding-bottom: 100px;
 
@@ -89,7 +93,7 @@
     }
     @media (min-width: $desktop-min-width) {
       // overflow: visible;
-      height: auto;
+      height: 75vh;
       // border-radius: 20px;
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     }
@@ -111,12 +115,14 @@
       background: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
       box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
       h4 {
         font-size: 1.2rem;
       }
 
-      // &:hover {
-      //   background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile.image}) no-repeat center center/cover;
+      &:hover {
+        cursor: pointer;
+      }
 
       // IPad[PORTFOLIO]
       @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {

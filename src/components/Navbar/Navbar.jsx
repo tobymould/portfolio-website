@@ -9,7 +9,7 @@ export class Navbar extends Component {
       <nav className={styles.navbarWrapper}>
         <ul>
           <li>
-            <a href="https://drive.google.com/file/d/13sQbPE_cf6EKGc_Xn6ppMWdQJPMgzR7o/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/drive/folders/1IxK3BPnABT3Qx8XJRiLsh4wWs5e1pMsX?usp=sharing" target="_blank">
               <div>
                 <FontAwesomeIcon icon={['fas', 'passport']} className={styles.icon} />
               </div>

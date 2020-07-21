@@ -134,10 +134,10 @@ export class Home extends Component {
       <>
         <Landing />
         <Navbar />
-        <About />
         <Skills />
         <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} />
         <Background />
+        {/* <About /> */}
         <Footer />
       </>
     );

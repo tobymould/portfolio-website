@@ -230,7 +230,7 @@ export const projects = [
     features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
   },
   {
-    name: 'Tick-Tack-Toe Game',
+    name: 'Tic-Tac-Toe Game',
     image: 'https://source.unsplash.com/1600x900/?games',
     live: 'https://tobymould.github.io/tick-tack-toe/',
     github: 'https://github.com/tobymould/tick-tack-toe',

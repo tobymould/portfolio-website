@@ -4,44 +4,32 @@
 //------------------------------------//
 
 .navbarWrapper {
-  position: sticky;
-  top: 93vh;
-  background: $grey-50;
+  // position: sticky;
+  // bottom: 10vh;
+  position: fixed;
+  bottom: 0vh;
+  // background: $grey-50;
   z-index: 4;
   font-size: 0.9rem;
-  color: $white-50;
+  // color: $white-50;
   box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
-
+  // overflow: hidden;
+  // padding: 10px 0;
+  // margin: 0px;
   // margin: 0 3vw;
   // border-radius: 20px;
 
-  // IPad[PORTFOLIO]
-  @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-    font-size: 1.2rem;
-    top: 95vh;
-  }
-  @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-    top: 96.6vh;
-  }
-  @media (min-width: $desktop-min-width) {
-    position: sticky;
-    top: 0vh;
-  }
-  // // IPad Pro[PORTFOLIO]
-  // @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-  //   font-size: 1.2rem;
-  // }
-
-  // @media (min-width: $desktop-min-width) {
-  //   font-size: 1.2rem;
-  // }
-
   ul {
+    // position: fixed;
+    // bottom: 0vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-content: center;
     list-style-type: none;
+    width: 100vw;
+    background: $grey-70;
+
     // padding: 5px;
     // background: $white-50;
     // background: blue;
@@ -49,20 +37,7 @@
     li {
       display: flex;
       padding: 0 5px 0;
-      // IPad[PORTFOLIO]
-      @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-        padding: 5px 5px;
-      }
-      // IPad Pro[PORTFOLIO]
-      @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-        padding: 5px 5px;
-      }
-
-      @media (min-width: $desktop-min-width) {
-        padding: 5px 5px;
-      }
-
-      // background: red;
+      // padding-bottom: 30px;
 
       div {
         display: flex;
@@ -78,31 +53,6 @@
           font-size: 0.8rem;
         }
 
-        // IPad[PORTFOLIO]
-        @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-          height: 2rem;
-          width: 2rem;
-          .icon {
-            font-size: 1rem;
-          }
-        }
-        // IPad Pro[PORTFOLIO]
-        @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-          height: 2rem;
-          width: 2rem;
-          .icon {
-            font-size: 1rem;
-          }
-        }
-
-        @media (min-width: $desktop-min-width) {
-          height: 2.2rem;
-          width: 2.2rem;
-          .icon {
-            font-size: 1.2rem;
-          }
-        }
-
         // margin-right: 5px;
       }
 
@@ -111,22 +61,6 @@
         color: white;
         line-height: 1rem;
         margin-top: 2px;
-
-        // IPad[PORTFOLIO]
-        @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-          font-size: 1rem;
-          margin-left: 10px;
-        }
-        // IPad Pro[PORTFOLIO]
-        @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-          font-size: 1rem;
-          margin-left: 10px;
-        }
-
-        @media (min-width: $desktop-min-width) {
-          font-size: 1.2rem;
-          margin-left: 10px;
-        }
       }
       // border-radius: 80px;
 
@@ -165,19 +99,121 @@
         &:hover {
           background: $white-50;
         }
+      }
+    }
+  }
 
-        // IPad[PORTFOLIO]
-        @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-          flex-direction: row;
-        }
-        // IPad Pro[PORTFOLIO]
-        @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-          flex-direction: row;
+  // --------------------------------------------------------------------------
+
+  // LANDSCAPE FORMATS
+  @media (orientation: landscape) {
+    @media (max-width: $iphoneX-width-landscape) {
+      ul {
+        position: fixed;
+        bottom: 0vh;
+      }
+    }
+
+    @media (min-width: 813px) and (max-width: $ipad-width-landscape) {
+      ul {
+        position: fixed;
+        bottom: 0vh;
+      }
+    }
+
+    @media (min-width: 1025px) and (max-width: $ipad-pro-width-landscape) {
+      ul {
+        position: fixed;
+        bottom: 0vh;
+      }
+    }
+
+    @media (min-width: $desktop-min-width) {
+    }
+  }
+
+  // PORTRAIT FORMATS
+  @media (orientation: portrait) {
+    // Ipad
+    @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+      font-size: 1.2rem;
+      // bottom: 0vh;
+      // top: 95vh;
+
+      li {
+        padding: 5px 5px;
+
+        div {
+          height: 2rem;
+          width: 2rem;
+          .icon {
+            font-size: 1rem;
+          }
         }
 
-        @media (min-width: $desktop-min-width) {
+        p {
+          font-size: 1rem;
+          margin-left: 10px;
+        }
+
+        a {
           flex-direction: row;
         }
+      }
+    }
+  }
+
+  // Ipad Pro
+  @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+    top: 96.6vh;
+
+    li {
+      padding: 5px 5px;
+
+      div {
+        height: 2rem;
+        width: 2rem;
+
+        .icon {
+          font-size: 1rem;
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        margin-left: 10px;
+      }
+
+      a {
+        flex-direction: row;
+      }
+    }
+  }
+
+  // Desktop
+  @media (min-width: $desktop-min-width) {
+    position: sticky;
+    top: 0vh;
+
+    li {
+      padding: 5px 5px;
+
+      div {
+        height: 2.2rem;
+        width: 2.2rem;
+
+        .icon {
+          font-size: 1.2rem;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-left: 10px;
+      }
+
+      a {
+        flex-direction: row;
       }
     }
   }

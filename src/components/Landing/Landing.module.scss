@@ -32,7 +32,7 @@
 
   .homeContent {
     position: absolute;
-    background: rgba($github, 0.3);
+    background: rgba($github, 0.5);
     top: 0;
     width: 100vw;
     height: 50vh;
@@ -43,11 +43,11 @@
     color: white;
     // margin: 0 auto;
     clip-path: polygon(0 0, 100% 0%, 100% 93%, 0 83%);
+    z-index: 2;
 
     // box-shadow: inset 5px 5px 35px 5px rgba(0, 0, 0, 1);
 
     // background: purple;
-    z-index: 2;
 
     // h1 {
     //   margin: 0px;
@@ -202,7 +202,7 @@
         top: 0;
         width: 100vw;
         height: 48vh;
-        background: rgba($github, 0.3);
+        background: rgba($github, 0.5);
 
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
 
@@ -229,7 +229,7 @@
         top: 0;
         width: 100vw;
         height: 48vh;
-        background: rgba($github, 0.3);
+        background: rgba($github, 0.5);
 
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 83%);
 

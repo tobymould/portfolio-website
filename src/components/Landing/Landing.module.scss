@@ -35,7 +35,7 @@
     background: rgba($github, 0.5);
     top: 0;
     width: 100vw;
-    height: 50vh;
+    height: 51vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,7 +63,7 @@
 
     h4 {
       // font-size: 1.4rem;
-      margin: 10px 0 10px;
+      margin: 0px 0 10px;
     }
 
     span {
@@ -104,7 +104,11 @@
 
         h4 {
           font-size: 1.2rem;
-          margin: 30px 0 10px;
+          margin: 10px 0 10px;
+        }
+
+        a {
+          margin-bottom: 30px;
         }
       }
     }

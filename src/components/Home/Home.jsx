@@ -27,9 +27,9 @@ export class Home extends Component {
     // }
   };
 
-  hoverToggle = event => {
-    this.setState({ hover: !this.state.hover });
-  };
+  // hoverToggle = event => {
+  //   this.setState({ hover: !this.state.hover });
+  // };
   // , eventSet: event.target.value, projectState: event.target.value
 
   setButtonPressed = projectButtonClicked => {

@@ -91,7 +91,6 @@ export class Portfolio extends Component {
           <h2>Portfolio</h2>
           {/* <Card /> */}
           <div className={styles.search}>
-            {/* <p>Filter your project search by language or title</p> */}
             <div>
               <FontAwesomeIcon className={styles.searchIcon} icon={['fas', 'search']} />
             </div>

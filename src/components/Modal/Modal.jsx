@@ -25,7 +25,7 @@ export class Modal extends Component {
     // console.log(project.features);
     return project.features.map((feature, index) => {
       return (
-        <li>
+        <li key={index}>
           {index + 1}. {feature}
         </li>
       );
@@ -37,16 +37,31 @@ export class Modal extends Component {
     this.addTechImages();
   };
 
-  test = () => {
-    const { projectLanguages } = this.props;
-    const { projectState } = this.state;
-    console.log(projectLanguages[0].projectName);
-    // projectLanguages.map(project => {
-    //   if (project.projectName.include(projectState.name)) {
-    //     console.log(project);
-    //   }
-    // });
-  };
+  // componentDidMount() {
+  //   this.state.projectState.catch(error => {
+  //     console.log(error);
+  //   });
+  // }
+
+  // getProjectLanguagePercent = () => {
+  //   const { projectLanguages, projectState } = this.props;
+  //   // this.setState({ stateObj: stateObj }, () => functionToPerformWhenStateSet);
+  //   // const { projectState } = this.state;
+  //   // fetch(projectState)
+  //   // .then(res => {
+  //   //   res.github;
+  //   // });
+  //   console.log('test: ');
+  //   // console.log(this.state.projectState);
+  //   // console.log(projectLanguages[0].url);
+  //   // console.log(projectState.github);
+
+  //   // projectLanguages.map(project => {
+  //   //   if (project.projectName.include(projectState.name)) {
+  //   //     console.log(project);
+  //   //   }
+  //   // });
+  // };
 
   render() {
     const { modalState, project, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
@@ -86,9 +101,8 @@ export class Modal extends Component {
                   <h4>Technologies Used</h4>
                   <div className={styles.table}>{/* <ul className={styles.langList}>{this.addTech()}</ul> */}</div>
                   <div className={styles.langPercent}>
-                    {/* {this.test()} */}
                     {/* <div style={{width: projectLanguages[]:, background: }}> </div> */}
-                    {/* {projectState ? this.test() : null} */}
+                    {/* {projectState ? this.getProjectLanguagePercent() : null} */}
                     <div> </div>
                     <div> </div>
                     <div> </div>

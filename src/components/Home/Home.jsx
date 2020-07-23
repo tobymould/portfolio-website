@@ -21,7 +21,10 @@ export class Home extends Component {
     this.setButtonPressed(event.target.value);
     this.setModalProject(event.target.value);
     this.setState({ modalState: !this.state.modalState });
-    this.modalOpenFunction(event.target.value);
+    // This.setState({ stateObj: stateObj }, () => functionToPerformWhenStateSet);
+    // if (this.state.projectState) {
+    //   this.modalOpenFunction(event.target.value);
+    // }
   };
 
   hoverToggle = event => {
@@ -35,12 +38,6 @@ export class Home extends Component {
     // console.log(`Event: ${this.state.event}`);
   };
 
-  setModalProject = projectButtonClicked => {
-    // console.log(projects[projectButtonClicked]);
-    this.setState({ projectState: projects[projectButtonClicked] });
-    // console.log(`projectState: ${this.state.projectState}`);
-  };
-
   modalOpenFunction = projectButtonClicked => {
     const { modalState, projectState, projectLanguages } = this.state;
     const { modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos } = this;
@@ -49,11 +46,17 @@ export class Home extends Component {
     // console.log(project);
 
     if (this.state.modalState == true) {
-      return <Modal project={projectState} modalState={modalState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} />;
+      return <Modal projectState={projectState} modalState={modalState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} />;
     } else {
       return null;
     }
     // });
+  };
+
+  setModalProject = projectButtonClicked => {
+    // console.log(projects[projectButtonClicked]);
+    this.setState({ projectState: projects[projectButtonClicked] }, () => this.modalOpenFunction(projectButtonClicked));
+    // console.log(`projectState: ${this.state.projectState}`);
   };
 
   setSearchTerm = event => {
@@ -66,12 +69,12 @@ export class Home extends Component {
     const promises = listOfRepos.map(async repo => {
       const response2 = await fetch(repo.languages_url);
       const dataJSON2 = await response2.json();
-      const langdata2 = { name: repo.name, languages: dataJSON2 };
+      const langdata2 = { name: repo.name, languages: dataJSON2, url: repo.html_url };
       return langdata2;
     });
 
     const langdata2 = await Promise.all(promises);
-    // console.log(langdata2);
+    console.log(langdata2);
     // console.log('2nd end');
     return langdata2;
   };
@@ -104,7 +107,7 @@ export class Home extends Component {
       // console.log(`Summary of values for Project ${index}: ${entries}`);
 
       let object = {};
-      object = { projectName: project.name, languages: entries };
+      object = { projectName: project.name, languages: entries, url: project.url };
       totals.push(object);
     });
     // console.log(totals);
@@ -115,17 +118,18 @@ export class Home extends Component {
     // console.log('1st start');
     const response1 = await fetch(`https://api.github.com/users/tobymould/repos`);
     const dataJSON1 = await response1.json();
+    // console.log(dataJSON1);
     const getLang1 = await this.getGithubRepoLanguages(dataJSON1);
     const percentage = this.convertToPercent(getLang1);
-    this.setState({ projectLanguage: percentage });
+    this.setState({ projectLanguages: percentage });
     // console.log('1st end');
   };
 
-  // componentDidMount() {
-  //   this.getGithubRepos().catch(error => {
-  //     console.log(error);
-  //   });
-  // }
+  componentDidMount() {
+    this.getGithubRepos().catch(error => {
+      console.log(error);
+    });
+  }
 
   render() {
     const { modalState, projectState, searchTerm, hover, projectLanguages } = this.state;

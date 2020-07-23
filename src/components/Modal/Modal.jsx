@@ -20,17 +20,17 @@ export class Modal extends Component {
     });
   };
 
-  notableFeatures = () => {
-    const { projectState } = this.props;
-    // console.log(project.features);
-    return projectState.features.map((feature, index) => {
-      return (
-        <li key={index}>
-          {index + 1}. {feature}
-        </li>
-      );
-    });
-  };
+  // notableFeatures = () => {
+  //   const { projectState, projectLanguages } = this.props;
+  //   // console.log(project.features);
+  //   return test.project.features.map((feature, index) => {
+  //     return (
+  //       <li key={index}>
+  //         {index + 1}. {feature}
+  //       </li>
+  //     );
+  //   });
+  // };
 
   addTech = () => {
     // this.addTechIcons();
@@ -50,6 +50,8 @@ export class Modal extends Component {
 
   render() {
     const { modalState, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
+    console.log('project being used in Modal:');
+    console.log(projectLanguages);
     // const project = projects[0];
 
     return (
@@ -62,23 +64,23 @@ export class Modal extends Component {
               <div className={styles.column1}>
                 {/* <!-- Summary Section --> */}
                 <div className={styles.summary}>
-                  <h3>{projectState.name}</h3>
+                  <h3>{modalState.name}</h3>
                   <div className={styles.imageSection}>
-                    <a href={projectState.live}>
-                      <img src={projectState.image} alt={projectState.name} className={styles.image} />
+                    <a href={modalState.live}>
+                      <img src={modalState.image} alt={modalState.name} className={styles.image} />
                     </a>
                   </div>
                   <div className={styles.buttons}>
-                    <a href={projectState.live} target="_blank">
+                    <a href={modalState.live} target="_blank">
                       <FontAwesomeIcon icon={['fas', 'desktop']} />
                       <p>Live Preview</p>
                     </a>
-                    <a href={projectState.github} target="_blank">
+                    <a href={modalState.github} target="_blank">
                       <FontAwesomeIcon icon={['fas', 'code-branch']} />
                       <p>Source Private</p>
                     </a>
                   </div>
-                  <p>{projectState.overview}</p>
+                  <p>{modalState.overview}</p>
                 </div>
 
                 {/* <!-- Technology Section --> */}
@@ -103,25 +105,25 @@ export class Modal extends Component {
                 {/* <!-- Role Content --> */}
                 <div className={styles.role}>
                   <h4>My Role</h4>
-                  <p>{projectState.role}</p>
+                  <p>{modalState.role}</p>
                 </div>
 
                 {/* <!-- Difficulties Content --> */}
                 <div className={styles.diff}>
                   <h4>Project Difficulties</h4>
-                  <p>{projectState.difficult}</p>
+                  <p>{modalState.difficult}</p>
                 </div>
 
                 {/* <!-- Solution Content --> */}
                 <div className={styles.sol}>
                   <h4>My Solution</h4>
-                  <p>{projectState.solution}</p>
+                  <p>{modalState.solution}</p>
                 </div>
 
                 {/* <!-- Notable Features Content --> */}
                 <div className={styles.feat}>
                   <h4>Notable Features</h4>
-                  <ul>{this.notableFeatures()}</ul>
+                  {/* <ul>{this.notableFeatures()}</ul> */}
                 </div>
               </div>
             </article>

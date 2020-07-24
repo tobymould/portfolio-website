@@ -16,7 +16,7 @@ export const projects = [
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript'],
+    languages: ['html', 'sass', 'javascript', 'React'],
     role: `I created this website from scratch without frameworks. As the owner of the website, I was responsible for the build. The aim was to build a website with only vanilla code.`,
     difficult: `Building the styling classes from scratch and keeping the code well-organised.`,
     solution: `I was able to create the template website seen here.`,

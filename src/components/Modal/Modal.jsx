@@ -50,9 +50,12 @@ export class Modal extends Component {
 
   render() {
     const { modalState, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
-    console.log('project being used in Modal:');
-    console.log(projectLanguages);
+    // console.log('project being used in Modal:');
+    // console.log(projectLanguages);
     // const project = projects[0];
+    console.log('projectState');
+    console.log(projectState);
+    console.log(projectState.project);
 
     return (
       // <p>sdsfd</p>
@@ -65,23 +68,23 @@ export class Modal extends Component {
               <div className={styles.column1}>
                 {/* <!-- Summary Section --> */}
                 <div className={styles.summary}>
-                  <h3>{projectState.name}</h3>
+                  <h3>{projectState.project.name}</h3>
                   <div className={styles.imageSection}>
-                    <a href={modalState.live}>
-                      <img src={modalState.image} alt={modalState.name} className={styles.image} />
+                    <a href={projectState.project.live}>
+                      <img src={projectState.project.image} alt={projectState.project.name} className={styles.image} />
                     </a>
                   </div>
                   <div className={styles.buttons}>
-                    <a href={modalState.live} target="_blank">
+                    <a href={projectState.project.live} target="_blank">
                       <FontAwesomeIcon icon={['fas', 'desktop']} />
                       <p>Live Preview</p>
                     </a>
-                    <a href={modalState.github} target="_blank">
+                    <a href={projectState.project.github} target="_blank">
                       <FontAwesomeIcon icon={['fas', 'code-branch']} />
                       <p>Source Private</p>
                     </a>
                   </div>
-                  <p>{modalState.overview}</p>
+                  <p>{projectState.project.overview}</p>
                 </div>
 
                 {/* <!-- Technology Section --> */}
@@ -106,19 +109,19 @@ export class Modal extends Component {
                 {/* <!-- Role Content --> */}
                 <div className={styles.role}>
                   <h4>My Role</h4>
-                  <p>{modalState.role}</p>
+                  <p>{projectState.project.role}</p>
                 </div>
 
                 {/* <!-- Difficulties Content --> */}
                 <div className={styles.diff}>
                   <h4>Project Difficulties</h4>
-                  <p>{modalState.difficult}</p>
+                  <p>{projectState.project.difficult}</p>
                 </div>
 
                 {/* <!-- Solution Content --> */}
                 <div className={styles.sol}>
                   <h4>My Solution</h4>
-                  <p>{modalState.solution}</p>
+                  <p>{projectState.project.solution}</p>
                 </div>
 
                 {/* <!-- Notable Features Content --> */}

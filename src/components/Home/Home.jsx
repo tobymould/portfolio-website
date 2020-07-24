@@ -17,7 +17,7 @@ export class Home extends Component {
 
   modalToggle = event => {
     const { projectLanguages } = this.state;
-    console.log(`Event target value: ${event.target.value}`);
+    // console.log(`Event target value: ${event.target.value}`);
 
     const val = event.target.value;
     this.setState({ modalState: !this.state.modalState }, () => this.modalOpenFunction(val));
@@ -29,14 +29,17 @@ export class Home extends Component {
 
     const dataFileUrl = projects[projectButtonClicked];
 
-    console.log(dataFileUrl);
-    const selectedProject = projectLanguages.filter(project => {
-      return dataFileUrl.github === project.url;
-    })[0];
-
-    console.log(selectedProject);
+    // console.log(dataFileUrl);
+    // console.log('datafile', 'github');
+    // console.log(dataFileUrl[2].github, projects.url);
 
     if (this.state.modalState) {
+      const selectedProject = projectLanguages.filter(project => {
+        return dataFileUrl.github === project.url;
+      })[0];
+      // console.log('selectedProject');
+      // console.log(selectedProject);
+
       this.setState({ projectState: selectedProject });
     }
   };

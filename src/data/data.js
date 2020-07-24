@@ -45,29 +45,29 @@ export const projects = [
     solution: 'I was able to create the template website seen here.',
     features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
   },
-  {
-    name: 'Integr8HR Client Project',
-    image: 'https://source.unsplash.com/1600x900/?human,resources',
-    live: 'https://intergr8-42df9.web.app/',
-    github: 'https://github.com/nology-tech/intergr8',
-    overview: 'overviewoverview',
-    technology: {
-      icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
-    role: 'rolerole',
-    difficult: 'difficultdifficult',
-    solution: 'I was able to create the template website seen here.',
-    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
-  },
+  // {
+  //   name: 'Integr8HR Client Project',
+  //   image: 'https://source.unsplash.com/1600x900/?human,resources',
+  //   live: 'https://intergr8-42df9.web.app/',
+  //   github: 'https://github.com/nology-tech/intergr8',
+  //   overview: 'overviewoverview',
+  //   technology: {
+  //     icons: [
+  //       { className: 'html', icon: ['fab', 'html5'] },
+  //       { className: 'css', icon: ['fab', 'css3-alt'] },
+  //       { className: 'sass', icon: ['fab', 'sass'] },
+  //       { className: 'javascript', icon: ['fab', 'js-square'] },
+  //       { className: 'react', icon: ['fab', 'react'] },
+  //       { className: 'node', icon: ['fab', 'node'] }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+  //   role: 'rolerole',
+  //   difficult: 'difficultdifficult',
+  //   solution: 'I was able to create the template website seen here.',
+  //   features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
+  // },
   // {
   //   name: 'Social Media Website',
   //   image: 'https://source.unsplash.com/1600x900/?social,media',

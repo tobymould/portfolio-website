@@ -55,6 +55,7 @@ export class Modal extends Component {
     // const project = projects[0];
 
     return (
+      // <p>sdsfd</p>
       <div className={styles.modalOverlayWrapper} onClick={modalToggle}>
         <section className={styles.modalContentWrapper}>
           <div className={styles.modalContent}>

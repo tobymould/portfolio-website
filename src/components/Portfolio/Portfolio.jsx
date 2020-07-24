@@ -97,7 +97,7 @@ export class Portfolio extends Component {
             <input type="search" placeholder="Search projects by language/title" onChange={setSearchTerm} />
           </div>
           <section className={styles.items}>{searchTerm ? this.searchProjects() : this.addPortfolioButtons()}</section>
-          <div>{modalState ? <Modal projectState={projectState} modalState={modalState} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} /> : null}</div>
+          <div>{modalState && projectState ? <Modal projectState={projectState} modalState={modalState} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} /> : null}</div>
         </div>
         {/* </Container> */}
       </section>

@@ -5,7 +5,7 @@ import Landing from '../Landing';
 import About from '../About';
 import Navbar from '..//Navbar';
 import Skills from '../Skills';
-import Modal from '../Modal';
+// import Modal from '../Modal';
 import Portfolio from '../Portfolio';
 import Background from '../Background';
 import Footer from '../Footer';
@@ -21,7 +21,8 @@ export class Home extends Component {
     console.log(`Event target value: ${event.target.value}`);
     // this.setButtonPressed(event.target.value);
     // this.setModalProject(event.target.value);
-    this.setState({ modalState: !this.state.modalState });
+    const val = event.target.value;
+    this.setState({ modalState: !this.state.modalState }, () => this.modalOpenFunction(val));
     // this.setState({ modalState: projectLanguages[event.target.value] });
 
     // console.log(projectState);
@@ -30,24 +31,30 @@ export class Home extends Component {
 
     // This.setState({ stateObj: stateObj }, () => functionToPerformWhenStateSet);
     // if (this.state.projectState) {
-    this.modalOpenFunction(event.target.value);
+
     // }
   };
 
   modalOpenFunction = projectButtonClicked => {
     const { modalState, projectState, projectLanguages } = this.state;
     const { modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos } = this;
-    console.log('projectLanguages');
-    console.log(projectLanguages);
+    // console.log('projectLanguages');
+    // console.log(projectLanguages);
 
     const dataFileUrl = projects[projectButtonClicked];
-    console.log('dataFileUrl');
+    // console.log('dataFileUrl');
     console.log(dataFileUrl);
     const selectedProject = projectLanguages.filter(project => {
       return dataFileUrl.github === project.url;
-    });
-    console.log('selectedProject');
+    })[0];
+
+    // projectLanguages.forEach(lang => {
+    //   console.log(lang.url, dataFileUrl.github, lang.url === dataFileUrl.github);
+    // });
+
+    // console.log('selectedProject');
     console.log(selectedProject);
+
     // console.log('What is this stupid, fucking number?');
     // console.log(modalState);
 
@@ -65,6 +72,10 @@ export class Home extends Component {
     if (this.state.modalState) {
       this.setState({ projectState: selectedProject });
     }
+
+    // console.log('projectState');
+    // console.log(projectState);
+
     // if (this.state.projectState) {
     //   console.log('projectState:');
     //   console.log(projectState);

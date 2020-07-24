@@ -37,16 +37,20 @@ export class Modal extends Component {
     this.addTechImages();
   };
 
-  // test = () => {
-  //   const { projectLanguages } = this.props;
-  //   const { projectState } = this.state;
-  //   console.log(projectLanguages[0].projectName);
-  //   // projectLanguages.map(project => {
-  //   //   if (project.projectName.include(projectState.name)) {
-  //   //     console.log(project);
-  //   //   }
-  //   // });
-  // };
+  languagesPercentage = () => {
+    // const { projectLanguages } = this.props;
+    const { projectState } = this.props;
+    // console.log(projectLanguages[0].projectName);
+    if (projectState) {
+      console.log(projectState);
+    }
+    // projectState.map(properties, index => {
+    //   console.log(properties);
+    //   // if (properties.projectName.include(projectState.name)) {
+    //   //   return <div> {index} </div>;
+    //   // }
+    // });
+  };
 
   render() {
     const { modalState, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
@@ -85,7 +89,7 @@ export class Modal extends Component {
                   <h4>Technologies Used</h4>
                   <div className={styles.table}>{/* <ul className={styles.langList}>{this.addTech()}</ul> */}</div>
                   <div className={styles.langPercent}>
-                    {/* {this.test()} */}
+                    {this.languagesPercentage()}
                     {/* <div style={{width: projectStateLanguages[]:, background: }}> </div> */}
                     {/* {projectState ? this.test() : null} */}
                     {/* {projectState ? this.getProjectLanguagePercent() : null} */}

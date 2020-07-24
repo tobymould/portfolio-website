@@ -20,17 +20,17 @@ export class Modal extends Component {
     });
   };
 
-  // notableFeatures = () => {
-  //   const { projectState, projectLanguages } = this.props;
-  //   // console.log(project.features);
-  //   return test.project.features.map((feature, index) => {
-  //     return (
-  //       <li key={index}>
-  //         {index + 1}. {feature}
-  //       </li>
-  //     );
-  //   });
-  // };
+  notableFeatures = () => {
+    const { projectState, projectLanguages } = this.props;
+    // console.log(project.features);
+    return projectState.project.features.map((feature, index) => {
+      return (
+        <li key={index}>
+          {index + 1}. {feature}
+        </li>
+      );
+    });
+  };
 
   addTech = () => {
     // this.addTechIcons();
@@ -50,15 +50,8 @@ export class Modal extends Component {
 
   render() {
     const { modalState, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
-    // console.log('project being used in Modal:');
-    // console.log(projectLanguages);
-    // const project = projects[0];
-    console.log('projectState');
-    console.log(projectState);
-    console.log(projectState.project);
 
     return (
-      // <p>sdsfd</p>
       <div className={styles.modalOverlayWrapper} onClick={modalToggle}>
         <section className={styles.modalContentWrapper}>
           <div className={styles.modalContent}>
@@ -127,7 +120,7 @@ export class Modal extends Component {
                 {/* <!-- Notable Features Content --> */}
                 <div className={styles.feat}>
                   <h4>Notable Features</h4>
-                  {/* <ul>{this.notableFeatures()}</ul> */}
+                  <ul>{this.notableFeatures()}</ul>
                 </div>
               </div>
             </article>

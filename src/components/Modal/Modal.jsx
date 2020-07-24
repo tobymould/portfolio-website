@@ -23,7 +23,7 @@ export class Modal extends Component {
   notableFeatures = () => {
     const { projectState, projectLanguages } = this.props;
     // console.log(project.features);
-    return projectState.project.features.map((feature, index) => {
+    return projectState.features.map((feature, index) => {
       return (
         <li key={index}>
           {index + 1}. {feature}
@@ -65,23 +65,23 @@ export class Modal extends Component {
               <div className={styles.column1}>
                 {/* <!-- Summary Section --> */}
                 <div className={styles.summary}>
-                  <h3>{projectState.project.name}</h3>
+                  <h3>{projectState.name}</h3>
                   <div className={styles.imageSection}>
-                    <a href={projectState.project.live}>
-                      <img src={projectState.project.image} alt={projectState.project.name} className={styles.image} />
+                    <a href={projectState.live}>
+                      <img src={projectState.image} alt={projectState.name} className={styles.image} />
                     </a>
                   </div>
                   <div className={styles.buttons}>
-                    <a href={projectState.project.live} target="_blank">
+                    <a href={projectState.live} target="_blank">
                       <FontAwesomeIcon icon={['fas', 'desktop']} />
                       <p>Live Preview</p>
                     </a>
-                    <a href={projectState.project.github} target="_blank">
+                    <a href={projectState.github} target="_blank">
                       <FontAwesomeIcon icon={['fas', 'code-branch']} />
                       <p>Source Private</p>
                     </a>
                   </div>
-                  <p>{projectState.project.overview}</p>
+                  <p>{projectState.overview}</p>
                 </div>
 
                 {/* <!-- Technology Section --> */}
@@ -106,19 +106,19 @@ export class Modal extends Component {
                 {/* <!-- Role Content --> */}
                 <div className={styles.role}>
                   <h4>My Role</h4>
-                  <p>{projectState.project.role}</p>
+                  <p>{projectState.role}</p>
                 </div>
 
                 {/* <!-- Difficulties Content --> */}
                 <div className={styles.diff}>
                   <h4>Project Difficulties</h4>
-                  <p>{projectState.project.difficult}</p>
+                  <p>{projectState.difficult}</p>
                 </div>
 
                 {/* <!-- Solution Content --> */}
                 <div className={styles.sol}>
                   <h4>My Solution</h4>
-                  <p>{projectState.project.solution}</p>
+                  <p>{projectState.solution}</p>
                 </div>
 
                 {/* <!-- Notable Features Content --> */}

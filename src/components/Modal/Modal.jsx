@@ -38,18 +38,20 @@ export class Modal extends Component {
   };
 
   languagesPercentage = () => {
-    // const { projectLanguages } = this.props;
     const { projectState } = this.props;
-    // console.log(projectLanguages[0].projectName);
-    if (projectState) {
-      console.log(projectState);
-    }
-    // projectState.map(properties, index => {
-    //   console.log(properties);
-    //   // if (properties.projectName.include(projectState.name)) {
-    //   //   return <div> {index} </div>;
-    //   // }
-    // });
+
+    return projectState.languages.map((language, index) => {
+      const languageName = language[0].toLowerCase();
+      return (
+        <>
+          <div className={languageName} style={{ width: `${language[1]}%`, height: '10px' }} key={index}>
+            <span>
+              {languageName}: {language[1]}%
+            </span>
+          </div>
+        </>
+      );
+    });
   };
 
   render() {
@@ -90,13 +92,10 @@ export class Modal extends Component {
                   <div className={styles.table}>{/* <ul className={styles.langList}>{this.addTech()}</ul> */}</div>
                   <div className={styles.langPercent}>
                     {this.languagesPercentage()}
-                    {/* <div style={{width: projectStateLanguages[]:, background: }}> </div> */}
-                    {/* {projectState ? this.test() : null} */}
-                    {/* {projectState ? this.getProjectLanguagePercent() : null} */}
-                    <div> </div>
-                    <div> </div>
-                    <div> </div>
-                    <div> </div>
+                    {/* <div className={styles.javascript} style={{ width: '50px' }}></div> */}
+                    {/* <div className={styles.html} style={{ width: '50px' }}></div> */}
+                    {/* <div className={styles.html} style={{ width: '50px' }}></div> */}
+                    {/* <div className={styles.html} style={{ width: '50px' }}></div> */}
                   </div>
                 </div>
               </div>

@@ -1,5 +1,9 @@
 @import '../../sass/variables';
 
+:export {
+  javascript: $javascript;
+}
+
 $section-background-colours: rgba(0, 0, 0, 0.1);
 
 // //
@@ -214,7 +218,6 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 
         .tech {
           @extend %margin-padding;
-          @extend %icon-colours;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
 
           background: $section-background-colours;
@@ -262,40 +265,58 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
             align-items: center;
             // width: 100%;
             padding-top: 10px;
+            // width: 200px;
+            // border: 1px solid black;
 
+            // .html {
+            //   color: $html;
+            // }
             div {
-              height: 10px;
+              position: relative;
+              font-size: 0.8rem;
+              // color: black;
+              //   // height: 10px;
+              //   // background: ;
+              //   // width: 50px;
+              span {
+                position: absolute;
+                // top: 10px;
+                width: 20px;
+                color: black;
+                top: 10px;
+                // background: $grey-50;
+              }
 
               &:first-of-type {
-                background: turquoise;
+                // background: $javascript;
                 border-radius: 20px 0 0 20px;
-                width: 40%;
+
+                // span {
+                //   bottom: 10px;
+                // }
               }
 
-              &:nth-of-type(2) {
-                background: green;
-                width: 30%;
-              }
-
-              &:nth-of-type(3) {
-                background: yellow;
-                width: 20%;
-              }
-
-              &:nth-of-type(4) {
-                background: red;
-                width: 10%;
-              }
+              // &:nth-of-type(2) {
+              //   span {
+              //     bottom: 10px;
+              //   }
+              // }
+              // &:nth-of-type(3) {
+              //   span {
+              //     bottom: 10px;
+              //     // left: -50px;
+              //   }
+              // }
 
               &:last-of-type {
-                // background: red;
-                background: blue;
-                width: 20%;
+                background: red;
+                // background: blue;
+                // width: 20%;
                 border-radius: 0 20px 20px 0;
               }
             }
 
-            // &:nth-child(0){
+            // &:nth-child(0) {
             //   width: 10%;
             // }
           }

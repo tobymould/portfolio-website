@@ -38,10 +38,10 @@ $white-50: rgba(255, 255, 255, 0.5);
 $black-90: rgba(0, 0, 0, 0.9);
 
 // ICON COLOURS
-$html5: #f06529;
-$css3: #2965f1;
+$html: #f06529;
+$css: #2965f1;
 $sass: #cd6799;
-$js: #f0db4f;
+$javascript: #f0db4f;
 $git: #f1502f;
 $npm: #cc3534;
 $react: #61dbfb;
@@ -52,87 +52,89 @@ $yarn: #117cad;
 $python: #306998;
 $github: #2b3137;
 
-%icon-colours {
-  .html {
-    color: $html5;
+.html {
+  color: $html;
+  background: $html;
+}
+
+.css {
+  color: $css;
+  background: $css;
+}
+
+.sass {
+  color: $sass;
+  background: $sass;
+}
+
+.javascript {
+  color: $javascript;
+  background: $javascript;
+}
+
+.react {
+  color: $react;
+}
+
+.bootstrap {
+  color: $bootstrap;
+}
+
+.git {
+  color: $git;
+}
+
+.github {
+  color: black;
+}
+
+.npm {
+  color: $npm;
+}
+
+.node {
+  color: $node;
+  // background: blue;
+}
+
+.python {
+  color: $python;
+}
+
+.yarn {
+  color: $yarn;
+}
+
+.github {
+  color: $github;
+}
+
+.firebase {
+  width: 60px;
+  height: 60px;
+
+  &-modal {
+    width: 35px;
+    height: 40px;
+    // background: yellow;
   }
+}
 
-  .css {
-    color: $css3;
+.mongodb {
+  width: 60px;
+  height: 70px;
+
+  &-modal {
+    width: 40px;
+    height: 50px;
   }
+}
 
-  .sass {
-    color: $sass;
-  }
-
-  .javascript {
-    color: $js;
-  }
-
-  .react {
-    color: $react;
-  }
-
-  .bootstrap {
-    color: $bootstrap;
-  }
-
-  .git {
-    color: $git;
-  }
-
-  .github {
-    color: black;
-  }
-
-  .npm {
-    color: $npm;
-  }
-
-  .node {
-    color: $node;
-    // background: blue;
-  }
-
-  .python {
-    color: $python;
-  }
-
-  .yarn {
-    color: $yarn;
-  }
-
-  .github {
-    color: $github;
-  }
-
-  .firebase {
-    width: 60px;
-    height: 60px;
-
-    &-modal {
-      width: 35px;
-      height: 40px;
-      // background: yellow;
-    }
-  }
-
-  .mongodb {
-    width: 60px;
-    height: 70px;
-
-    &-modal {
-      width: 40px;
-      height: 50px;
-    }
-  }
-
-  .postman {
-    width: 65px;
-    height: 65px;
-    // width: 80px;
-    // height: 100%;
-  }
+.postman {
+  width: 65px;
+  height: 65px;
+  // width: 80px;
+  // height: 100%;
 }
 
 .software {

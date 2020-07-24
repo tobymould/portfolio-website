@@ -27,7 +27,6 @@
   }
 
   .items {
-    @extend %icon-colours;
     display: grid;
     gap: 20px 0;
     justify-items: center;

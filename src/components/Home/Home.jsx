@@ -5,7 +5,6 @@ import Landing from '../Landing';
 import About from '../About';
 import Navbar from '..//Navbar';
 import Skills from '../Skills';
-// import Modal from '../Modal';
 import Portfolio from '../Portfolio';
 import Background from '../Background';
 import Footer from '../Footer';
@@ -19,95 +18,28 @@ export class Home extends Component {
   modalToggle = event => {
     const { projectLanguages } = this.state;
     console.log(`Event target value: ${event.target.value}`);
-    // this.setButtonPressed(event.target.value);
-    // this.setModalProject(event.target.value);
+
     const val = event.target.value;
     this.setState({ modalState: !this.state.modalState }, () => this.modalOpenFunction(val));
-    // this.setState({ modalState: projectLanguages[event.target.value] });
-
-    // console.log(projectState);
-    // console.log('my value is:');
-    // console.log(test);
-
-    // This.setState({ stateObj: stateObj }, () => functionToPerformWhenStateSet);
-    // if (this.state.projectState) {
-
-    // }
   };
 
   modalOpenFunction = projectButtonClicked => {
     const { modalState, projectState, projectLanguages } = this.state;
     const { modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos } = this;
-    // console.log('projectLanguages');
-    // console.log(projectLanguages);
 
     const dataFileUrl = projects[projectButtonClicked];
-    // console.log('dataFileUrl');
+
     console.log(dataFileUrl);
     const selectedProject = projectLanguages.filter(project => {
       return dataFileUrl.github === project.url;
     })[0];
 
-    // projectLanguages.forEach(lang => {
-    //   console.log(lang.url, dataFileUrl.github, lang.url === dataFileUrl.github);
-    // });
-
-    // console.log('selectedProject');
     console.log(selectedProject);
-
-    // console.log('What is this stupid, fucking number?');
-    // console.log(modalState);
-
-    // const fuckoff = projectLanguages[projectButtonClicked];
-    // console.log('my value is:');
-    // console.log(fuckoff);
-    // if (projectLanguages[projectButtonClicked].url == )
-    // const project = projectButtonClicked;
-
-    // console.log('Project from Datafile');
-    // console.log(project);
-    // console.log('modal State!!!');
-    // console.log(modalState);
 
     if (this.state.modalState) {
       this.setState({ projectState: selectedProject });
     }
-
-    // console.log('projectState');
-    // console.log(projectState);
-
-    // if (this.state.projectState) {
-    //   console.log('projectState:');
-    //   console.log(projectState);
-    // }
-    // });
   };
-
-  // hoverToggle = event => {
-  //   this.setState({ hover: !this.state.hover });
-  // };
-  // , eventSet: event.target.value, projectState: event.target.value
-
-  // setButtonPressed = async projectButtonClicked => {
-  //   console.log(`Button pressed: ${projectButtonClicked}`);
-  //   this.response = this.setState({ eventSet: projectButtonClicked });
-  //   // console.log(`Event: ${this.state.event}`);
-  // };
-
-  /*
-promisedSetState = (newState) => new Promise(resolve => this.setState(newState, resolve));
-now you can call
-
-await pwomisedSetState({ someState: true });
-*/
-
-  // setModalProject = async projectButtonClicked => {
-  //   // console.log(projects[projectButtonClicked]);
-  //   const hello = () => {
-  //     this.setState({ projectState: projects[projectButtonClicked] }, () => this.modalOpenFunction(projectButtonClicked));
-  //   };
-  //   // console.log(`projectState: ${this.state.projectState}`);
-  // };
 
   setSearchTerm = event => {
     this.setState({ searchTerm: event.target.value });

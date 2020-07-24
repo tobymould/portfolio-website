@@ -5,7 +5,6 @@ import Card from './Card/Card';
 import projects from '../../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from '../Modal';
-// import Container from '../../containers/Container';
 
 export class Portfolio extends Component {
   //
@@ -61,23 +60,6 @@ export class Portfolio extends Component {
       return searchResult;
     }
   };
-
-  // hoverEffect = event => {
-  //   // const imageFile = dataFile.projects[event.target.value];
-  //   const { hover } = this.props;
-  //   let style;
-  //   if (hover) {
-  //     console.log('entered');
-  //     console.log(event);
-  //     // return null;
-  //     // return (event.target.style.background = {`linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile.image}) no-repeat center center/cover`)};
-  //   } else {
-  //     console.log('left');
-  //     console.log(event);
-  //     // return null;
-  //     // return (event.target.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageFile.image}) no-repeat center center/cover`);
-  //   }
-  // };
 
   render() {
     const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm, getGithubRepos, getGithubRepoLanguages, hoverToggle, hover, projectLanguages, modalToggle } = this.props;

@@ -20,45 +20,42 @@ export class Modal extends Component {
     });
   };
 
-  // notableFeatures = () => {
-  //   const { projectState, projectLanguages } = this.props;
-  //   // console.log(project.features);
-  //   return test.project.features.map((feature, index) => {
-  //     return (
-  //       <li key={index}>
-  //         {index + 1}. {feature}
-  //       </li>
-  //     );
-  //   });
-  // };
+  notableFeatures = () => {
+    const { projectState, projectLanguages } = this.props;
+    // console.log(project.features);
+    return projectState.project.features.map((feature, index) => {
+      return (
+        <li key={index}>
+          {index + 1}. {feature}
+        </li>
+      );
+    });
+  };
 
   addTech = () => {
     // this.addTechIcons();
     this.addTechImages();
   };
 
-  // test = () => {
-  //   const { projectLanguages } = this.props;
-  //   const { projectState } = this.state;
-  //   console.log(projectLanguages[0].projectName);
-  //   // projectLanguages.map(project => {
-  //   //   if (project.projectName.include(projectState.name)) {
-  //   //     console.log(project);
-  //   //   }
-  //   // });
-  // };
+  languagesPercentage = () => {
+    // const { projectLanguages } = this.props;
+    const { projectState } = this.props;
+    // console.log(projectLanguages[0].projectName);
+    if (projectState) {
+      console.log(projectState);
+    }
+    // projectState.map(properties, index => {
+    //   console.log(properties);
+    //   // if (properties.projectName.include(projectState.name)) {
+    //   //   return <div> {index} </div>;
+    //   // }
+    // });
+  };
 
   render() {
     const { modalState, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
-    // console.log('project being used in Modal:');
-    // console.log(projectLanguages);
-    // const project = projects[0];
-    console.log('projectState');
-    console.log(projectState);
-    console.log(projectState.project);
 
     return (
-      // <p>sdsfd</p>
       <div className={styles.modalOverlayWrapper} onClick={modalToggle}>
         <section className={styles.modalContentWrapper}>
           <div className={styles.modalContent}>
@@ -92,7 +89,7 @@ export class Modal extends Component {
                   <h4>Technologies Used</h4>
                   <div className={styles.table}>{/* <ul className={styles.langList}>{this.addTech()}</ul> */}</div>
                   <div className={styles.langPercent}>
-                    {/* {this.test()} */}
+                    {this.languagesPercentage()}
                     {/* <div style={{width: projectStateLanguages[]:, background: }}> </div> */}
                     {/* {projectState ? this.test() : null} */}
                     {/* {projectState ? this.getProjectLanguagePercent() : null} */}
@@ -127,7 +124,7 @@ export class Modal extends Component {
                 {/* <!-- Notable Features Content --> */}
                 <div className={styles.feat}>
                   <h4>Notable Features</h4>
-                  {/* <ul>{this.notableFeatures()}</ul> */}
+                  <ul>{this.notableFeatures()}</ul>
                 </div>
               </div>
             </article>

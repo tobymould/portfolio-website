@@ -46,7 +46,7 @@ export class Home extends Component {
 
   setSearchTerm = event => {
     this.setState({ searchTerm: event.target.value });
-    console.log(event.target.value);
+    // console.log(event.target.value);
   };
 
   getGithubRepoLanguages = async listOfRepos => {
@@ -57,19 +57,19 @@ export class Home extends Component {
 
       let thisProject = projects.find(project => project.github === repo.html_url);
 
-      console.log('this project matched:');
-      console.log(thisProject);
+      // console.log('this project matched:');
+      // console.log(thisProject);
 
       const langdata2 = { project: { ...thisProject }, name: repo.name, languages: dataJSON2, url: repo.html_url };
 
-      console.log('This is the resulting objec:');
-      console.log(langdata2);
+      // console.log('This is the resulting objec:');
+      // console.log(langdata2);
       return langdata2;
     });
 
     const langdata2 = await Promise.all(promises);
-    console.log('This is the resulting array:');
-    console.log(langdata2);
+    // console.log('This is the resulting array:');
+    // console.log(langdata2);
     // console.log('2nd end');
     return langdata2;
   };
@@ -107,8 +107,8 @@ export class Home extends Component {
       object = { ...project, languages: entries, url: project.url };
       totals.push(object);
     });
-    console.log('This is the resulting % array resulting:');
-    console.log(totals);
+    // console.log('This is the resulting % array resulting:');
+    // console.log(totals);
     // const final = { ...totals };
     return totals;
   };
@@ -121,8 +121,8 @@ export class Home extends Component {
     const getLang1 = await this.getGithubRepoLanguages(dataJSON1);
     const percentage = this.convertToPercent(getLang1);
     this.setState({ projectLanguages: percentage });
-    console.log('this.state.projectLanguages:');
-    console.log(this.state.projectLanguages);
+    // console.log('this.state.projectLanguages:');
+    // console.log(this.state.projectLanguages);
     // console.log('1st end');
   };
 

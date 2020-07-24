@@ -20,39 +20,42 @@ export class Modal extends Component {
     });
   };
 
-  notableFeatures = () => {
-    const { project } = this.props;
-    // console.log(project.features);
-    return project.features.map((feature, index) => {
-      return (
-        <li>
-          {index + 1}. {feature}
-        </li>
-      );
-    });
-  };
+  // notableFeatures = () => {
+  //   const { projectState, projectLanguages } = this.props;
+  //   // console.log(project.features);
+  //   return test.project.features.map((feature, index) => {
+  //     return (
+  //       <li key={index}>
+  //         {index + 1}. {feature}
+  //       </li>
+  //     );
+  //   });
+  // };
 
   addTech = () => {
     // this.addTechIcons();
     this.addTechImages();
   };
 
-  test = () => {
-    const { projectLanguages } = this.props;
-    const { projectState } = this.state;
-    console.log(projectLanguages[0].projectName);
-    // projectLanguages.map(project => {
-    //   if (project.projectName.include(projectState.name)) {
-    //     console.log(project);
-    //   }
-    // });
-  };
+  // test = () => {
+  //   const { projectLanguages } = this.props;
+  //   const { projectState } = this.state;
+  //   console.log(projectLanguages[0].projectName);
+  //   // projectLanguages.map(project => {
+  //   //   if (project.projectName.include(projectState.name)) {
+  //   //     console.log(project);
+  //   //   }
+  //   // });
+  // };
 
   render() {
-    const { modalState, project, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
+    const { modalState, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
+    console.log('project being used in Modal:');
+    console.log(projectLanguages);
     // const project = projects[0];
 
     return (
+      // <p>sdsfd</p>
       <div className={styles.modalOverlayWrapper} onClick={modalToggle}>
         <section className={styles.modalContentWrapper}>
           <div className={styles.modalContent}>
@@ -62,23 +65,23 @@ export class Modal extends Component {
               <div className={styles.column1}>
                 {/* <!-- Summary Section --> */}
                 <div className={styles.summary}>
-                  <h3>{project.name}</h3>
+                  <h3>{projectState.name}</h3>
                   <div className={styles.imageSection}>
-                    <a href={project.live}>
-                      <img src={project.image} alt={project.name} className={styles.image} />
+                    <a href={modalState.live}>
+                      <img src={modalState.image} alt={modalState.name} className={styles.image} />
                     </a>
                   </div>
                   <div className={styles.buttons}>
-                    <a href={project.live} target="_blank">
+                    <a href={modalState.live} target="_blank">
                       <FontAwesomeIcon icon={['fas', 'desktop']} />
                       <p>Live Preview</p>
                     </a>
-                    <a href={project.github} target="_blank">
+                    <a href={modalState.github} target="_blank">
                       <FontAwesomeIcon icon={['fas', 'code-branch']} />
                       <p>Source Private</p>
                     </a>
                   </div>
-                  <p>{project.overview}</p>
+                  <p>{modalState.overview}</p>
                 </div>
 
                 {/* <!-- Technology Section --> */}
@@ -87,8 +90,9 @@ export class Modal extends Component {
                   <div className={styles.table}>{/* <ul className={styles.langList}>{this.addTech()}</ul> */}</div>
                   <div className={styles.langPercent}>
                     {/* {this.test()} */}
-                    {/* <div style={{width: projectLanguages[]:, background: }}> </div> */}
+                    {/* <div style={{width: projectStateLanguages[]:, background: }}> </div> */}
                     {/* {projectState ? this.test() : null} */}
+                    {/* {projectState ? this.getProjectLanguagePercent() : null} */}
                     <div> </div>
                     <div> </div>
                     <div> </div>
@@ -102,25 +106,25 @@ export class Modal extends Component {
                 {/* <!-- Role Content --> */}
                 <div className={styles.role}>
                   <h4>My Role</h4>
-                  <p>{project.role}</p>
+                  <p>{modalState.role}</p>
                 </div>
 
                 {/* <!-- Difficulties Content --> */}
                 <div className={styles.diff}>
                   <h4>Project Difficulties</h4>
-                  <p>{project.difficult}</p>
+                  <p>{modalState.difficult}</p>
                 </div>
 
                 {/* <!-- Solution Content --> */}
                 <div className={styles.sol}>
                   <h4>My Solution</h4>
-                  <p>{project.solution}</p>
+                  <p>{modalState.solution}</p>
                 </div>
 
                 {/* <!-- Notable Features Content --> */}
                 <div className={styles.feat}>
                   <h4>Notable Features</h4>
-                  <ul>{this.notableFeatures()}</ul>
+                  {/* <ul>{this.notableFeatures()}</ul> */}
                 </div>
               </div>
             </article>

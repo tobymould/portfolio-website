@@ -5,7 +5,6 @@ import Landing from '../Landing';
 import About from '../About';
 import Navbar from '..//Navbar';
 import Skills from '../Skills';
-import Modal from '../Modal';
 import Portfolio from '../Portfolio';
 import Background from '../Background';
 import Footer from '../Footer';
@@ -17,43 +16,29 @@ export class Home extends Component {
   //
 
   modalToggle = event => {
+    const { projectLanguages } = this.state;
     console.log(`Event target value: ${event.target.value}`);
-    this.setButtonPressed(event.target.value);
-    this.setModalProject(event.target.value);
-    this.setState({ modalState: !this.state.modalState });
-    this.modalOpenFunction(event.target.value);
-  };
 
-  hoverToggle = event => {
-    this.setState({ hover: !this.state.hover });
-  };
-  // , eventSet: event.target.value, projectState: event.target.value
-
-  setButtonPressed = projectButtonClicked => {
-    // console.log(`Button pressed: ${projectButtonClicked}`);
-    this.setState({ eventSet: projectButtonClicked });
-    // console.log(`Event: ${this.state.event}`);
-  };
-
-  setModalProject = projectButtonClicked => {
-    // console.log(projects[projectButtonClicked]);
-    this.setState({ projectState: projects[projectButtonClicked] });
-    // console.log(`projectState: ${this.state.projectState}`);
+    const val = event.target.value;
+    this.setState({ modalState: !this.state.modalState }, () => this.modalOpenFunction(val));
   };
 
   modalOpenFunction = projectButtonClicked => {
     const { modalState, projectState, projectLanguages } = this.state;
     const { modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos } = this;
 
-    const project = projects[projectButtonClicked];
-    // console.log(project);
+    const dataFileUrl = projects[projectButtonClicked];
 
-    if (this.state.modalState == true) {
-      return <Modal project={projectState} modalState={modalState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} />;
-    } else {
-      return null;
+    console.log(dataFileUrl);
+    const selectedProject = projectLanguages.filter(project => {
+      return dataFileUrl.github === project.url;
+    })[0];
+
+    console.log(selectedProject);
+
+    if (this.state.modalState) {
+      this.setState({ projectState: selectedProject });
     }
-    // });
   };
 
   setSearchTerm = event => {
@@ -66,12 +51,22 @@ export class Home extends Component {
     const promises = listOfRepos.map(async repo => {
       const response2 = await fetch(repo.languages_url);
       const dataJSON2 = await response2.json();
-      const langdata2 = { name: repo.name, languages: dataJSON2 };
+
+      let thisProject = projects.find(project => project.github === repo.html_url);
+
+      console.log('this project matched:');
+      console.log(thisProject);
+
+      const langdata2 = { project: { ...thisProject }, name: repo.name, languages: dataJSON2, url: repo.html_url };
+
+      console.log('This is the resulting objec:');
+      console.log(langdata2);
       return langdata2;
     });
 
     const langdata2 = await Promise.all(promises);
-    // console.log(langdata2);
+    console.log('This is the resulting array:');
+    console.log(langdata2);
     // console.log('2nd end');
     return langdata2;
   };
@@ -81,6 +76,8 @@ export class Home extends Component {
 
     const convertsEachProjectLanguageContributionToPercent = getLang1.map((project, index) => {
       const entries = Object.entries(project.languages);
+      // console.log('entries:');
+      // console.log(entries);
       let sum = 0;
       // console.log(`initial value of Project ${index} is: ${sum}`);
 
@@ -104,10 +101,12 @@ export class Home extends Component {
       // console.log(`Summary of values for Project ${index}: ${entries}`);
 
       let object = {};
-      object = { projectName: project.name, languages: entries };
+      object = { ...project, languages: entries, url: project.url };
       totals.push(object);
     });
-    // console.log(totals);
+    console.log('This is the resulting % array resulting:');
+    console.log(totals);
+    // const final = { ...totals };
     return totals;
   };
 
@@ -115,17 +114,20 @@ export class Home extends Component {
     // console.log('1st start');
     const response1 = await fetch(`https://api.github.com/users/tobymould/repos`);
     const dataJSON1 = await response1.json();
+    // console.log(dataJSON1);
     const getLang1 = await this.getGithubRepoLanguages(dataJSON1);
     const percentage = this.convertToPercent(getLang1);
-    this.setState({ projectLanguage: percentage });
+    this.setState({ projectLanguages: percentage });
+    console.log('this.state.projectLanguages:');
+    console.log(this.state.projectLanguages);
     // console.log('1st end');
   };
 
-  // componentDidMount() {
-  //   this.getGithubRepos().catch(error => {
-  //     console.log(error);
-  //   });
-  // }
+  componentDidMount() {
+    this.getGithubRepos().catch(error => {
+      console.log(error);
+    });
+  }
 
   render() {
     const { modalState, projectState, searchTerm, hover, projectLanguages } = this.state;
@@ -135,7 +137,7 @@ export class Home extends Component {
         <Landing />
         <Navbar />
         <Skills />
-        <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} />
+        <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} modalToggle={modalToggle} />
         <Background />
         {/* <About /> */}
         <Footer />

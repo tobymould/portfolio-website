@@ -5,7 +5,6 @@ import Card from './Card/Card';
 import projects from '../../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from '../Modal';
-// import Container from '../../containers/Container';
 
 export class Portfolio extends Component {
   //
@@ -62,25 +61,8 @@ export class Portfolio extends Component {
     }
   };
 
-  // hoverEffect = event => {
-  //   // const imageFile = dataFile.projects[event.target.value];
-  //   const { hover } = this.props;
-  //   let style;
-  //   if (hover) {
-  //     console.log('entered');
-  //     console.log(event);
-  //     // return null;
-  //     // return (event.target.style.background = {`linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%), url(${imageFile.image}) no-repeat center center/cover`)};
-  //   } else {
-  //     console.log('left');
-  //     console.log(event);
-  //     // return null;
-  //     // return (event.target.style.background = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imageFile.image}) no-repeat center center/cover`);
-  //   }
-  // };
-
   render() {
-    const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm, getGithubRepos, getGithubRepoLanguages, hoverToggle, hover, projectLanguages } = this.props;
+    const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm, getGithubRepos, getGithubRepoLanguages, hoverToggle, hover, projectLanguages, modalToggle } = this.props;
 
     // this.hoverEffect();
 
@@ -91,14 +73,13 @@ export class Portfolio extends Component {
           <h2>Portfolio</h2>
           {/* <Card /> */}
           <div className={styles.search}>
-            {/* <p>Filter your project search by language or title</p> */}
             <div>
               <FontAwesomeIcon className={styles.searchIcon} icon={['fas', 'search']} />
             </div>
             <input type="search" placeholder="Search projects by language/title" onChange={setSearchTerm} />
           </div>
           <section className={styles.items}>{searchTerm ? this.searchProjects() : this.addPortfolioButtons()}</section>
-          <div>{modalState ? modalOpenFunction() : null}</div>
+          <div>{modalState && projectState ? <Modal projectState={projectState} modalState={modalState} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} /> : null}</div>
         </div>
         {/* </Container> */}
       </section>

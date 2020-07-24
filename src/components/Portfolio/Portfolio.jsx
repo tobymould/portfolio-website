@@ -80,7 +80,7 @@ export class Portfolio extends Component {
   // };
 
   render() {
-    const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm, getGithubRepos, getGithubRepoLanguages, hoverToggle, hover, projectLanguages } = this.props;
+    const { modalState, projectState, modalOpenFunction, setSearchTerm, searchTerm, getGithubRepos, getGithubRepoLanguages, hoverToggle, hover, projectLanguages, modalToggle } = this.props;
 
     // this.hoverEffect();
 
@@ -97,7 +97,7 @@ export class Portfolio extends Component {
             <input type="search" placeholder="Search projects by language/title" onChange={setSearchTerm} />
           </div>
           <section className={styles.items}>{searchTerm ? this.searchProjects() : this.addPortfolioButtons()}</section>
-          <div>{modalState ? modalOpenFunction() : null}</div>
+          <div>{modalState ? <Modal projectState={projectState} modalState={modalState} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} /> : null}</div>
         </div>
         {/* </Container> */}
       </section>

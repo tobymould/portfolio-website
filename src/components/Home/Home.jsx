@@ -37,15 +37,17 @@ export class Home extends Component {
   modalOpenFunction = projectButtonClicked => {
     const { modalState, projectState, projectLanguages } = this.state;
     const { modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos } = this;
+    console.log('projectLanguages');
+    console.log(projectLanguages);
 
     const dataFileUrl = projects[projectButtonClicked];
     console.log('dataFileUrl');
     console.log(dataFileUrl);
     const selectedProject = projectLanguages.filter(project => {
-      return dataFileUrl === project.url;
+      return dataFileUrl.github === project.url;
     });
-
-    this.setState({ projectState: selectedProject });
+    console.log('selectedProject');
+    console.log(selectedProject);
     // console.log('What is this stupid, fucking number?');
     // console.log(modalState);
 
@@ -61,10 +63,12 @@ export class Home extends Component {
     // console.log(modalState);
 
     if (this.state.modalState) {
-      return <Modal projectState={projectState} modalState={modalState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} getGithubRepoLanguages={getGithubRepoLanguages} getGithubRepos={getGithubRepos} projectLanguages={projectLanguages} />;
-    } else {
-      return null;
+      this.setState({ projectState: selectedProject });
     }
+    // if (this.state.projectState) {
+    //   console.log('projectState:');
+    //   console.log(projectState);
+    // }
     // });
   };
 
@@ -190,7 +194,7 @@ await pwomisedSetState({ someState: true });
         <Landing />
         <Navbar />
         <Skills />
-        <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} />
+        <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} modalToggle={modalToggle} />
         <Background />
         {/* <About /> */}
         <Footer />

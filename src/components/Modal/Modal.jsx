@@ -64,7 +64,7 @@ export class Modal extends Component {
               <div className={styles.column1}>
                 {/* <!-- Summary Section --> */}
                 <div className={styles.summary}>
-                  <h3>{modalState.name}</h3>
+                  <h3>{projectState.name}</h3>
                   <div className={styles.imageSection}>
                     <a href={modalState.live}>
                       <img src={modalState.image} alt={modalState.name} className={styles.image} />

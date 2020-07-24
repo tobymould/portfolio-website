@@ -3,7 +3,7 @@ export const projects = [
     name: 'Portfolio Project',
     image: 'https://source.unsplash.com/1600x900/?portfolio,website',
     live: 'https://toby-portfolio-7fe51.web.app',
-    github: 'https://github.com/tobymould/portfolio',
+    github: 'https://github.com/tobymould/portfolio-website',
     overview: `The website you are currently previewing is hosted on <span>Netlify</span> and is an ongoing work-in-progress.`,
     technology: {
       icons: [
@@ -68,29 +68,29 @@ export const projects = [
     solution: 'I was able to create the template website seen here.',
     features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
   },
-  {
-    name: 'Social Media Website',
-    image: 'https://source.unsplash.com/1600x900/?social,media',
-    live: 'https://',
-    github: 'https://',
-    overview: 'overviewoverview',
-    technology: {
-      icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'mongodb'],
-    role: 'rolerole',
-    difficult: 'difficultdifficult',
-    solution: 'I was able to create the template website seen here.',
-    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
-  },
+  // {
+  //   name: 'Social Media Website',
+  //   image: 'https://source.unsplash.com/1600x900/?social,media',
+  //   live: 'https://',
+  //   github: 'https://',
+  //   overview: 'overviewoverview',
+  //   technology: {
+  //     icons: [
+  //       { className: 'html', icon: ['fab', 'html5'] },
+  //       { className: 'css', icon: ['fab', 'css3-alt'] },
+  //       { className: 'sass', icon: ['fab', 'sass'] },
+  //       { className: 'javascript', icon: ['fab', 'js-square'] },
+  //       { className: 'react', icon: ['fab', 'react'] },
+  //       { className: 'node', icon: ['fab', 'node'] }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'mongodb'],
+  //   role: 'rolerole',
+  //   difficult: 'difficultdifficult',
+  //   solution: 'I was able to create the template website seen here.',
+  //   features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
+  // },
   {
     name: 'Gold Plating Website',
     image: 'https://source.unsplash.com/1600x900/?gold',
@@ -229,29 +229,29 @@ export const projects = [
     solution: 'I was able to create the template website seen here.',
     features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
   },
-  {
-    name: 'Tic-Tac-Toe Game',
-    image: 'https://source.unsplash.com/1600x900/?games',
-    live: 'https://tobymould.github.io/tick-tack-toe/',
-    github: 'https://github.com/tobymould/tick-tack-toe',
-    overview: 'The website you are currently previewing is hosted on Netlify, so the loading speed will be slower than usual.',
-    technology: {
-      icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'sass', 'javascript'],
-    role: 'rolerole',
-    difficult: 'difficultdifficult',
-    solution: 'I was able to create the template website seen here.',
-    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
-  },
+  // {
+  //   name: 'Tic-Tac-Toe Game',
+  //   image: 'https://source.unsplash.com/1600x900/?games',
+  //   live: 'https://tobymould.github.io/tick-tack-toe/',
+  //   github: 'https://github.com/tobymould/tick-tack-toe',
+  //   overview: 'The website you are currently previewing is hosted on Netlify, so the loading speed will be slower than usual.',
+  //   technology: {
+  //     icons: [
+  //       { className: 'html', icon: ['fab', 'html5'] },
+  //       { className: 'css', icon: ['fab', 'css3-alt'] },
+  //       { className: 'sass', icon: ['fab', 'sass'] },
+  //       { className: 'javascript', icon: ['fab', 'js-square'] },
+  //       { className: 'react', icon: ['fab', 'react'] },
+  //       { className: 'node', icon: ['fab', 'node'] }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'sass', 'javascript'],
+  //   role: 'rolerole',
+  //   difficult: 'difficultdifficult',
+  //   solution: 'I was able to create the template website seen here.',
+  //   features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
+  // },
   {
     name: 'Morse Code Converter',
     image: 'https://source.unsplash.com/1600x900/?morse',
@@ -274,53 +274,53 @@ export const projects = [
     difficult: 'difficultdifficult',
     solution: 'I was able to create the template website seen here.',
     features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
-  },
-  {
-    name: 'Arduino Project',
-    image: 'https://source.unsplash.com/1600x900/?arduino',
-    live: 'https://',
-    github: 'https://',
-    overview: 'overviewoverview',
-    technology: {
-      icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'sass', 'javascript'],
-    role: 'rolerole',
-    difficult: 'difficultdifficult',
-    solution: 'I was able to create the template website seen here.',
-    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
-  },
-  {
-    name: 'Cislunar Industries USA, inc.',
-    image: 'https://source.unsplash.com/1600x900/?space',
-    live: 'https://tobymould.github.io/cislunar/',
-    github: 'https://',
-    overview: 'overviewoverview',
-    technology: {
-      icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'sass', 'javascript'],
-    role: 'rolerole',
-    difficult: 'difficultdifficult',
-    solution: 'I was able to create the template website seen here.',
-    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
   }
+  // {
+  //   name: 'Arduino Project',
+  //   image: 'https://source.unsplash.com/1600x900/?arduino',
+  //   live: 'https://',
+  //   github: 'https://',
+  //   overview: 'overviewoverview',
+  //   technology: {
+  //     icons: [
+  //       { className: 'html', icon: ['fab', 'html5'] },
+  //       { className: 'css', icon: ['fab', 'css3-alt'] },
+  //       { className: 'sass', icon: ['fab', 'sass'] },
+  //       { className: 'javascript', icon: ['fab', 'js-square'] },
+  //       { className: 'react', icon: ['fab', 'react'] },
+  //       { className: 'node', icon: ['fab', 'node'] }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'sass', 'javascript'],
+  //   role: 'rolerole',
+  //   difficult: 'difficultdifficult',
+  //   solution: 'I was able to create the template website seen here.',
+  //   features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
+  // },
+  // {
+  //   name: 'Cislunar Industries USA, inc.',
+  //   image: 'https://source.unsplash.com/1600x900/?space',
+  //   live: 'https://tobymould.github.io/cislunar/',
+  //   github: 'https://',
+  //   overview: 'overviewoverview',
+  //   technology: {
+  //     icons: [
+  //       { className: 'html', icon: ['fab', 'html5'] },
+  //       { className: 'css', icon: ['fab', 'css3-alt'] },
+  //       { className: 'sass', icon: ['fab', 'sass'] },
+  //       { className: 'javascript', icon: ['fab', 'js-square'] },
+  //       { className: 'react', icon: ['fab', 'react'] },
+  //       { className: 'node', icon: ['fab', 'node'] }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'sass', 'javascript'],
+  //   role: 'rolerole',
+  //   difficult: 'difficultdifficult',
+  //   solution: 'I was able to create the template website seen here.',
+  //   features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
+  // }
 ];
 
 // export default data;

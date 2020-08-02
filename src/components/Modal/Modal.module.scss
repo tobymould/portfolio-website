@@ -4,8 +4,6 @@
   javascript: $javascript;
 }
 
-$section-background-colours: rgba(0, 0, 0, 0.1);
-
 // //
 // //------------------------------------
 // //--------MIX-INS--------//
@@ -38,7 +36,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
   height: 100vh;
   width: 100vw;
   // overflow: auto; /*enables the scrollbar if needed */
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 //
 //-----------------------------------//
@@ -50,6 +48,16 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  h4 {
+    color: black;
+    // color: $colour1;
+    font-weight: bold;
+    // text-decoration: underline;
+    margin-bottom: 5px;
+    border-bottom: 1px solid $grey-50;
+    display: inline-block;
+  }
 
   .modalContent {
     box-shadow: inset 5px 5px 15px -10px rgba(0, 0, 0, 1);
@@ -183,6 +191,7 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           }
 
           .buttons {
+            margin-top: 10px;
             display: flex;
             align-items: center;
             justify-content: space-evenly;
@@ -190,7 +199,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
 
             a {
               // width: 50%;
-              font-size: 0.5rem;
+              font-size: 0.8rem;
+              padding: 0 10px;
               // padding: 5px 10px;
               // margin-left: 5px;
               display: flex;
@@ -198,18 +208,23 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
               // gap-left: 20px;
               justify-content: center;
               align-items: center;
-              // background: yellow;
+              background: $colour1;
+              border: 1px solid $grey-50;
+              border-radius: 20px;
 
-              i {
-                margin: 0 10px 0 0;
-                padding: 5px;
-                font-size: 1rem;
-                // display: inline-block;
-                // background: blue;
-              }
+              // i {
+              //   // margin: 0 10px 0 0;
+              //   padding: 5px;
+              //   // font-size: 5rem;
+              //   // display: inline-block;
+              //   // background: blue;
+              // }
 
               p {
-                padding: 0 5px;
+                padding: 0 0 0 5px;
+                color: white;
+                font-size: 0.6rem;
+
                 // background: green;
               }
             }
@@ -219,106 +234,81 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         .tech {
           @extend %margin-padding;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
-
-          background: $section-background-colours;
+          background: $grey-70;
           // @extend %text-adjust;
 
           // background: rgba(0, 255, 0, 0.1);
 
-          .table {
-            // display: grid;
-            // grid-template-columns: 1fr 1fr;
+          .techList {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
             align-items: center;
-            // background: purple;
+            justify-content: space-evenly;
 
-            .langList {
-              display: flex;
-              flex-direction: row;
-              padding: 10px;
-              margin: 0;
-              // background: green;
-              // width: 100%;
-
-              i {
-                padding: 0 10px;
-              }
-
-              // li {
-              //   padding: 5px 0;
-              //   background: blue;
-              //   i {
-              //     margin: 0px 20px;
-              //     // margin-bottom: 5px;
-              //     padding: 0;
-              //     background: red;
-              //   }
-              // }
-            }
+            // padding: 10px;
+            margin: 5px 0;
+            // background: green;
+            // width: 100%;
           }
 
           .langPercent {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             // width: 100%;
             padding-top: 10px;
+            padding-bottom: 10px;
+            background: $grey-50;
+            padding: 10px;
+            border-radius: 10px;
             // width: 200px;
             // border: 1px solid black;
 
             // .html {
             //   color: $html;
             // }
-            div {
-              position: relative;
-              font-size: 0.8rem;
-              // color: black;
-              //   // height: 10px;
-              //   // background: ;
-              //   // width: 50px;
-              span {
-                position: absolute;
-                // top: 10px;
-                width: 20px;
-                color: black;
-                top: 10px;
-                // background: $grey-50;
-              }
+            // background: blue;
 
-              &:first-of-type {
-                // background: $javascript;
-                border-radius: 20px 0 0 20px;
+            .chart {
+              display: flex;
+              width: 100%;
+              height: 10px;
+              // background: black;
 
-                // span {
-                //   bottom: 10px;
-                // }
-              }
+              div {
+                &:nth-of-type(1) {
+                  border-radius: 20px 0 0 20px;
+                }
 
-              // &:nth-of-type(2) {
-              //   span {
-              //     bottom: 10px;
-              //   }
-              // }
-              // &:nth-of-type(3) {
-              //   span {
-              //     bottom: 10px;
-              //     // left: -50px;
-              //   }
-              // }
-
-              &:last-of-type {
-                background: red;
-                // background: blue;
-                // width: 20%;
-                border-radius: 0 20px 20px 0;
+                &:last-of-type {
+                  border-radius: 0 20px 20px 0;
+                }
               }
             }
 
-            // &:nth-child(0) {
-            //   width: 10%;
-            // }
+            .name {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              height: 35px;
+              font-size: 0.8rem;
+              text-align: center;
+              // background: red;
+
+              div {
+                padding: 10px;
+
+                &:nth-of-type(1) {
+                  border-radius: 20px 0 0 20px;
+                }
+
+                &:last-of-type {
+                  border-radius: 0 20px 20px 0;
+                }
+              }
+            }
           }
         }
       }
@@ -328,6 +318,8 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
         flex-direction: column;
         justify-content: start;
         min-height: 30%;
+        font-size: 0.7rem;
+        // line-height: 0.5rem;
         // background: rgba(255, 255, 255, 0.9);
         // width: 100%;
         // margin: 10px;
@@ -339,7 +331,9 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           @extend %margin-padding;
           background: $section-background-colours;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
-
+          p {
+            line-height: 1rem;
+          }
           // width: 100%;
           // max-height: 180px;
           // background: rgba(0, 0, 255, 0.1);
@@ -349,6 +343,9 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           @extend %margin-padding;
           background: $section-background-colours;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+          p {
+            line-height: 1rem;
+          }
 
           // width: 100%;
           // background: rgba(255, 255, 0, 0.1);
@@ -358,6 +355,9 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           @extend %margin-padding;
           background: $section-background-colours;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+          p {
+            line-height: 1rem;
+          }
 
           // width: 100%;
           // background: rgba(255, 0, 255, 0.1);
@@ -374,10 +374,16 @@ $section-background-colours: rgba(0, 0, 0, 0.1);
           ul {
             display: flex;
             flex-direction: column;
+            list-style: none;
 
             li {
-              margin: 0 0 0 20px;
-              padding: 0;
+              margin: 0 0 0 0;
+              padding-bottom: 5px;
+              line-height: 1rem;
+
+              span {
+                color: $colour1;
+              }
             }
           }
         }

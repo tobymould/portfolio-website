@@ -36,7 +36,7 @@ export class Skills extends Component {
     // console.log(skills.icons[0].icon[0]);
     // console.log(skills.icons[0].icon[1]);
     return (
-      <section className={styles.skillsWrapper}>
+      <section id="#skills" className={styles.skillsWrapper}>
         {/* <div className={styles.container}> */}
         <h2>Skills</h2>
         <p>

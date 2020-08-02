@@ -25,7 +25,7 @@ export class Navbar extends Component {
             </Link>
           </li>
           <li>
-            <Link to="/">
+            <Link to="#skills">
               <div>
                 <FontAwesomeIcon icon={['fas', 'microchip']} className={styles.icon} />
               </div>

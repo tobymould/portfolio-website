@@ -2,31 +2,123 @@ export const projects = [
   {
     name: 'Portfolio Project',
     image: 'https://source.unsplash.com/1600x900/?portfolio,website',
-    live: 'https://toby-portfolio-7fe51.web.app',
+    live: 'https://tobymould.com/',
     github: 'https://github.com/tobymould/portfolio-website',
-    overview: `The website you are currently previewing is hosted on <span>Netlify</span> and is an ongoing work-in-progress.`,
+    overview: ``,
     technology: {
       icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
+        { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
     languages: ['html', 'sass', 'javascript', 'React'],
-    role: `I created this website from scratch without frameworks. As the owner of the website, I was responsible for the build. The aim was to build a website with only vanilla code.`,
-    difficult: `Building the styling classes from scratch and keeping the code well-organised.`,
-    solution: `I was able to create the template website seen here.`,
-    features: [`Use of all Sass functionalities Partials, Mix-ins, Functions, variables etc.`, `Use of CSS Animations, Grid & Flex concepts.`, `Project Portfolio Modals.`, `Direct link between GitHub & Netlify Hosting service.`]
+    role: `I am the sole creator of this website. The aim of the build was to form a central library repository from which all projects I come on to build could be hosted.`,
+    difficult: `The interaction of GitHub API to display %'s for each language used in the project. Migration of the site from HTML/CSS/JS into React`,
+    solution: `Creation of the stylish website you are currently visiting`,
+    features: [`GitHub API - Connection to retrieve dynamic data of each projects language distribution, and display on the page as % using bar charts.`, `Use of CSS Animations, Grid & Flex concepts.`, `Project Portfolio Modals.`, `Direct link between GitHub & Netlify Hosting service.`]
+  },
+  {
+    name: 'Expense Tracker App',
+    image: 'https://source.unsplash.com/1600x900/?money',
+    live: 'https://expense-tracker-223d5.web.app/',
+    github: 'https://github.com/tobymould/expense-tracker',
+    overview: 'overviewoverview',
+    technology: {
+      icons: [
+        { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+      ],
+      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+    },
+    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    role: 'role',
+    difficult: 'difficultdifficult',
+    solution: 'I was able to create the template website seen here.',
+    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
+  },
+  {
+    name: 'Real-Time Chatroom',
+    image: 'https://source.unsplash.com/1600x900/?chat',
+    live: 'https://realtime-chatroom-ea4d6.web.app/',
+    github: 'https://github.com/tobymould/real-time-chatroom',
+    overview: 'overviewoverview',
+    technology: {
+      icons: [
+        { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+      ],
+      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+    },
+    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    role: 'role',
+    difficult: 'difficultdifficult',
+    solution: 'I was able to create the template website seen here.',
+    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
   },
   {
     name: 'Github Finder',
     image: 'https://source.unsplash.com/1600x900/?github',
     live: 'https://github-search-c70d7.web.app/',
     github: 'https://github.com/tobymould/github-finder',
+    overview: 'overviewoverview',
+    technology: {
+      icons: [
+        { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+      ],
+      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+    },
+    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    role: 'role',
+    difficult: 'difficultdifficult',
+    solution: 'I was able to create the template website seen here.',
+    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
+  },
+  {
+    name: 'Speech-Recognition Number Guessing Game',
+    image: 'https://source.unsplash.com/1600x900/?speech',
+    live: 'https://tobymould.github.io/speak-number-guessing-game/',
+    github: 'https://github.com/tobymould/speak-number-guessing-game',
+    overview: 'overviewoverview',
+    technology: {
+      icons: [
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+      ],
+      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+    },
+    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    role: 'role',
+    difficult: 'difficultdifficult',
+    solution: 'I was able to create the template website seen here.',
+    features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
+  },
+  {
+    name: 'Integr8HR Client Project',
+    image: 'https://source.unsplash.com/1600x900/?human,resources',
+    live: 'https://intergr8-42df9.web.app/',
+    github: 'https://github.com/tobymould/intergr8',
     overview: 'overviewoverview',
     technology: {
       icons: [
@@ -40,34 +132,11 @@ export const projects = [
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
     languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
-    role: 'role',
+    role: 'rolerole',
     difficult: 'difficultdifficult',
     solution: 'I was able to create the template website seen here.',
     features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
   },
-  // {
-  //   name: 'Integr8HR Client Project',
-  //   image: 'https://source.unsplash.com/1600x900/?human,resources',
-  //   live: 'https://intergr8-42df9.web.app/',
-  //   github: 'https://github.com/nology-tech/intergr8',
-  //   overview: 'overviewoverview',
-  //   technology: {
-  //     icons: [
-  //       { className: 'html', icon: ['fab', 'html5'] },
-  //       { className: 'css', icon: ['fab', 'css3-alt'] },
-  //       { className: 'sass', icon: ['fab', 'sass'] },
-  //       { className: 'javascript', icon: ['fab', 'js-square'] },
-  //       { className: 'react', icon: ['fab', 'react'] },
-  //       { className: 'node', icon: ['fab', 'node'] }
-  //     ],
-  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-  //   },
-  //   languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
-  //   role: 'rolerole',
-  //   difficult: 'difficultdifficult',
-  //   solution: 'I was able to create the template website seen here.',
-  //   features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
-  // },
   // {
   //   name: 'Social Media Website',
   //   image: 'https://source.unsplash.com/1600x900/?social,media',
@@ -99,12 +168,12 @@ export const projects = [
     overview: 'The website you are currently previewing is hosted on Netlify, so the loading speed will be slower than usual.',
     technology: {
       icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
+        { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
@@ -122,12 +191,12 @@ export const projects = [
     overview: 'is hosted on Netlify, so the loading speed will be slower than usual.',
     technology: {
       icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
+        { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
@@ -145,12 +214,12 @@ export const projects = [
     overview: 'The form validator mini-project is hosted on Netlify, so the loading speed will be slower than usual.',
     technology: {
       icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
+        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
@@ -168,12 +237,12 @@ export const projects = [
     overview: 'The website you are currently previewing is hosted on Netlify, so the loading speed will be slower than usual.',
     technology: {
       icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
+        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
@@ -191,12 +260,12 @@ export const projects = [
     overview: 'The website you are currently previewing is hosted on Netlify, so the loading speed will be slower than usual.',
     technology: {
       icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
+        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
@@ -214,12 +283,12 @@ export const projects = [
     overview: 'The website you are currently previewing is hosted on Netlify, so the loading speed will be slower than usual.',
     technology: {
       icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
+        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
@@ -260,12 +329,12 @@ export const projects = [
     overview: 'The website you are currently previewing is hosted on Netlify, so the loading speed will be slower than usual.',
     technology: {
       icons: [
-        { className: 'html', icon: ['fab', 'html5'] },
-        { className: 'css', icon: ['fab', 'css3-alt'] },
-        { className: 'sass', icon: ['fab', 'sass'] },
-        { className: 'javascript', icon: ['fab', 'js-square'] },
-        { className: 'react', icon: ['fab', 'react'] },
-        { className: 'node', icon: ['fab', 'node'] }
+        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
@@ -336,9 +405,12 @@ export const skills = {
     { language: 'git', icon: ['fab', 'git'], colour: '#f1502f', sizeGeneral: '3x', sizeModal: '2x' },
     { language: 'github', icon: ['fab', 'github'], colour: '#2b3137', sizeGeneral: '3x', sizeModal: '2x' }
   ],
-  images: [{ className: 'firebase', url: 'require(../assets/icons/firebase.png)' }]
+  images: [
+    { className: 'firebase', url: 'https://www.spsolutions.com.mx/assets/img/servicios/firebase.png' },
+    { className: 'postman', url: 'https://s3.amazonaws.com/media-p.slid.es/uploads/327261/images/5065937/pm-logo-vert.png' },
+    { className: 'typescript', url: 'https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png' }
+  ]
 };
-
 //  '<img className="firebase-modal" src="../assets/icons/firebase.png" alt="firebase logo" />'];
 
 // export default projects;

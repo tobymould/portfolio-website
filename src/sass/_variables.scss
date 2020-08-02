@@ -22,6 +22,8 @@ $ipad-pro-width-landscape: 1366px;
 $ipad-pro-height-landscape: 1024px;
 
 $lato-font: 'Lato', sans-serif;
+
+$section-background-colours: rgba(0, 0, 0, 0.1);
 // GENERAL COLOURS
 $dark-colour: #111;
 $light-colour: #f4f4f4;
@@ -53,31 +55,51 @@ $python: #306998;
 $github: #2b3137;
 
 .html {
-  color: $html;
   background: $html;
+
+  &-text {
+    color: $html;
+  }
 }
 
 .css {
-  color: $css;
   background: $css;
+
+  &-text {
+    color: $css;
+  }
 }
 
 .sass {
-  color: $sass;
   background: $sass;
+
+  &-text {
+    color: $sass;
+  }
 }
 
 .javascript {
-  color: $javascript;
   background: $javascript;
+
+  &-text {
+    color: $javascript;
+  }
 }
 
 .react {
-  color: $react;
+  background: $react;
+
+  &-text {
+    color: $react;
+  }
 }
 
 .bootstrap {
-  color: $bootstrap;
+  background: $bootstrap;
+
+  &-text {
+    color: $bootstrap;
+  }
 }
 
 .git {
@@ -93,12 +115,20 @@ $github: #2b3137;
 }
 
 .node {
-  color: $node;
+  background: $node;
+
+  &-text {
+    color: $node;
+  }
   // background: blue;
 }
 
 .python {
-  color: $python;
+  background: $python;
+
+  &-text {
+    color: $python;
+  }
 }
 
 .yarn {
@@ -110,8 +140,20 @@ $github: #2b3137;
 }
 
 .firebase {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+
+  &-modal {
+    width: 35px;
+    height: 40px;
+    // background: yellow;
+  }
+}
+
+.typescript {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
 
   &-modal {
     width: 35px;
@@ -131,7 +173,7 @@ $github: #2b3137;
 }
 
 .postman {
-  width: 65px;
+  width: 75px;
   height: 65px;
   // width: 80px;
   // height: 100%;

@@ -79,8 +79,8 @@ export class Home extends Component {
 
     const convertsEachProjectLanguageContributionToPercent = getLang1.map((project, index) => {
       const entries = Object.entries(project.languages);
-      // console.log('entries:');
-      // console.log(entries);
+      console.log('entries1:');
+      console.log(entries);
       let sum = 0;
       // console.log(`initial value of Project ${index} is: ${sum}`);
 
@@ -101,10 +101,30 @@ export class Home extends Component {
         return replaced;
       });
 
+      let test = entries.map((element, index) => {
+        if (element.indexOf('HTML') === 0) {
+          if (element[1] > 20);
+        } else {
+          return null;
+        }
+      });
+      // test.split();
+
+      // find(entry => {
+      //   if (entry[0].contains('HTML')){
+
+      //   }
+      // });
+      console.log('test:');
+      console.log(test);
+
+      console.log('entries2:');
+      console.log(entries);
       // console.log(`Summary of values for Project ${index}: ${entries}`);
 
       let object = {};
       object = { ...project, languages: entries, url: project.url };
+      // console.log('object', object);
       totals.push(object);
     });
     // console.log('This is the resulting % array resulting:');

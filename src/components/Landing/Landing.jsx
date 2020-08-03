@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export class Landing extends Component {
   render() {
     return (
-      <section className={styles.homeWrapper}>
+      <section id="landing" className={styles.homeWrapper}>
         <div className={styles.homeOverlay}></div>
         <div className={styles.homeContent}>
           <h1>Toby Mould</h1>

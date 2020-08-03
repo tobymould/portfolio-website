@@ -67,7 +67,7 @@ export class Portfolio extends Component {
     // this.hoverEffect();
 
     return (
-      <section className={styles.portfolioWrapper}>
+      <section id="portfolio" className={styles.portfolioWrapper}>
         {/* <Container> */}
         <div className={styles.container}>
           <h2>Portfolio</h2>

@@ -76,6 +76,7 @@ export class Home extends Component {
 
   convertToPercent = getLang1 => {
     let totals = [];
+    let array = [];
 
     const convertsEachProjectLanguageContributionToPercent = getLang1.map((project, index) => {
       const entries = Object.entries(project.languages);
@@ -103,13 +104,16 @@ export class Home extends Component {
 
       let test = entries.map((element, index) => {
         if (element.indexOf('HTML') === 0) {
-          if (element[1] > 20);
+          if (element[1] < 20) {
+            return index;
+          }
+          return element;
         } else {
           return null;
         }
       });
       // test.split();
-
+      console.log('array: ', (array += test));
       // find(entry => {
       //   if (entry[0].contains('HTML')){
 
@@ -130,6 +134,7 @@ export class Home extends Component {
     // console.log('This is the resulting % array resulting:');
     // console.log(totals);
     const final = { ...totals };
+    console.log(array);
     return totals;
   };
 
@@ -156,15 +161,21 @@ export class Home extends Component {
     const { modalState, projectState, searchTerm, hover, projectLanguages } = this.state;
     const { modalOpenFunction, modalToggle, setButtonPressed, setModalProject, setSearchTerm, searchProjects, getGithubRepoLanguages, getGithubRepos, hoverToggle } = this;
     return (
-      <>
-        <Landing />
+      <React.Fragment className={styles.homeWrapper}>
+        <Landing path="landing" />
+
         <Navbar />
+
         <Skills />
+
         <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} modalToggle={modalToggle} />
-        <Background />
+
+        <div id="background" className={styles.scrollBackground}>
+          <Background />
+        </div>
         {/* <About /> */}
         <Footer />
-      </>
+      </React.Fragment>
     );
   }
 }

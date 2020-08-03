@@ -17,36 +17,36 @@ export class Navbar extends Component {
             </a>
           </li>
           <li>
-            <Link to="/">
+            <a href="#landing">
               <div>
                 <FontAwesomeIcon icon={['fas', 'home']} className={styles.icon} />
               </div>
               <p>Home</p>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="#skills">
+            <a href="#skills">
               <div>
                 <FontAwesomeIcon icon={['fas', 'microchip']} className={styles.icon} />
               </div>
               <p>Skills</p>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/">
+            <a href="#portfolio">
               <div>
                 <FontAwesomeIcon icon={['fas', 'code']} className={styles.icon} />
               </div>
               <p>Portfolio</p>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/">
+            <a href="#background">
               <div>
                 <FontAwesomeIcon icon={['fas', 'user-circle']} className={styles.icon} />
               </div>
               <p>Background</p>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

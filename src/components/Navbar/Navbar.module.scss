@@ -95,10 +95,6 @@
         //   // padding-right: 15px;
         //   // font-size: 1.5rem;
         // }
-
-        &:hover {
-          background: $white-50;
-        }
       }
     }
   }
@@ -129,6 +125,11 @@
     }
 
     @media (min-width: $desktop-min-width) {
+      a {
+        &:hover {
+          background: $white-50;
+        }
+      }
     }
   }
 
@@ -214,6 +215,10 @@
 
       a {
         flex-direction: row;
+
+        &:hover {
+          background: $white-50;
+        }
       }
     }
   }

@@ -117,9 +117,13 @@
       box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
       // clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 
-      h4 {
-        font-size: 1.2rem;
-      }
+      font-size: 1.2rem;
+      color: white;
+
+      // h4 {
+      //   font-size: 1.2rem;
+      //   color: white;
+      // }
 
       &:hover {
         cursor: pointer;

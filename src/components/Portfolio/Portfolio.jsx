@@ -13,7 +13,7 @@ export class Portfolio extends Component {
     return projects.map((project, index) => {
       return (
         <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
-          <h4>{project.name}</h4>
+          {project.name}
         </button>
       );
       // return <Card object={project} key={index} />;

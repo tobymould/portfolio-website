@@ -7,6 +7,9 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 //------------------------------------//
 //--------0. GENERAL STYLES--------//
 //------------------------------------//
@@ -15,11 +18,9 @@ body {
   // font-family: 'Montserrat', sans-serif;
   font-family: $lato-font;
   background: $grey;
-
   // .container {
   //   margin: 0 40vw;
   // }
-
   h1 {
     margin-bottom: 0;
     font-size: 3rem;

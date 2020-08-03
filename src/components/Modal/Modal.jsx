@@ -105,6 +105,7 @@ export class Modal extends Component {
                   <div className={styles.langPercent}>
                     <div className={styles.chart}>{this.languagesPercentage()}</div>
                     <div className={styles.name}>{this.languagesPercentage2()}</div>
+                    <p>*language data pulled directly from github API</p>
                   </div>
                 </div>
               </div>

@@ -309,6 +309,17 @@
                 }
               }
             }
+
+            p {
+              font-size: 0.5rem;
+              margin: 0;
+              padding: 0;
+              height: 15px;
+              color: white;
+              // text-align: left;
+              // background: blue;
+              // color: black;
+            }
           }
         }
       }
@@ -318,7 +329,7 @@
         flex-direction: column;
         justify-content: start;
         min-height: 30%;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         // line-height: 0.5rem;
         // background: rgba(255, 255, 255, 0.9);
         // width: 100%;
@@ -331,6 +342,7 @@
           @extend %margin-padding;
           background: $section-background-colours;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
           p {
             line-height: 1rem;
           }
@@ -343,6 +355,7 @@
           @extend %margin-padding;
           background: $section-background-colours;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
           p {
             line-height: 1rem;
           }
@@ -355,6 +368,7 @@
           @extend %margin-padding;
           background: $section-background-colours;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
+
           p {
             line-height: 1rem;
           }

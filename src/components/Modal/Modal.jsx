@@ -10,6 +10,11 @@ export class Modal extends Component {
     return projectState.technology.icons.map((item, index) => {
       return <FontAwesomeIcon icon={[item.icon[0], item.icon[1]]} style={{ color: item.colour }} size={item.sizeModal} key={index} />;
     });
+
+    // const { project } = this.props;
+    // return project.technology.images.map((item, index) => {
+    //   return <img className={item.className} src={item.url} alt={item.className} key={index} />;
+    // });
   };
 
   // addTechImages = () => {

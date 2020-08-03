@@ -32,7 +32,7 @@ export class Portfolio extends Component {
       if (projectName.includes(term)) {
         return (
           <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
-            <h4>{project.name}</h4>
+            {project.name}
           </button>
         );
       }
@@ -45,7 +45,7 @@ export class Portfolio extends Component {
       if (singularLanguageArray.includes(true)) {
         return (
           <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
-            <h4>{project.name}</h4>
+            {project.name}
           </button>
         );
       } else {

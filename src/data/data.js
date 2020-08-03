@@ -8,15 +8,15 @@ export const projects = [
     technology: {
       icons: [
         { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase', url: 'https://www.spsolutions.com.mx/assets/img/servicios/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript', 'React'],
+    languages: ['html', 'css', 'sass', 'react', 'firebase'],
     role: `ReactApp - I am the sole creator of this website. The aim of the build was to form a central library repository from which all projects I come on to build could be hosted.`,
     difficult: `The interaction of GitHub API to display %'s for each language used in the project. Also, migration of the site from HTML/CSS/JS into React`,
     solution: `Creation of the stylish website you are currently visiting`,
@@ -31,15 +31,15 @@ export const projects = [
     technology: {
       icons: [
         { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    languages: ['html', 'css', 'sass', 'react', 'firebase'],
     role: 'React App - I created this app entirely from scratch. The aim of the build was to demonstrate my ability to undertake authenticated CRUD actions with a stylish user interface',
     difficult: 'Setup of a scalable data structure fore each specific users expense list from the very beginning',
     solution: 'Set-up documents specific to a user and their tasks as fields.',
@@ -54,15 +54,15 @@ export const projects = [
     technology: {
       icons: [
         { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    languages: ['html', 'css', 'sass', 'react', 'firebase'],
     role: 'React App - I created this app from scratch. The aim was to demonstrate my ability to utilise Authenticated CRUD in application toward an instant messaging forum to better understand how these systems can work',
     difficult: 'The Authenticated Private Routing to different chatrooms and structuring of the database',
     solution: '',
@@ -77,15 +77,15 @@ export const projects = [
     technology: {
       icons: [
         { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    languages: ['html', 'css', 'sass', 'react', 'firebase'],
     role: 'React App - a practice project. The purpose of this projects was to further demonstrate the ability to contact and grab data from an API call and display it on the page',
     difficult: 'Syntax of including variable inputs into the url query string part of the API call',
     solution: '',
@@ -99,16 +99,16 @@ export const projects = [
     overview: '',
     technology: {
       icons: [
-        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    languages: ['html', 'css', 'sass', 'javascript'],
     role: 'JavaScript App - The purpose of this project was to learn how I could integrate the use of spoken word into an App. Voice command technology is the next big trend in tech with its use in Google Home, Amazon Alexa and the like. I wanted understand how this external API technology could be applied to projects.',
     difficult: 'Use of the specific language syntax related to voice command code.',
     solution: 'I plan to integrate this capability into other Apps',
@@ -123,15 +123,15 @@ export const projects = [
     technology: {
       icons: [
         { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
         // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript', 'react', 'nodejs', 'firebase'],
+    languages: ['html', 'css', 'sass', 'react', 'firebase'],
     role: 'React App - I was part of a team of 8 student developers on the nology software development programme. My role was varied working on the setup of the database, authentication and private routing, to responsive design and React feature development.',
     difficult: 'Private routing',
     solution: 'We worked together using github and undertook pair-programming. The result was a functional MVP which would be used by Intergr8HR for their next-step funding demonstrations',
@@ -154,7 +154,7 @@ export const projects = [
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript'],
+    languages: ['html', 'css', 'sass', 'javascript'],
     role: 'JavaScript App - I created this game from scratch. The aim was to build my first ever game using Javascript.',
     difficult: 'Switching through the different phases of the functional code automatically based on dynamic data usage.',
     solution: '',
@@ -177,7 +177,7 @@ export const projects = [
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript'],
+    languages: ['html', 'css', 'sass', 'javascript'],
     role: 'JavaScript App - The aim was to demonstrate the ability to use Javascript loops to convert words into morse code',
     difficult: '',
     solution: '',
@@ -201,7 +201,7 @@ export const projects = [
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript'],
+    languages: ['html', 'css', 'sass', 'javascript'],
     role: 'JavaScript App - I aimed to better understand how the Math object could be used, in conjunction with DOM events, to create a utility application',
     difficult: 'Efficient application of control flow logic to produce clean code',
     solution: '',
@@ -224,7 +224,7 @@ export const projects = [
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript'],
+    languages: ['html', 'css', 'sass', 'javascript'],
     role: 'JavaScript App - I created this form validator during a self-taught javaScript lesson. The aim was to focus on improving my comprehension of vanilla JavaScript.',
     difficult: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
     solution: 'I learned about how to layout Javascript files and how regular expressions work.',
@@ -247,7 +247,7 @@ export const projects = [
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass', 'javascript'],
+    languages: ['html', 'css', 'sass', 'javascript'],
     role: 'JavaScript App - I created this booking system during a self-taught javaScript lesson. The aim was to focus on improving my comprehension of vanilla JavaScript.',
     difficult: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
     solution: 'I was able to create the template website seen here.',
@@ -263,15 +263,14 @@ export const projects = [
     technology: {
       icons: [
         { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' }
+        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
         // { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
         // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
       ],
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
-    languages: ['html', 'sass'],
+    languages: ['html', 'css'],
     role: 'HTML/CSS App - I created this Gold Plating website myself. The aim was to focus on improving my comprehension of vanilla HTML/CSS and Python3 with a personal project.',
     difficult: 'Efficient use of HTML ID/Classes and layout of the CSS.',
     solution: 'I was able to create an asthetically pleasing and classy website.',

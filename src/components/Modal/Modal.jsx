@@ -117,28 +117,28 @@ export class Modal extends Component {
 
               {/* <!-- Column 2 --> */}
               <div className={styles.column2}>
+                {/* <!-- Solution Content --> */}
+                <div className={styles.sol}>
+                  <h4>Project Purpose:</h4>
+                  <p>{projectState.purpose}</p>
+                </div>
+
                 {/* <!-- Role Content --> */}
                 <div className={styles.role}>
                   <h4>My Role:</h4>
                   <p>{projectState.role}</p>
                 </div>
 
-                {/* <!-- Difficulties Content --> */}
-                <div className={styles.diff}>
-                  <h4>Project Difficulties:</h4>
-                  <p>{projectState.difficult}</p>
-                </div>
-
-                {/* <!-- Solution Content --> */}
-                <div className={styles.sol}>
-                  <h4>My Solution:</h4>
-                  <p>{projectState.solution}</p>
-                </div>
-
                 {/* <!-- Notable Features Content --> */}
                 <div className={styles.feat}>
                   <h4>Notable Features:</h4>
                   <ul>{this.notableFeatures()}</ul>
+                </div>
+
+                {/* <!-- Difficulties Content --> */}
+                <div className={styles.diff}>
+                  <h4>Future Work:</h4>
+                  <p>{projectState.future}</p>
                 </div>
               </div>
             </article>

@@ -17,9 +17,9 @@ export const projects = [
       images: [{ className: 'firebase', url: 'https://www.spsolutions.com.mx/assets/img/servicios/firebase.png' }]
     },
     languages: ['html', 'css', 'sass', 'react', 'firebase'],
-    role: `ReactApp - I am the sole creator of this website. The aim of the build was to form a central library repository from which all projects I come on to build could be hosted.`,
-    difficult: `The interaction of GitHub API to display %'s for each language used in the project. Also, migration of the site from HTML/CSS/JS into React`,
-    solution: `Creation of the stylish website you are currently visiting`,
+    role: `I am the sole creator of this website.`,
+    future: `The addition of animations and further projects`,
+    purpose: `The aim of the build was to form a central library repository from which all projects I come on to build could be hosted.`,
     features: [`GitHub API - Connection to retrieve dynamic data of each projects language distribution, and display on the page as % using bar charts.`, `fully responsive design for all devices both portrait and landscape`, `clean and clear stylistic UI approach`, `Firebase hosting`]
   },
   {
@@ -40,9 +40,9 @@ export const projects = [
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
     languages: ['html', 'css', 'sass', 'react', 'firebase'],
-    role: 'React App - I created this app entirely from scratch. The aim of the build was to demonstrate my ability to undertake authenticated CRUD actions with a stylish user interface',
-    difficult: 'Setup of a scalable data structure fore each specific users expense list from the very beginning',
-    solution: 'Set-up documents specific to a user and their tasks as fields.',
+    role: 'I created this app entirely from scratch. ',
+    future: 'The integration of audiospeech-to-text ability',
+    purpose: 'The aim of the build was to demonstrate my ability to undertake authenticated CRUD actions with a stylish user interface',
     features: ['CRUD operations to an external Firebase database', 'Hosted on Firebase', 'Authentication to provide user-specific expense tracking lists']
   },
   {
@@ -63,10 +63,10 @@ export const projects = [
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
     languages: ['html', 'css', 'sass', 'react', 'firebase'],
-    role: 'React App - I created this app from scratch. The aim was to demonstrate my ability to utilise Authenticated CRUD in application toward an instant messaging forum to better understand how these systems can work',
-    difficult: 'The Authenticated Private Routing to different chatrooms and structuring of the database',
-    solution: '',
-    features: ['Creation, reading and display of message from an external Firebase database ', 'Private routing that requires Authentication to access the content', 'user-specific messaging utilising their own metadata to identify themselves on the chatroom']
+    role: 'I created this app from scratch.',
+    future: 'The addition of further, separate chatrooms',
+    purpose: 'The aim was to demonstrate my ability to utilise Authenticated CRUD in application toward an instant messaging forum to better understand how these systems can work',
+    features: ['Creation, reading and display of message from an external Firebase database ', 'Private routing that requires Authentication to access the content', 'User-specific messaging utilising their own metadata to identify themselves on the chatroom']
   },
   {
     name: 'Github Finder',
@@ -86,9 +86,9 @@ export const projects = [
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
     languages: ['html', 'css', 'sass', 'react', 'firebase'],
-    role: 'React App - a practice project. The purpose of this projects was to further demonstrate the ability to contact and grab data from an API call and display it on the page',
-    difficult: 'Syntax of including variable inputs into the url query string part of the API call',
-    solution: '',
+    role: 'A practice project built following a tutorial',
+    future: 'Improved styling and inclusion of additional API information',
+    purpose: 'The purpose of this projects was to further demonstrate the ability to contact and grab data from an API call and display it on the page',
     features: ['Use of a private token for calling the github API', 'The dynamic data API call that adapts a search based on user input']
   },
   {
@@ -109,9 +109,9 @@ export const projects = [
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
     languages: ['html', 'css', 'sass', 'javascript'],
-    role: 'JavaScript App - The purpose of this project was to learn how I could integrate the use of spoken word into an App. Voice command technology is the next big trend in tech with its use in Google Home, Amazon Alexa and the like. I wanted understand how this external API technology could be applied to projects.',
-    difficult: 'Use of the specific language syntax related to voice command code.',
-    solution: 'I plan to integrate this capability into other Apps',
+    role: 'I build this app following a tutorial',
+    future: 'I plan to integrate this capability into other Apps',
+    purpose: 'The purpose of this project was to learn how I could integrate the use of spoken word into an App. Voice command technology is the next big trend in tech with its use in Google Home, Amazon Alexa and the like. I wanted understand how this external API technology could be applied to projects. ',
     features: ['Use of voice-command to interact with the App', 'Using the dynamic transcription response to initiate an update to the page ']
   },
   {
@@ -133,8 +133,8 @@ export const projects = [
     },
     languages: ['html', 'css', 'sass', 'react', 'firebase'],
     role: 'React App - I was part of a team of 8 student developers on the nology software development programme. My role was varied working on the setup of the database, authentication and private routing, to responsive design and React feature development.',
-    difficult: 'Private routing',
-    solution: 'We worked together using github and undertook pair-programming. The result was a functional MVP which would be used by Intergr8HR for their next-step funding demonstrations',
+    future: 'Private routing',
+    purpose: 'We worked together using github and undertook pair-programming. The result was a functional MVP which would be used by Intergr8HR for their next-step funding demonstrations',
     features: ['Authenticated CRUD with Firebase']
   }
   // {
@@ -156,8 +156,8 @@ export const projects = [
   //   },
   //   languages: ['html', 'css', 'sass', 'javascript'],
   //   role: 'JavaScript App - I created this game from scratch. The aim was to build my first ever game using Javascript.',
-  //   difficult: 'Switching through the different phases of the functional code automatically based on dynamic data usage.',
-  //   solution: '',
+  //   future: 'Switching through the different phases of the functional code automatically based on dynamic data usage.',
+  //   purpose: '',
   //   features: ['', 'functional programming approach']
   // },
   // {
@@ -179,8 +179,8 @@ export const projects = [
   //   },
   //   languages: ['html', 'css', 'sass', 'javascript'],
   //   role: 'JavaScript App - The aim was to demonstrate the ability to use Javascript loops to convert words into morse code',
-  //   difficult: '',
-  //   solution: '',
+  //   future: '',
+  //   purpose: '',
   //   features: ['Ability to transcribe strings from one form into another using string array methods']
   // },
 
@@ -203,8 +203,8 @@ export const projects = [
   //   },
   //   languages: ['html', 'css', 'sass', 'javascript'],
   //   role: 'JavaScript App - I aimed to better understand how the Math object could be used, in conjunction with DOM events, to create a utility application',
-  //   difficult: 'Efficient application of control flow logic to produce clean code',
-  //   solution: '',
+  //   future: 'Efficient application of control flow logic to produce clean code',
+  //   purpose: '',
   //   features: ['Application of basic control flow logic']
   // },
   // {
@@ -226,8 +226,8 @@ export const projects = [
   //   },
   //   languages: ['html', 'css', 'sass', 'javascript'],
   //   role: 'JavaScript App - I created this form validator during a self-taught javaScript lesson. The aim was to focus on improving my comprehension of vanilla JavaScript.',
-  //   difficult: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
-  //   solution: 'I learned about how to layout Javascript files and how regular expressions work.',
+  //   future: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
+  //   purpose: 'I learned about how to layout Javascript files and how regular expressions work.',
   //   features: ['Use of Regular Expressions.', 'Insertion of HTML elements and text using JavaScript.']
   // },
   // {
@@ -249,8 +249,8 @@ export const projects = [
   //   },
   //   languages: ['html', 'css', 'sass', 'javascript'],
   //   role: 'JavaScript App - I created this booking system during a self-taught javaScript lesson. The aim was to focus on improving my comprehension of vanilla JavaScript.',
-  //   difficult: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
-  //   solution: 'I was able to create the template website seen here.',
+  //   future: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
+  //   purpose: 'I was able to create the template website seen here.',
   //   features: ['Saving and retrieving data from Local Storage.', 'Generating visual seating units that were selectable.', 'Calculation and display of totals in the HTML.']
   // }
 
@@ -272,8 +272,8 @@ export const projects = [
   //   },
   //   languages: ['html', 'css'],
   //   role: 'HTML/CSS App - I created this Gold Plating website myself. The aim was to focus on improving my comprehension of vanilla HTML/CSS and Python3 with a personal project.',
-  //   difficult: 'Efficient use of HTML ID/Classes and layout of the CSS.',
-  //   solution: 'I was able to create an asthetically pleasing and classy website.',
+  //   future: 'Efficient use of HTML ID/Classes and layout of the CSS.',
+  //   purpose: 'I was able to create an asthetically pleasing and classy website.',
   //   features: ['Use of Python3 as a backend.', 'Extensive use of a range of CSS properties.', 'Well-balanced use of design and smooth scrolling.']
   // },
   // {
@@ -295,8 +295,8 @@ export const projects = [
   //   },
   //   languages: ['html', 'css'],
   //   role: 'HTML/CSS App - I created this News Site during a self-taught HTML/CSS course. The aim was to focus on improving my comprehension of vanilla HTML/CSS.',
-  //   difficult: 'Efficient use of HTML ID/Classes and layout of the CSS.',
-  //   solution: 'I was able to create the multi-paged website that is more complicated.',
+  //   future: 'Efficient use of HTML ID/Classes and layout of the CSS.',
+  //   purpose: 'I was able to create the multi-paged website that is more complicated.',
   //   features: ['Extensive use of a range of CSS properties.', 'Multi-paged website with e-mail filtering.', 'Complicated interweave of images, grids and colours.']
   // }
 
@@ -319,8 +319,8 @@ export const projects = [
   //   },
   //   languages: ['html', 'sass', 'javascript'],
   //   role: 'rolerole',
-  //   difficult: 'difficultdifficult',
-  //   solution: 'I was able to create the template website seen here.',
+  //   future: 'difficultdifficult',
+  //   purpose: 'I was able to create the template website seen here.',
   //   features: ['<li>feature1</li>', '<li>feature2</li>', '<li>feature3</li>']
   // }
 ];

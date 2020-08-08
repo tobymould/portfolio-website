@@ -76,7 +76,6 @@ export class Home extends Component {
 
   convertNameOfLanguageToReact = totals => {
     console.log({ totals });
-    // let check = {};
     let tally = [];
 
     let test = totals.map((project, index) => {
@@ -109,39 +108,6 @@ export class Home extends Component {
     });
     console.log({ totals });
   };
-
-  // const convertNameOfLanguageToReact = totals.map((project, index) => {
-  //   const hello = project.languages.concat(language => {
-  //     return check.concat([language[0]]: language[1]) ;
-  //   });
-
-  //   console.log('hello', hello);
-  // if (project.languages.)
-  // });
-
-  //   project.languages.map(languageArray => {
-
-  //   })
-
-  //   let test2 = htmlArrayIndexLessThan25.filter(element => {
-  //     const hello = typeof element === 'number';
-  //     // console.log('hello', hello);
-  //     return hello;
-  //   });
-
-  //   console.log('test2', test2.toString());
-  // };
-  // console.log('totals', totals[0].languages);
-  // let fixTheList = [];
-  // let htmlArrayIndexLessThan25 = totals.map((element, index) => {
-  //   return fixTheList.concat(element);
-
-  //   if (element.indexOf('HTML') === 0 && element[1] < 25) {
-  //     // console.log(element.findIndex(() => 'HTML'));
-  //     return index;
-  //   }
-  // });
-  // console.log({ htmlArrayIndexLessThan25 });
 
   convertToPercent = getLang1 => {
     let totals = [];

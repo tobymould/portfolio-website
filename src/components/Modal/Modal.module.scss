@@ -229,6 +229,11 @@
               }
             }
           }
+          .overview {
+            padding-top: 5px;
+            line-height: 1rem;
+            font-size: 0.75rem;
+          }
         }
 
         .tech {
@@ -344,7 +349,7 @@
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
 
           p {
-            line-height: 1rem;
+            line-height: 1.2rem;
           }
           // width: 100%;
           // max-height: 180px;
@@ -357,7 +362,7 @@
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
 
           p {
-            line-height: 1rem;
+            line-height: 1.2rem;
           }
 
           // width: 100%;
@@ -370,7 +375,7 @@
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
 
           p {
-            line-height: 1rem;
+            line-height: 1.2rem;
           }
 
           // width: 100%;
@@ -393,7 +398,7 @@
             li {
               margin: 0 0 0 0;
               padding-bottom: 5px;
-              line-height: 1rem;
+              line-height: 1.2rem;
 
               span {
                 color: $colour1;

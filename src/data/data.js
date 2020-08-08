@@ -118,7 +118,7 @@ export const projects = [
     name: 'Integr8HR Client Project',
     image: 'https://source.unsplash.com/1600x900/?human,resources',
     live: 'https://intergr8-42df9.web.app/',
-    github: 'https://github.com/tobymould/intergr8',
+    github: 'https://github.com/tobymould/intergr8-1',
     overview: '',
     technology: {
       icons: [
@@ -132,10 +132,10 @@ export const projects = [
       images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
     },
     languages: ['html', 'css', 'sass', 'react', 'firebase'],
-    role: 'React App - I was part of a team of 8 student developers on the nology software development programme. My role was varied working on the setup of the database, authentication and private routing, to responsive design and React feature development.',
-    future: 'Private routing',
-    purpose: 'We worked together using github and undertook pair-programming. The result was a functional MVP which would be used by Intergr8HR for their next-step funding demonstrations',
-    features: ['Authenticated CRUD with Firebase']
+    role: 'I was part of a team of 8 student developers on the nology software development programme. My role was varied working on the setup of the database, authentication and private routing, to responsive design and React feature development. We worked together using github and undertook pair-programming.',
+    future: 'The MVP will be taken forward by Intergr8HR to secure venture funding',
+    purpose: ' The result was a functional MVP which would be used by Intergr8HR for their next-step funding demonstrations',
+    features: ['Authenticated (e-mail) CRUD with Firebase', 'Statistics dashboard to show the number of incomplete, assigned and completed HR tickets']
   }
   // {
   //   name: 'Battleship Game',

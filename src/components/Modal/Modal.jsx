@@ -100,7 +100,7 @@ export class Modal extends Component {
                       <p>Source Private</p>
                     </a>
                   </div>
-                  <p>{projectState.overview}</p>
+                  <p className={styles.overview}>{projectState.overview}</p>
                 </div>
 
                 {/* <!-- Technology Section --> */}

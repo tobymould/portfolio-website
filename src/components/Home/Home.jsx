@@ -81,20 +81,21 @@ export class Home extends Component {
 
     let test = totals.map((project, index) => {
       let test2 = project.languages.filter(language => {
-        if (language.indexOf('HTML') === 0 && language[1] < 25) {
-          return tally.push(index);
+        if (language.indexOf('HTML') === 0 && language[1] < 10) {
+          tally.push(index);
+        }
+        if (language.indexOf('CSS') === 0) {
+          return [(language[0] = 'Sass'), language[1]];
         }
       });
     });
     console.log({ tally });
 
-    let test3 = totals.map((project, index) => {
+    totals.forEach((project, index) => {
       if (tally.includes(index)) {
-        project.languages.map(language => {
+        project.languages.forEach(language => {
           if (language.indexOf('JavaScript') === 0) {
-            return [(language[0] = 'React.js'), language[1]];
-          } else if (language.indexOf('CSS') === 0) {
-            return [(language[0] = 'Sass'), language[1]];
+            return [(language[0] = 'React'), language[1]];
           } else {
             return language;
           }
@@ -104,7 +105,7 @@ export class Home extends Component {
         return project;
       }
     });
-    console.log({ test3 });
+    console.log({ totals });
   };
 
   // const convertNameOfLanguageToReact = totals.map((project, index) => {

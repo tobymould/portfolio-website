@@ -74,14 +74,82 @@ export class Home extends Component {
     return langdata2;
   };
 
+  convertNameOfLanguageToReact = totals => {
+    console.log({ totals });
+    // let check = {};
+    let tally = [];
+
+    let test = totals.map((project, index) => {
+      let test2 = project.languages.filter(language => {
+        if (language.indexOf('HTML') === 0 && language[1] < 25) {
+          return tally.push(index);
+        }
+      });
+    });
+    console.log({ tally });
+
+    let test3 = totals.map((project, index) => {
+      if (tally.includes(index)) {
+        project.languages.map(language => {
+          if (language.indexOf('JavaScript') === 0) {
+            return [(language[0] = 'React.js'), language[1]];
+          } else if (language.indexOf('CSS') === 0) {
+            return [(language[0] = 'Sass'), language[1]];
+          } else {
+            return language;
+          }
+        });
+        return project;
+      } else {
+        return project;
+      }
+    });
+    console.log({ test3 });
+  };
+
+  // const convertNameOfLanguageToReact = totals.map((project, index) => {
+  //   const hello = project.languages.concat(language => {
+  //     return check.concat([language[0]]: language[1]) ;
+  //   });
+
+  //   console.log('hello', hello);
+  // if (project.languages.)
+  // });
+
+  //   project.languages.map(languageArray => {
+
+  //   })
+
+  //   let test2 = htmlArrayIndexLessThan25.filter(element => {
+  //     const hello = typeof element === 'number';
+  //     // console.log('hello', hello);
+  //     return hello;
+  //   });
+
+  //   console.log('test2', test2.toString());
+  // };
+  // console.log('totals', totals[0].languages);
+  // let fixTheList = [];
+  // let htmlArrayIndexLessThan25 = totals.map((element, index) => {
+  //   return fixTheList.concat(element);
+
+  //   if (element.indexOf('HTML') === 0 && element[1] < 25) {
+  //     // console.log(element.findIndex(() => 'HTML'));
+  //     return index;
+  //   }
+  // });
+  // console.log({ htmlArrayIndexLessThan25 });
+
   convertToPercent = getLang1 => {
     let totals = [];
     let array = [];
+    let conversions;
 
     const convertsEachProjectLanguageContributionToPercent = getLang1.map((project, index) => {
+      // console.log('project.languages', project.languages);
       const entries = Object.entries(project.languages);
-      console.log('entries1:');
-      console.log(entries);
+      // console.log('entries1:');
+      // console.log(entries);
       let sum = 0;
       // console.log(`initial value of Project ${index} is: ${sum}`);
 
@@ -102,39 +170,19 @@ export class Home extends Component {
         return replaced;
       });
 
-      let test = entries.map((element, index) => {
-        if (element.indexOf('HTML') === 0) {
-          if (element[1] < 20) {
-            return index;
-          }
-          return element;
-        } else {
-          return null;
-        }
-      });
-      // test.split();
-      console.log('array: ', (array += test));
-      // find(entry => {
-      //   if (entry[0].contains('HTML')){
-
-      //   }
-      // });
-      console.log('test:');
-      console.log(test);
-
-      console.log('entries2:');
-      console.log(entries);
-      // console.log(`Summary of values for Project ${index}: ${entries}`);
-
       let object = {};
       object = { ...project, languages: entries, url: project.url };
       // console.log('object', object);
       totals.push(object);
     });
+
     // console.log('This is the resulting % array resulting:');
     // console.log(totals);
     const final = { ...totals };
-    console.log(array);
+    // console.log(totals[0].languages);
+
+    this.convertNameOfLanguageToReact(totals);
+    // console.log('totals', totals);
     return totals;
   };
 
@@ -161,7 +209,7 @@ export class Home extends Component {
     const { modalState, projectState, searchTerm, hover, projectLanguages } = this.state;
     const { modalOpenFunction, modalToggle, setButtonPressed, setModalProject, setSearchTerm, searchProjects, getGithubRepoLanguages, getGithubRepos, hoverToggle } = this;
     return (
-      <React.Fragment className={styles.homeWrapper}>
+      <div className={styles.homeWrapper}>
         <Landing path="landing" />
 
         <Navbar />
@@ -175,7 +223,7 @@ export class Home extends Component {
         </div>
         {/* <About /> */}
         <Footer />
-      </React.Fragment>
+      </div>
     );
   }
 }

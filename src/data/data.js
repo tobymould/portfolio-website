@@ -136,169 +136,169 @@ export const projects = [
     difficult: 'Private routing',
     solution: 'We worked together using github and undertook pair-programming. The result was a functional MVP which would be used by Intergr8HR for their next-step funding demonstrations',
     features: ['Authenticated CRUD with Firebase']
-  },
-  {
-    name: 'Battleship Game',
-    image: 'https://source.unsplash.com/1600x900/?ship',
-    live: 'https://tobymould.github.io/battleship/',
-    github: 'https://github.com/tobymould/battleship',
-    overview: '',
-    technology: {
-      icons: [
-        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'css', 'sass', 'javascript'],
-    role: 'JavaScript App - I created this game from scratch. The aim was to build my first ever game using Javascript.',
-    difficult: 'Switching through the different phases of the functional code automatically based on dynamic data usage.',
-    solution: '',
-    features: ['', 'functional programming approach']
-  },
-  {
-    name: 'Morse Code Converter',
-    image: 'https://source.unsplash.com/1600x900/?morse',
-    live: 'https://tobymould.github.io/morsecode/',
-    github: 'https://github.com/tobymould/morsecode',
-    overview: '',
-    technology: {
-      icons: [
-        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'css', 'sass', 'javascript'],
-    role: 'JavaScript App - The aim was to demonstrate the ability to use Javascript loops to convert words into morse code',
-    difficult: '',
-    solution: '',
-    features: ['Ability to transcribe strings from one form into another using string array methods']
-  },
-
-  {
-    name: 'Calculator',
-    image: 'https://source.unsplash.com/1600x900/?calculator',
-    live: 'https://tobymould.github.io/myCalculator/',
-    github: 'https://github.com/tobymould/myCalculator',
-    overview: '',
-    technology: {
-      icons: [
-        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'css', 'sass', 'javascript'],
-    role: 'JavaScript App - I aimed to better understand how the Math object could be used, in conjunction with DOM events, to create a utility application',
-    difficult: 'Efficient application of control flow logic to produce clean code',
-    solution: '',
-    features: ['Application of basic control flow logic']
-  },
-  {
-    name: 'Form Validator',
-    image: 'https://source.unsplash.com/1600x900/?application,form',
-    live: 'https://vibrant-hawking-1f118b.netlify.app/',
-    github: 'https://github.com/tobymould/FormValidation',
-    overview: '',
-    technology: {
-      icons: [
-        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'css', 'sass', 'javascript'],
-    role: 'JavaScript App - I created this form validator during a self-taught javaScript lesson. The aim was to focus on improving my comprehension of vanilla JavaScript.',
-    difficult: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
-    solution: 'I learned about how to layout Javascript files and how regular expressions work.',
-    features: ['Use of Regular Expressions.', 'Insertion of HTML elements and text using JavaScript.']
-  },
-  {
-    name: 'Cinema Movie Booker',
-    image: 'https://source.unsplash.com/1600x900/?cinema',
-    live: 'https://vibrant-thompson-1ef434.netlify.app/',
-    github: 'https://github.com/tobymould/MovieBooker',
-    overview: '',
-    technology: {
-      icons: [
-        { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'css', 'sass', 'javascript'],
-    role: 'JavaScript App - I created this booking system during a self-taught javaScript lesson. The aim was to focus on improving my comprehension of vanilla JavaScript.',
-    difficult: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
-    solution: 'I was able to create the template website seen here.',
-    features: ['Saving and retrieving data from Local Storage.', 'Generating visual seating units that were selectable.', 'Calculation and display of totals in the HTML.']
-  },
-
-  {
-    name: 'Gold Plating Website',
-    image: 'https://source.unsplash.com/1600x900/?gold',
-    live: 'https://tender-newton-d06fd9.netlify.app/',
-    github: 'https://github.com/tobymould/firstwebsite',
-    overview: '',
-    technology: {
-      icons: [
-        { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'css'],
-    role: 'HTML/CSS App - I created this Gold Plating website myself. The aim was to focus on improving my comprehension of vanilla HTML/CSS and Python3 with a personal project.',
-    difficult: 'Efficient use of HTML ID/Classes and layout of the CSS.',
-    solution: 'I was able to create an asthetically pleasing and classy website.',
-    features: ['Use of Python3 as a backend.', 'Extensive use of a range of CSS properties.', 'Well-balanced use of design and smooth scrolling.']
-  },
-  {
-    name: 'News Site',
-    image: 'https://source.unsplash.com/1600x900/?news',
-    live: 'https://ecstatic-borg-8c8cde.netlify.app/index.html',
-    github: 'https://github.com/tobymould/NewsWebsite',
-    overview: '',
-    technology: {
-      icons: [
-        { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'css'],
-    role: 'HTML/CSS App - I created this News Site during a self-taught HTML/CSS course. The aim was to focus on improving my comprehension of vanilla HTML/CSS.',
-    difficult: 'Efficient use of HTML ID/Classes and layout of the CSS.',
-    solution: 'I was able to create the multi-paged website that is more complicated.',
-    features: ['Extensive use of a range of CSS properties.', 'Multi-paged website with e-mail filtering.', 'Complicated interweave of images, grids and colours.']
   }
+  // {
+  //   name: 'Battleship Game',
+  //   image: 'https://source.unsplash.com/1600x900/?ship',
+  //   live: 'https://tobymould.github.io/battleship/',
+  //   github: 'https://github.com/tobymould/battleship',
+  //   overview: '',
+  //   technology: {
+  //     icons: [
+  //       { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+  //       // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'css', 'sass', 'javascript'],
+  //   role: 'JavaScript App - I created this game from scratch. The aim was to build my first ever game using Javascript.',
+  //   difficult: 'Switching through the different phases of the functional code automatically based on dynamic data usage.',
+  //   solution: '',
+  //   features: ['', 'functional programming approach']
+  // },
+  // {
+  //   name: 'Morse Code Converter',
+  //   image: 'https://source.unsplash.com/1600x900/?morse',
+  //   live: 'https://tobymould.github.io/morsecode/',
+  //   github: 'https://github.com/tobymould/morsecode',
+  //   overview: '',
+  //   technology: {
+  //     icons: [
+  //       { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+  //       // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'css', 'sass', 'javascript'],
+  //   role: 'JavaScript App - The aim was to demonstrate the ability to use Javascript loops to convert words into morse code',
+  //   difficult: '',
+  //   solution: '',
+  //   features: ['Ability to transcribe strings from one form into another using string array methods']
+  // },
+
+  // {
+  //   name: 'Calculator',
+  //   image: 'https://source.unsplash.com/1600x900/?calculator',
+  //   live: 'https://tobymould.github.io/myCalculator/',
+  //   github: 'https://github.com/tobymould/myCalculator',
+  //   overview: '',
+  //   technology: {
+  //     icons: [
+  //       { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+  //       // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'css', 'sass', 'javascript'],
+  //   role: 'JavaScript App - I aimed to better understand how the Math object could be used, in conjunction with DOM events, to create a utility application',
+  //   difficult: 'Efficient application of control flow logic to produce clean code',
+  //   solution: '',
+  //   features: ['Application of basic control flow logic']
+  // },
+  // {
+  //   name: 'Form Validator',
+  //   image: 'https://source.unsplash.com/1600x900/?application,form',
+  //   live: 'https://vibrant-hawking-1f118b.netlify.app/',
+  //   github: 'https://github.com/tobymould/FormValidation',
+  //   overview: '',
+  //   technology: {
+  //     icons: [
+  //       { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+  //       // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'css', 'sass', 'javascript'],
+  //   role: 'JavaScript App - I created this form validator during a self-taught javaScript lesson. The aim was to focus on improving my comprehension of vanilla JavaScript.',
+  //   difficult: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
+  //   solution: 'I learned about how to layout Javascript files and how regular expressions work.',
+  //   features: ['Use of Regular Expressions.', 'Insertion of HTML elements and text using JavaScript.']
+  // },
+  // {
+  //   name: 'Cinema Movie Booker',
+  //   image: 'https://source.unsplash.com/1600x900/?cinema',
+  //   live: 'https://vibrant-thompson-1ef434.netlify.app/',
+  //   github: 'https://github.com/tobymould/MovieBooker',
+  //   overview: '',
+  //   technology: {
+  //     icons: [
+  //       { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+  //       // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'css', 'sass', 'javascript'],
+  //   role: 'JavaScript App - I created this booking system during a self-taught javaScript lesson. The aim was to focus on improving my comprehension of vanilla JavaScript.',
+  //   difficult: 'Using Javascript to insert elements on the page based on highly-specific regular expressions nested inside conditionals.',
+  //   solution: 'I was able to create the template website seen here.',
+  //   features: ['Saving and retrieving data from Local Storage.', 'Generating visual seating units that were selectable.', 'Calculation and display of totals in the HTML.']
+  // }
+
+  // {
+  //   name: 'Gold Plating Website',
+  //   image: 'https://source.unsplash.com/1600x900/?gold',
+  //   live: 'https://tender-newton-d06fd9.netlify.app/',
+  //   github: 'https://github.com/tobymould/firstwebsite',
+  //   overview: '',
+  //   technology: {
+  //     icons: [
+  //       { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+  //       // { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'css'],
+  //   role: 'HTML/CSS App - I created this Gold Plating website myself. The aim was to focus on improving my comprehension of vanilla HTML/CSS and Python3 with a personal project.',
+  //   difficult: 'Efficient use of HTML ID/Classes and layout of the CSS.',
+  //   solution: 'I was able to create an asthetically pleasing and classy website.',
+  //   features: ['Use of Python3 as a backend.', 'Extensive use of a range of CSS properties.', 'Well-balanced use of design and smooth scrolling.']
+  // },
+  // {
+  //   name: 'News Site',
+  //   image: 'https://source.unsplash.com/1600x900/?news',
+  //   live: 'https://ecstatic-borg-8c8cde.netlify.app/index.html',
+  //   github: 'https://github.com/tobymould/NewsWebsite',
+  //   overview: '',
+  //   technology: {
+  //     icons: [
+  //       { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+  //       { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+  //       // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' }
+  //       // { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+  //       // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+  //     ],
+  //     images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+  //   },
+  //   languages: ['html', 'css'],
+  //   role: 'HTML/CSS App - I created this News Site during a self-taught HTML/CSS course. The aim was to focus on improving my comprehension of vanilla HTML/CSS.',
+  //   difficult: 'Efficient use of HTML ID/Classes and layout of the CSS.',
+  //   solution: 'I was able to create the multi-paged website that is more complicated.',
+  //   features: ['Extensive use of a range of CSS properties.', 'Multi-paged website with e-mail filtering.', 'Complicated interweave of images, grids and colours.']
+  // }
 
   // {
   //   name: 'Arduino Project',

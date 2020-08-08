@@ -56,11 +56,15 @@ export class Home extends Component {
       const dataJSON2 = await response2.json();
 
       let thisProject = projects.find(project => project.github === repo.html_url);
-
+      // let projectName = projects.find(project => {
+      //   if (project.github === repo.html_url) {
+      //     return project.name;
+      //   }
+      // });
       // console.log('this project matched:');
       // console.log(thisProject);
 
-      const langdata2 = { ...thisProject, name: repo.name, languages: dataJSON2, url: repo.html_url };
+      const langdata2 = { ...thisProject, languages: dataJSON2, url: repo.html_url };
 
       // console.log('This is the resulting objec:');
       // console.log(langdata2);

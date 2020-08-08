@@ -53,12 +53,21 @@ $java: #5382a1;
 $yarn: #117cad;
 $python: #306998;
 $github: #2b3137;
+$jsx: #48028f;
 
 .html {
   background: $html;
 
   &-text {
     color: $html;
+  }
+}
+
+.jsx {
+  background: $jsx;
+
+  &-text {
+    color: $jsx;
   }
 }
 

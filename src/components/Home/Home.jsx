@@ -96,6 +96,8 @@ export class Home extends Component {
         project.languages.forEach(language => {
           if (language.indexOf('JavaScript') === 0) {
             return [(language[0] = 'React'), language[1]];
+          } else if (language.indexOf('HTML') === 0) {
+            return [(language[0] = 'JSX'), language[1]];
           } else {
             return language;
           }

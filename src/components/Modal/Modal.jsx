@@ -87,6 +87,10 @@ export class Modal extends Component {
       );
     } else if (projectState.name === 'Real-Time Chatroom') {
       return <img src={'./videos/Chatroom.gif'} alt={projectState.name} className={styles.image} key={projectState.id} />;
+    } else if (projectState.name === 'Github Finder') {
+      return <img src={'./videos/GithubFinder_v1.1.gif'} alt={projectState.name} className={styles.image} key={projectState.id} />;
+    } else if (projectState.name === 'Speech-Recognition Guessing Game') {
+      return <img src={'./videos/speakNumberGuessingGame_v1.1.gif'} alt={projectState.name} className={styles.image} key={projectState.id} />;
     } else {
       return <img src={projectState.image} alt={projectState.name} className={styles.image} />;
     }

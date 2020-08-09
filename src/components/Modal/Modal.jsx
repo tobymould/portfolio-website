@@ -91,6 +91,8 @@ export class Modal extends Component {
       return <img src={'./videos/GithubFinder_v1.1.gif'} alt={projectState.name} className={styles.image} key={projectState.id} />;
     } else if (projectState.name === 'Speech-Recognition Guessing Game') {
       return <img src={'./videos/speakNumberGuessingGame_v1.1.gif'} alt={projectState.name} className={styles.image} key={projectState.id} />;
+    } else if (projectState.name === 'Integr8HR Client Project') {
+      return <img src={'./videos/Intergr8HR_v1.1.gif'} alt={projectState.name} className={styles.image} key={projectState.id} />;
     } else {
       return <img src={projectState.image} alt={projectState.name} className={styles.image} />;
     }

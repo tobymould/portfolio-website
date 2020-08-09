@@ -24,7 +24,9 @@ export const projects = [
   },
   {
     name: 'Expense Tracker App',
+    id: 2,
     image: 'https://source.unsplash.com/1600x900/?money',
+    gif: ``,
     live: 'https://expense-tracker-223d5.web.app/',
     github: 'https://github.com/tobymould/expense-tracker',
     overview: '',

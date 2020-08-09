@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import styles from './Modal.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactPlayer from 'react-player';
 // import projects from '../../data/data';
+// import video from "./../../assets/videos/ExpenseTracker_v2.1.mp4"
 
 export class Modal extends Component {
   addTechIcons = () => {
@@ -71,6 +73,23 @@ export class Modal extends Component {
     });
   };
 
+  video = () => {
+    const { projectState } = this.props;
+    if (projectState.name === 'Expense Tracker App') {
+      return (
+        <img src={'./videos/ExpenseTrackerGif.gif'} alt={projectState.name} className={styles.image} key={projectState.id} />
+        // <div className="player-wrapper">
+        //   <ReactPlayer className={styles.image} url="./videos/ExpenseTracker_v2.1.MP4" controls={true} key={projectState.id} />
+        // </div>
+        // <video src={'./videos/ExpenseTracker_v2.1.MP4'} type="video/mp4" width="100%" height="100%" controls key={projectState.id}>
+        //   Your browser does not support the video tag.
+        // </video>
+      );
+    } else {
+      return <img src={projectState.image} alt={projectState.name} className={styles.image} />;
+    }
+  };
+
   render() {
     const { modalState, modalOpenFunction, modalToggle, getGithubRepoLanguages, getGithubRepos, projectLanguages, projectState } = this.props;
 
@@ -87,7 +106,8 @@ export class Modal extends Component {
                   <h3>{projectState.name}</h3>
                   <div className={styles.imageSection}>
                     <a href={projectState.live}>
-                      <img src={projectState.image} alt={projectState.name} className={styles.image} />
+                      {/* <img src={'https://media.giphy.com/media/U6Rs8mb1arz7raWPW6/giphy.gif'} alt={projectState.name} className={styles.image} /> */}
+                      {this.video && this.video()}
                     </a>
                   </div>
                   <div className={styles.buttons}>

@@ -85,6 +85,8 @@ export class Modal extends Component {
         //   Your browser does not support the video tag.
         // </video>
       );
+    } else if (projectState.name === 'Real-Time Chatroom') {
+      return <img src={'./videos/Chatroom.gif'} alt={projectState.name} className={styles.image} key={projectState.id} />;
     } else {
       return <img src={projectState.image} alt={projectState.name} className={styles.image} />;
     }
@@ -105,10 +107,7 @@ export class Modal extends Component {
                 <div className={styles.summary}>
                   <h3>{projectState.name}</h3>
                   <div className={styles.imageSection}>
-                    <a href={projectState.live}>
-                      {/* <img src={'https://media.giphy.com/media/U6Rs8mb1arz7raWPW6/giphy.gif'} alt={projectState.name} className={styles.image} /> */}
-                      {this.video && this.video()}
-                    </a>
+                    <a href={projectState.live}>{this.video && this.video()}</a>
                   </div>
                   <div className={styles.buttons}>
                     <a href={projectState.live} target="_blank">

@@ -49,6 +49,7 @@ export const projects = [
   },
   {
     name: 'Real-Time Chatroom',
+    id: 3,
     image: 'https://source.unsplash.com/1600x900/?chat',
     live: 'https://realtime-chatroom-ea4d6.web.app/',
     github: 'https://github.com/tobymould/real-time-chatroom',

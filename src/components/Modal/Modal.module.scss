@@ -103,7 +103,7 @@
           // background: rgba(255, 0, 0, 0.1);
           @extend %margin-padding;
           // @extend %modal-overview-section-images;
-          background: $section-background-colours;
+          // background: $section-background-colours;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
 
           // width: 100%;
@@ -209,6 +209,7 @@
           @extend %margin-padding;
           box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
           background: $grey-70;
+
           // @extend %text-adjust;
 
           // background: rgba(0, 255, 0, 0.1);

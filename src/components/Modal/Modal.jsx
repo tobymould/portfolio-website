@@ -131,7 +131,7 @@ export class Modal extends Component {
                 {/* <!-- Technology Section --> */}
                 <div className={styles.tech}>
                   <h4>Technologies Used</h4>
-                  <div className={styles.techList}>{this.addTechIcons()}</div>
+                  {/* <div className={styles.techList}>{this.addTechIcons()}</div> */}
                   <div className={styles.langPercent}>
                     <div className={styles.chart}>{this.languagesPercentage()}</div>
                     <div className={styles.name}>{this.languagesPercentage2()}</div>

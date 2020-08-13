@@ -131,7 +131,7 @@
 
       // IPad[PORTFOLIO]
       @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-        height: 20px;
+        // height: 20px;
 
         h4 {
           font-size: 1.2rem;
@@ -146,7 +146,7 @@
 
       //Desktop-widescreen[PORTFOLIO]
       @media (min-width: $desktop-min-width) {
-        height: 20px;
+        // height: 20px;
         max-width: 30vw;
 
         h4 {

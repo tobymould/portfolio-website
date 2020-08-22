@@ -55,7 +55,7 @@ export class Portfolio extends Component {
 
     // Determines what to display if no positive matches:
     if (nullCounter == searchResult.length) {
-      return <p className={styles.noResult}>Could not find the project </p>;
+      return <p className={styles.noResult}>Could not find a project with that name, or one that uses that language. </p>;
     } else {
       return searchResult;
     }

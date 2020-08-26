@@ -71,6 +71,29 @@ export const projects = [
     features: [`MongoDB Atlas database capable of all CRUD functionality`, `Development of Error-handling middleware`, `Implementation of authentication, authorisation and some basic security features via Jason Web Tokens`, `Routing with data schema, modeling, sanitisation and presenation`]
   },
   {
+    name: 'Integr8HR Client Project',
+    image: 'https://source.unsplash.com/1600x900/?human,resources',
+    live: 'https://intergr8-42df9.web.app/',
+    github: 'https://github.com/tobymould/intergr8-1',
+    overview: '',
+    technology: {
+      icons: [
+        { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+      ],
+      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
+    },
+    languages: ['html', 'css', 'sass', 'react', 'firebase'],
+    role: 'I was part of a team of 8 student developers on the nology software development programme. My role was varied working on the setup of the database, authentication and private routing, to responsive design and React feature development. We worked together using github and undertook pair-programming.',
+    future: 'The MVP will be taken forward by Intergr8HR to secure venture funding',
+    purpose: ' The result was a functional MVP which would be used by Intergr8HR for their next-step funding demonstrations',
+    features: ['Authenticated (e-mail) CRUD with Firebase', 'Statistics dashboard to show the number of incomplete, assigned and completed HR tickets']
+  },
+  {
     name: 'Real-Time Chatroom',
     id: 3,
     image: 'https://source.unsplash.com/1600x900/?chat',
@@ -140,30 +163,8 @@ export const projects = [
     future: 'I plan to integrate this capability into other Apps',
     purpose: 'The purpose of this project was to learn how I could integrate the use of spoken word into an App. Voice command technology is the next big trend in tech with its use in Google Home, Amazon Alexa and the like. I wanted understand how this external API technology could be applied to projects. ',
     features: ['Use of voice-command to interact with the App', 'Using the dynamic transcription response to initiate an update to the page ']
-  },
-  {
-    name: 'Integr8HR Client Project',
-    image: 'https://source.unsplash.com/1600x900/?human,resources',
-    live: 'https://intergr8-42df9.web.app/',
-    github: 'https://github.com/tobymould/intergr8-1',
-    overview: '',
-    technology: {
-      icons: [
-        { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-        { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
-        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-        // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-      ],
-      images: [{ className: 'firebase-modal', url: '../assets/icons/firebase.png' }]
-    },
-    languages: ['html', 'css', 'sass', 'react', 'firebase'],
-    role: 'I was part of a team of 8 student developers on the nology software development programme. My role was varied working on the setup of the database, authentication and private routing, to responsive design and React feature development. We worked together using github and undertook pair-programming.',
-    future: 'The MVP will be taken forward by Intergr8HR to secure venture funding',
-    purpose: ' The result was a functional MVP which would be used by Intergr8HR for their next-step funding demonstrations',
-    features: ['Authenticated (e-mail) CRUD with Firebase', 'Statistics dashboard to show the number of incomplete, assigned and completed HR tickets']
   }
+
   // {
   //   name: 'Battleship Game',
   //   image: 'https://source.unsplash.com/1600x900/?ship',

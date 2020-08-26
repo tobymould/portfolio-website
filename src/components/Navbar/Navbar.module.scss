@@ -38,30 +38,6 @@
       display: flex;
       padding: 0 5px 0;
       // padding-bottom: 30px;
-
-      div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: rgb(205, 205, 205);
-        border-radius: 50%;
-        height: 20px;
-        width: 20px;
-
-        .icon {
-          color: $github;
-          font-size: 0.8rem;
-        }
-
-        // margin-right: 5px;
-      }
-
-      p {
-        // background: red;
-        color: white;
-        line-height: 1rem;
-        margin-top: 2px;
-      }
       // border-radius: 80px;
 
       &:nth-child(1) {
@@ -90,11 +66,28 @@
         width: 100%;
 
         // background: green;
-        // i {
-        //   // padding-right: 5px;
-        //   // padding-right: 15px;
-        //   // font-size: 1.5rem;
-        // }
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(205, 205, 205);
+          border-radius: 50%;
+          height: 30px;
+          width: 30px;
+
+          .icon {
+            color: $github;
+            font-size: 1rem;
+          }
+
+          // margin-right: 5px;
+        }
+        p {
+          // background: red;
+          color: white;
+          line-height: 1rem;
+          margin-top: 2px;
+        }
       }
     }
   }
@@ -125,9 +118,14 @@
     }
 
     @media (min-width: $desktop-min-width) {
-      a {
-        &:hover {
-          background: $white-50;
+      ul {
+        position: sticky;
+        top: 0vh;
+
+        a {
+          &:hover {
+            background: $white-50;
+          }
         }
       }
     }
@@ -154,7 +152,6 @@
 
         p {
           font-size: 1rem;
-          margin-left: 10px;
         }
 
         a {
@@ -166,6 +163,7 @@
 
   // Ipad Pro
   @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+    // position: sticky;
     top: 96.6vh;
 
     li {
@@ -182,7 +180,6 @@
 
       p {
         font-size: 1rem;
-        margin-left: 10px;
       }
 
       a {
@@ -210,7 +207,6 @@
 
       p {
         font-size: 1.2rem;
-        margin-left: 10px;
       }
 
       a {

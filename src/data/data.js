@@ -48,6 +48,29 @@ export const projects = [
     features: ['CRUD operations to an external Firebase database', 'Hosted on Firebase', 'Authentication to provide user-specific expense tracking lists']
   },
   {
+    name: 'Software Bootcamp API',
+    image: 'https://source.unsplash.com/1600x900/?API',
+    live: '',
+    github: 'https://github.com/tobymould/BootcampAPI',
+    overview: ``,
+    technology: {
+      icons: [
+        { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
+        // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+      ],
+      images: [{ className: 'mongodb', url: 'https://www.spsolutions.com.mx/assets/icons/mongoDB.png' }]
+    },
+    languages: ['mongodb', 'mongoose', 'express'],
+    role: `I created this Express API from a tutorial`,
+    future: `Evolution from just an API to be used on a dynamically-generated frontend`,
+    purpose: `The aim of the build was to develop a greater depth of understanding of all the facets and details of how an API is built, and everything that must be accounted for through that process.`,
+    features: [`MongoDB Atlas database capable of all CRUD functionality`, `Development of Error-handling middleware`, `Implementation of authentication, authorisation and some basic security features via Jason Web Tokens`, `Routing with data schema, modeling, sanitisation and presenation`]
+  },
+  {
     name: 'Real-Time Chatroom',
     id: 3,
     image: 'https://source.unsplash.com/1600x900/?chat',
@@ -94,29 +117,7 @@ export const projects = [
     purpose: 'The purpose of this projects was to further demonstrate the ability to contact and grab data from an API call and display it on the page',
     features: ['Use of a private token for calling the github API', 'The dynamic data API call that adapts a search based on user input']
   },
-  // {
-  //   name: 'API project',
-  //   image: 'https://source.unsplash.com/1600x900/?API',
-  //   live: '',
-  //   github: 'https://github.com/tobymould/Express-API',
-  //   overview: ``,
-  //   technology: {
-  //     icons: [
-  //       { className: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-  //       { className: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
-  //       { className: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' }
-  //       // { className: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
-  //       // { className: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-  //       // { className: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }
-  //     ],
-  //     images: [{ className: 'mongodb', url: 'https://www.spsolutions.com.mx/assets/icons/mongoDB.png' }]
-  //   },
-  //   languages: ['html', 'css', 'sass', 'react', 'mongodb'],
-  //   role: `I created this Express API from a tutorial`,
-  //   future: `Evolution from just an API to be used on a dynamically-generated frontend`,
-  //   purpose: `The aim of the build was to develop a greater depth of understanding of all the facets and details of how an API is built, and everything that must be accounted for through that process.`,
-  //   features: [`MongoDB Atlas database capable of all CRUD functionality`, `Development of Error-handling middleware`, `Implementation of authentication, authorisation and some basic security features via Jason Web Tokens`, `Routing with data schema, modeling, sanitisation and presenation`]
-  // },
+
   {
     name: 'Speech-Recognition Guessing Game',
     image: 'https://source.unsplash.com/1600x900/?speech',
@@ -366,6 +367,7 @@ export const skills = {
   ],
   images: [
     { className: 'mongodb', url: 'https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png' },
+    { className: 'express', url: 'https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png' },
     { className: 'firebase', url: 'https://www.spsolutions.com.mx/assets/img/servicios/firebase.png' },
     { className: 'postman', url: 'https://s3.amazonaws.com/media-p.slid.es/uploads/327261/images/5065937/pm-logo-vert.png' },
     { className: 'typescript', url: 'https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png' }

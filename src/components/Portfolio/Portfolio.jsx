@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import styles from './Portfolio.module.scss';
 
-import Card from './Card/Card';
 import projects from '../../data/data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Modal from '../Modal';
+import ProjectButton from './ProjectButton';
 
 export class Portfolio extends Component {
   //
   addPortfolioButtons = () => {
     const { modalToggle, hoverToggle, hoverEffect } = this.props;
     return projects.map((project, index) => {
-      return (
-        <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
-          {project.name}
-        </button>
-      );
+      return <ProjectButton key={index} index={index} project={project} modalToggle={modalToggle} />;
       // return <Card object={project} key={index} />;
     });
   };
@@ -30,11 +26,7 @@ export class Portfolio extends Component {
       // Project Name Search:
       const projectName = project.name.toLowerCase();
       if (projectName.includes(term)) {
-        return (
-          <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
-            {project.name}
-          </button>
-        );
+        return <ProjectButton key={index} index={index} project={project} modalToggle={modalToggle} />;
       }
 
       // Project Language Search:
@@ -43,11 +35,7 @@ export class Portfolio extends Component {
       });
 
       if (singularLanguageArray.includes(true)) {
-        return (
-          <button className={styles.item} value={index} key={index} style={{ background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${project.image}) no-repeat center center/cover` }} onClick={modalToggle}>
-            {project.name}
-          </button>
-        );
+        return <ProjectButton key={index} index={index} project={project} modalToggle={modalToggle} />;
       } else {
         nullCounter++;
       }

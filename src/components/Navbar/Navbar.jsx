@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Navbar.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from '@reach/router';
 
 export class Navbar extends Component {
   render() {
@@ -9,7 +8,7 @@ export class Navbar extends Component {
       <nav className={styles.navbarWrapper}>
         <ul>
           <li>
-            <a href="https://drive.google.com/drive/folders/1IxK3BPnABT3Qx8XJRiLsh4wWs5e1pMsX?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/drive/folders/1IxK3BPnABT3Qx8XJRiLsh4wWs5e1pMsX?usp=sharing" target="_blank" rel="noopener noreferrer">
               <div>
                 <FontAwesomeIcon icon={['fas', 'passport']} className={styles.icon} />
               </div>

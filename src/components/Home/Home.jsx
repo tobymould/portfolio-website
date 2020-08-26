@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styles from './Home.module.scss';
 
 import Landing from '../Landing';
-import About from '../About';
+// import About from '../About';
 import Navbar from '..//Navbar';
 import Skills from '../Skills';
 import Portfolio from '../Portfolio';

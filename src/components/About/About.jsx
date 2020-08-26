@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import styles from './About.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import picture from '../../assets/img/profilePicture.jpg';
 
 class About extends Component {
   render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Modal.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
 // import projects from '../../data/data';
 // import video from "./../../assets/videos/ExpenseTracker_v2.1.mp4"
 
@@ -116,11 +116,11 @@ export class Modal extends Component {
                     <a href={projectState.live}>{this.video && this.video()}</a>
                   </div>
                   <div className={styles.buttons}>
-                    <a href={projectState.live} target="_blank">
+                    <a href={projectState.live} target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={['fas', 'desktop']} />
                       <p>Live Preview</p>
                     </a>
-                    <a href={projectState.github} target="_blank">
+                    <a href={projectState.github} target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={['fas', 'code-branch']} />
                       <p>Source Private</p>
                     </a>

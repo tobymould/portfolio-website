@@ -108,51 +108,5 @@
       color: white;
       // height: 100%;
     }
-
-    .item {
-      // border: solid red 5px;
-      min-height: 200px;
-      background: rgba(255, 255, 255, 0.9);
-      border-radius: 10px;
-      box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 1);
-      // clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-
-      font-size: 1.2rem;
-      color: white;
-
-      // h4 {
-      //   font-size: 1.2rem;
-      //   color: white;
-      // }
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      // IPad[PORTFOLIO]
-      @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
-        // height: 20px;
-
-        h4 {
-          font-size: 1.2rem;
-        }
-      }
-      // IPad Pro[PORTFOLIO]
-      @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
-        h4 {
-          font-size: 1.2rem;
-        }
-      }
-
-      //Desktop-widescreen[PORTFOLIO]
-      @media (min-width: $desktop-min-width) {
-        // height: 20px;
-        max-width: 30vw;
-
-        h4 {
-          font-size: 1.2rem;
-        }
-      }
-    }
   }
 }

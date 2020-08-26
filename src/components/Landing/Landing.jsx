@@ -15,7 +15,7 @@ export class Landing extends Component {
           </h2>
 
           <h4>toby.mould@icloud.com</h4>
-          <a href="https://uk.linkedin.com/in/tobymould" target="_blank">
+          <a href="https://uk.linkedin.com/in/tobymould" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={['fab', 'linkedin']} size={'3x'} href="https://uk.linkedin.com/in/tobymould" />
           </a>
         </div>

@@ -40,7 +40,7 @@ export class Skills extends Component {
         {/* <div className={styles.container}> */}
         <h2>Skills</h2>
         <p>
-          I am a self-taught Front-End Web Developer looking for opportunties to become a<span> Full-Stack Web Developer</span>. I have a basis of knowledge and practice in the following:
+          I am a self-taught Full-Stack Web Developer looking for <span> Full-Stack Web Developer</span> opportunties. I have a basis of knowledge and practice in the following:
         </p>
         <section className={styles.items}>
           {this.addSkillIcons()}

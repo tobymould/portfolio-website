@@ -64,7 +64,7 @@ export const projects = [
       ],
       images: [{ className: 'mongodb', url: 'https://www.spsolutions.com.mx/assets/icons/mongoDB.png' }]
     },
-    languages: ['mongodb', 'mongoose', 'express'],
+    languages: ['mongodb', 'mongoose', 'express', 'node.js'],
     role: `I created this Express API from a tutorial`,
     future: `Evolution from just an API to be used on a dynamically-generated frontend`,
     purpose: `The aim of the build was to develop a greater depth of understanding of all the facets and details of how an API is built, and everything that must be accounted for through that process.`,

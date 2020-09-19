@@ -16,15 +16,15 @@ This portfolio website was originally made using vanilla JavaScript but underwen
 
 ### Project Contained:
 1. __Expense Tracker__ 
-   - _Tools_: React.js | Sass | CSS3 | HTML5 | Firebase
+   - Tools: _React.js | Sass | CSS3 | HTML5 | Firebase_
 2. __Software Bootcamp API__ 
-   - Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku 
+   - Tools: _Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku_
 3. __Real-time Chatroom__ 
-   - React.js | Sass | CSS3 | HTML5 | Firebase
+   - Tools: _React.js | Sass | CSS3 | HTML5 | Firebase_
 4. __Github Finder__ 
-   - React.js | Sass | CSS3 | HTML5 | Firebase
+   - Tools: _React.js | Sass | CSS3 | HTML5 | Firebase_
 5. __Speech-Recognition Guessing Game__ 
-   - JavaScript | Sass | CSS3 | HTML5 | Firebase
+   - Tools: _JavaScript | Sass | CSS3 | HTML5 | Firebase_
 
 ## Table of Contents:
 - Installation

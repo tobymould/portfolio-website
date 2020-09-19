@@ -2,7 +2,6 @@
 # Portfolio Website ReadMe :nerd_face:
 > React Firebase Website hosting all projects undertaken to date
 
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 ## :satellite: Summary :satellite:
 This portfolio website was originally made using vanilla JavaScript but underwent a conversion in React to provide a better, more organised coding experience.

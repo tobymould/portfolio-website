@@ -6,14 +6,14 @@
 ## Description
 This portfolio website was originally made using vanilla JavaScript but underwent a conversion in React to provide a better, more organised coding experience.
 
-## Client Projects
+### Client Projects
 - __Integr8HR Client Project__ - (complete)- React | Sass | CSS3 | HTML5 | Firebase
 - __Progress Quantifier__ - (in progress) - React Native | Sass | CSS3 | HTML5
 
-## Challenges Contained
+### Challenges Contained
 - None
 
-## Project Contained:
+### Project Contained:
 - __Expense Tracker__ - React.js | Sass | CSS3 | HTML5 | Firebase
 - __Software Bootcamp API__ - Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku 
 - __Real-time Chatroom__ - React.js | Sass | CSS3 | HTML5 | Firebase

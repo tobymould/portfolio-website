@@ -8,8 +8,10 @@ This portfolio website was originally made using vanilla JavaScript but underwen
 
 ## Projects:
 ### Client Projects
-1. __Integr8HR Client Project__ - (complete)- React | Sass | CSS3 | HTML5 | Firebase
-2. __Progress Quantifier__ - (in progress) - React Native | Sass | CSS3 | HTML5
+1. __Integr8HR Client Project__ - (complete)
+   - Tools: _React | Sass | CSS3 | HTML5 | Firebase_
+2. __Progress Quantifier__ - (in progress) 
+   - Tools: _React Native | Sass | CSS3 | HTML5_
 
 ### Challenges Contained
 - None

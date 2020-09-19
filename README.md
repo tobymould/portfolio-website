@@ -9,21 +9,21 @@ This portfolio website was originally made using vanilla JavaScript but underwen
 
 ## Projects Contained:
 ### 1. Client Projects
-1. __Integr8HR Client Project__ - (complete) 
+1. :office:__Integr8HR Client Project__:office: - (complete) 
    - __Tools:__ _React | Sass | CSS3 | HTML5 | Firebase_
-2. __Progress Quantifier__ - (in progress) :movie_camera:
+2. :seedling:__Progress Quantifier__:seedling: - (in progress) :movie_camera:
    - __Tools:__ _React Native | Sass | CSS3 | HTML5_
 
 ### 2. Personal projects:
 1. :pound:__Expense Tracker__:pound:  - (complete) 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
-2. __Software Bootcamp API__  - (complete) 
+2. :computer:__Software Bootcamp API__:computer: - (complete) 
    - __Tools:__ _Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku_
-3. __Real-time Chatroom__  - (complete) 
+3. :pager:__Real-time Chatroom__:pager:  - (complete) 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
-4. __Github Finder__  - (complete) 
+4. :flashlight:__Github Finder__:flashlight:  - (complete) 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
-5. __Speech-Recognition Guessing Game__  - (complete) 
+5. :loudspeaker:__Speech-Recognition Guessing Game__:loudspeaker:  - (complete) 
    - __Tools:__ _JavaScript | Sass | CSS3 | HTML5 | Firebase_
 
 ### Challenges

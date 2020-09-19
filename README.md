@@ -2,10 +2,13 @@
 # Portfolio Website ReadMe :nerd_face:
 > React Firebase Website hosting all projects undertaken to date
 
-/n Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 ## Summary:
 This portfolio website was originally made using vanilla JavaScript but underwent a conversion in React to provide a better, more organised coding experience.
+
+## Languages/Tools:
+__React | Sass | CSS3 | HTML5 | Firebase__
 
 ## Projects Contained:
 ### 1. Client Projects

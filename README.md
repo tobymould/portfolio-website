@@ -15,7 +15,8 @@ This portfolio website was originally made using vanilla JavaScript but underwen
 - None
 
 ### Project Contained:
-1. __Expense Tracker__ - React.js | Sass | CSS3 | HTML5 | Firebase
+1. __Expense Tracker__ 
+   - React.js | Sass | CSS3 | HTML5 | Firebase
 2. __Software Bootcamp API__ - Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku 
 3. __Real-time Chatroom__ - React.js | Sass | CSS3 | HTML5 | Firebase
 4. __Github Finder__ - React.js | Sass | CSS3 | HTML5 | Firebase

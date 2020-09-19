@@ -28,7 +28,7 @@ __React.js | Sass | CSS3 | HTML5 | Firebase__
 3. :calling: __Real-time Chatroom__ 
    - __Status:__ COMPLETE 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
-4. :flashlight: __Github Finder__ 
+4. :octocat: __Github Finder__ 
    - __Status:__ COMPLETE 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
 5. :loudspeaker: __Speech-Recognition Guessing Game__ 

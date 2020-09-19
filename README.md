@@ -26,7 +26,7 @@ __React.js | Sass | CSS3 | HTML5 | Firebase__
 2. :computer: __Software Bootcamp API__
    - __Status:__ COMPLETE 
    - __Tools:__ _Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku_
-3. :pager: __Real-time Chatroom__ 
+3. :calling: __Real-time Chatroom__ 
    - __Status:__ COMPLETE 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
 4. :flashlight: __Github Finder__ 

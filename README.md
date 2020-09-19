@@ -2,7 +2,7 @@
 # Portfolio Website ReadMe :nerd_face:
 > React Firebase Website hosting all projects undertaken to date
 
-Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
+![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 ## :satellite: Summary :satellite:
 This portfolio website was originally made using vanilla JavaScript but underwent a conversion in React to provide a better, more organised coding experience.
@@ -15,7 +15,7 @@ __React.js | Sass | CSS3 | HTML5 | Firebase__
 1. __Integr8HR Client Project__ :office: 
    - __Status:__ COMPLETE 
    - __Tools:__ _React | Sass | CSS3 | HTML5 | Firebase_
-2. __Progress Quantifier__ :seedling: 
+2. :seedling: __Progress Quantifier__  
    - __Status:__ IN PROGRESS
    - __Tools:__ _React.js Native | Sass | CSS3 | HTML5_
 

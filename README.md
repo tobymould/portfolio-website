@@ -12,7 +12,7 @@ __React.js | Sass | CSS3 | HTML5 | Firebase__
 
 ## :orange_book: Projects Contained :orange_book:
 ### 1. Client Projects
-1. __Integr8HR Client Project__ :office: 
+1. :office: __Integr8HR Client Project__ 
    - __Status:__ COMPLETE 
    - __Tools:__ _React | Sass | CSS3 | HTML5 | Firebase_
 2. :seedling: __Progress Quantifier__  
@@ -20,19 +20,19 @@ __React.js | Sass | CSS3 | HTML5 | Firebase__
    - __Tools:__ _React.js Native | Sass | CSS3 | HTML5_
 
 ### 2. Personal projects:
-1. :pound: __Expense Tracker__ :pound:
+1. :pound: __Expense Tracker__
    - __Status:__ COMPLETE 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
-2. :computer: __Software Bootcamp API__ :computer: 
+2. :computer: __Software Bootcamp API__
    - __Status:__ COMPLETE 
    - __Tools:__ _Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku_
-3. :pager: __Real-time Chatroom__ :pager: 
+3. :pager: __Real-time Chatroom__ 
    - __Status:__ COMPLETE 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
-4. :flashlight: __Github Finder__ :flashlight: 
+4. :flashlight: __Github Finder__ 
    - __Status:__ COMPLETE 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
-5. :loudspeaker: __Speech-Recognition Guessing Game__ :loudspeaker: 
+5. :loudspeaker: __Speech-Recognition Guessing Game__ 
    - __Status:__ COMPLETE 
    - __Tools:__ _JavaScript | Sass | CSS3 | HTML5 | Firebase_
 

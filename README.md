@@ -10,7 +10,7 @@ This portfolio website was originally made using vanilla JavaScript but underwen
 ## :hammer:Languages/Tools:hammer::
 __React.js | Sass | CSS3 | HTML5 | Firebase__
 
-## Projects Contained:
+## :orange_book:Projects Contained:orange_book::
 ### 1. Client Projects
 1. :office:__Integr8HR Client Project__:office: - (complete) 
    - __Tools:__ _React | Sass | CSS3 | HTML5 | Firebase_

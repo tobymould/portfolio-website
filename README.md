@@ -15,7 +15,7 @@ This portfolio website was originally made using vanilla JavaScript but underwen
    - __Tools:__ _React Native | Sass | CSS3 | HTML5_
 
 ### 2. Personal projects:
-1. __Expense Tracker__  - (complete) 
+1. :pound:__Expense Tracker__:pound:  - (complete) 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_
 2. __Software Bootcamp API__  - (complete) 
    - __Tools:__ _Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku_

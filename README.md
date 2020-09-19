@@ -4,10 +4,10 @@
 
 Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
-## :satellite:Summary:satellite::
+## :satellite: Summary :satellite:
 This portfolio website was originally made using vanilla JavaScript but underwent a conversion in React to provide a better, more organised coding experience.
 
-## :hammer:Languages/Tools:hammer::
+## :hammer: Languages/Tools :hammer::
 __React.js | Sass | CSS3 | HTML5 | Firebase__
 
 ## :orange_book:Projects Contained:orange_book::

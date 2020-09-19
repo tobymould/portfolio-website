@@ -1,6 +1,7 @@
 
 # Portfolio Website ReadMe :nerd_face:
 > React Firebase Website hosting all projects undertaken to date
+
 /n Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 
 ## Summary:
@@ -8,32 +9,26 @@ This portfolio website was originally made using vanilla JavaScript but underwen
 
 ## Projects:
 ### Client Projects
-1. __Integr8HR Client Project__ - (complete)
+1. __Integr8HR Client Project__ - (complete) 
    - Tools: _React | Sass | CSS3 | HTML5 | Firebase_
-2. __Progress Quantifier__ - (in progress) 
+2. __Progress Quantifier__ - (in progress) :movie_camera:
    - Tools: _React Native | Sass | CSS3 | HTML5_
 
 ### Challenges Contained
 - None
 
 ### Project Contained:
-1. __Expense Tracker__ 
+1. __Expense Tracker__  - (complete) 
    - Tools: _React.js | Sass | CSS3 | HTML5 | Firebase_
-2. __Software Bootcamp API__ 
+2. __Software Bootcamp API__  - (complete) 
    - Tools: _Node.js | Express | MongoDB | Mongoose | POSTMAN | Heroku_
-3. __Real-time Chatroom__ 
+3. __Real-time Chatroom__  - (complete) 
    - Tools: _React.js | Sass | CSS3 | HTML5 | Firebase_
-4. __Github Finder__ 
+4. __Github Finder__  - (complete) 
    - Tools: _React.js | Sass | CSS3 | HTML5 | Firebase_
-5. __Speech-Recognition Guessing Game__ 
+5. __Speech-Recognition Guessing Game__  - (complete) 
    - Tools: _JavaScript | Sass | CSS3 | HTML5 | Firebase_
 
 ## Table of Contents:
 - Installation
-- 
 
-## SETUP/USAGE/HOW TO
-
-## CUSTOMISE/ADDITIONAL
-
-## FAQ/CONTACT/TROUBLESHOOT

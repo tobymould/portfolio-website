@@ -8,14 +8,14 @@ Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
 This portfolio website was originally made using vanilla JavaScript but underwent a conversion in React to provide a better, more organised coding experience.
 
 ## Languages/Tools:
-__React | Sass | CSS3 | HTML5 | Firebase__
+__React.js | Sass | CSS3 | HTML5 | Firebase__
 
 ## Projects Contained:
 ### 1. Client Projects
 1. :office:__Integr8HR Client Project__:office: - (complete) 
    - __Tools:__ _React | Sass | CSS3 | HTML5 | Firebase_
 2. :seedling:__Progress Quantifier__:seedling: - (in progress) :movie_camera:
-   - __Tools:__ _React Native | Sass | CSS3 | HTML5_
+   - __Tools:__ _React.js Native | Sass | CSS3 | HTML5_
 
 ### 2. Personal projects:
 1. :pound:__Expense Tracker__:pound:  - (complete) 

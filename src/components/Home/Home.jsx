@@ -6,6 +6,7 @@ import Landing from '../Landing';
 import Navbar from '..//Navbar';
 import Skills from '../Skills';
 import Portfolio from '../Portfolio';
+import Challenge from '../Challenge';
 import Background from '../Background';
 import Footer from '../Footer';
 
@@ -87,9 +88,9 @@ export class Home extends Component {
         if (language.indexOf('HTML') === 0 && language[1] < 10) {
           tally.push(index);
         }
-        if (language.indexOf('CSS') === 0) {
-          return [(language[0] = 'Sass'), language[1]];
-        }
+        // if (language.indexOf('CSS') === 0) {
+        //   return [(language[0] = 'Sass'), language[1]];
+        // }
       });
     });
     console.log({ tally });
@@ -190,6 +191,8 @@ export class Home extends Component {
         <Skills />
 
         <Portfolio modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} modalToggle={modalToggle} />
+
+        {/* <Challenge modalState={modalState} projectState={projectState} modalOpenFunction={modalOpenFunction} modalToggle={modalToggle} setButtonPressed={setButtonPressed} setModalProject={setModalProject} searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchProjects={searchProjects} hoverToggle={hoverToggle} hover={hover} projectLanguages={projectLanguages} modalToggle={modalToggle} /> */}
 
         <div id="background" className={styles.scrollBackground}>
           <Background />

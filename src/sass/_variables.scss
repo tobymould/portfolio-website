@@ -87,6 +87,14 @@ $jsx: #48028f;
   }
 }
 
+.scss {
+  background: $sass;
+
+  &-text {
+    color: $sass;
+  }
+}
+
 .javascript {
   background: $javascript;
 

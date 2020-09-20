@@ -1,0 +1,112 @@
+@import '../../sass/variables';
+//------------------------------------//
+//--------4. challenge SECTION--------//
+//------------------------------------//
+.challengeWrapper {
+  // padding: 60px 0px;
+  background: $white;
+  padding: 0 10px;
+  // padding: 0 10px;
+  padding-bottom: 20px;
+  // box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
+  box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
+
+  margin: 6vh 3vw;
+  border-radius: 20px;
+
+  // clip-path: polygon(3% 10%, 97% 0, 97% 90%, 3% 100%);
+
+  h2 {
+    width: 260px;
+    margin: 0 auto 20px;
+  }
+
+  .search {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // text-align: center;
+
+    .searchIcon {
+      font-size: 1.5rem;
+      color: $github;
+      // padding-right: 30px;
+    }
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $white;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+    }
+
+    input[type='search'] {
+      background: rgba(255, 255, 255, 0.5);
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin-left: 5px;
+      min-width: 270px;
+      outline: none;
+      border: 2px solid $colour1;
+      font-size: 1rem;
+
+      &:focus {
+        border: 2px solid $colour1-50;
+        border-radius: 60px;
+      }
+    }
+  }
+
+  .items {
+    min-height: 200px;
+    margin-top: 20px;
+    // padding-bottom: 60px;
+    // margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    // padding: 10px;
+    margin: 15px 10px 0;
+    min-height: 40vh;
+    overflow: scroll;
+    background: $white;
+    // background: blue;
+    border-radius: 20px;
+    border: 10px solid $white;
+    scroll-margin: 40px;
+    box-shadow: 5px 5px 35px 5px rgba(0, 0, 0, 1);
+
+    // padding-bottom: 100px;
+
+    // @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+    //   height: 82vh;
+    //   // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // }
+    // // IPad Pro[challenge]
+    // @media (min-width: $ipad-pro-min-width) and (max-width: $ipad-pro-max-width) {
+    //   height: 80vh;
+    //   // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // }
+    // @media (min-width: $desktop-min-width) {
+    //   // overflow: visible;
+    //   height: 75vh;
+    //   // border-radius: 20px;
+    //   grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    // }
+
+    .noResult {
+      justify-self: center;
+      align-self: center;
+      font-size: 3rem;
+      // background: yellow;
+      line-height: 3rem;
+      text-align: center;
+      color: white;
+      // height: 100%;
+    }
+  }
+}

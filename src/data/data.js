@@ -353,6 +353,8 @@ export const projects = [
   // }
 ];
 
+export const challenges = [];
+
 // export default data;
 export const skills = {
   icons: [

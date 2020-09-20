@@ -122,7 +122,7 @@ export class Modal extends Component {
                     </a>
                     <a href={projectState.github} target="_blank" rel="noopener noreferrer">
                       <FontAwesomeIcon icon={['fas', 'code-branch']} />
-                      <p>Source Private</p>
+                      <p>Source</p>
                     </a>
                   </div>
                   <p className={styles.overview}>{projectState.overview}</p>

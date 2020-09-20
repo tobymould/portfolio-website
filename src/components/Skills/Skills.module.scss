@@ -29,13 +29,57 @@
   .items {
     display: grid;
     gap: 20px 0;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, 80px);
+    grid-template-columns: 1fr;
     width: 100%;
     border-radius: 10px;
     margin: 10px 0;
     justify-content: center;
+
+    .frontend {
+      text-align: center;
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          margin: 0 5px 10px;
+        }
+      }
+    }
+
+    .backend {
+      text-align: center;
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          margin: 0 5px 0;
+        }
+      }
+    }
+    .other {
+      text-align: center;
+
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          margin: 0 5px 10px;
+        }
+      }
+    }
   }
 }
 
@@ -48,8 +92,29 @@
     }
 
     .items {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
       padding: 10px 0;
-      grid-template-columns: repeat(auto-fit, 100px);
+      align-items: space-between;
+
+      .frontend {
+        div {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          align-items: center;
+          justify-items: center;
+        }
+      }
+
+      .backend,
+      .other {
+        div {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          justify-items: center;
+        }
+      }
     }
   }
 }
@@ -62,8 +127,9 @@
     }
 
     .items {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
       padding: 20px 0;
-      grid-template-columns: repeat(auto-fit, 70px);
     }
   }
 }
@@ -76,9 +142,10 @@
     }
 
     .items {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
       // width: 80vw;
       padding: 20px 0;
-      grid-template-columns: repeat(auto-fit, 70px);
     }
   }
 }

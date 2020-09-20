@@ -358,24 +358,35 @@ export const challenges = [];
 // export default data;
 export const skills = {
   icons: [
-    { language: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
-    { language: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
-    { language: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' },
-    { language: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
-    { language: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
-    { language: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' },
-    { language: 'yarn', icon: ['fab', 'yarn'], colour: '#117cad', sizeGeneral: '3x', sizeModal: '2x' },
-    { language: 'git', icon: ['fab', 'git'], colour: '#f1502f', sizeGeneral: '3x', sizeModal: '2x' },
-    { language: 'github', icon: ['fab', 'github'], colour: '#2b3137', sizeGeneral: '3x', sizeModal: '2x' }
+    {
+      frontend: [
+        { language: 'react', icon: ['fab', 'react'], colour: '#61dbfb', sizeGeneral: '3x', sizeModal: '2x' },
+        { language: 'javascript', icon: ['fab', 'js-square'], colour: '#f0db4f', sizeGeneral: '3x', sizeModal: '2x' },
+        { language: 'html', icon: ['fab', 'html5'], colour: '#f06529', sizeGeneral: '3x', sizeModal: '2x' },
+        { language: 'css', icon: ['fab', 'css3-alt'], colour: '#2965f1', sizeGeneral: '3x', sizeModal: '2x' },
+        { language: 'sass', icon: ['fab', 'sass'], colour: '#cd6799', sizeGeneral: '3x', sizeModal: '2x' }
+      ],
+      backend: [{ language: 'node', icon: ['fab', 'node'], colour: '#3c873a', sizeGeneral: '3x', sizeModal: '2x' }],
+      other: [
+        { language: 'yarn', icon: ['fab', 'yarn'], colour: '#117cad', sizeGeneral: '3x', sizeModal: '2x' },
+        { language: 'git', icon: ['fab', 'git'], colour: '#f1502f', sizeGeneral: '3x', sizeModal: '2x' },
+        { language: 'github', icon: ['fab', 'github'], colour: '#2b3137', sizeGeneral: '3x', sizeModal: '2x' }
+      ]
+    }
   ],
   images: [
-    { className: 'mongodb', url: 'https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png' },
-    { className: 'express', url: 'https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png' },
-    { className: 'firebase', url: 'https://www.spsolutions.com.mx/assets/img/servicios/firebase.png' },
-    { className: 'postman', url: 'https://s3.amazonaws.com/media-p.slid.es/uploads/327261/images/5065937/pm-logo-vert.png' },
-    { className: 'typescript', url: 'https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png' }
+    {
+      frontend: [{ className: 'typescript', url: 'https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png' }],
+      backend: [
+        { className: 'mongodb', url: 'https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/e5eee315a17de0d7f56117077eb71fa9/mongo.png' },
+        { className: 'express', url: 'https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png' },
+        { className: 'firebase', url: 'https://www.spsolutions.com.mx/assets/img/servicios/firebase.png' }
+      ],
+      other: [{ className: 'postman', url: 'https://s3.amazonaws.com/media-p.slid.es/uploads/327261/images/5065937/pm-logo-vert.png' }]
+    }
   ]
 };
+
 //  '<img className="firebase-modal" src="../assets/icons/firebase.png" alt="firebase logo" />'];
 
 // export default projects;

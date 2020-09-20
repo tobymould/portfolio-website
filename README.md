@@ -18,7 +18,7 @@ __React.js | Sass | CSS3 | HTML5 | Firebase__
    - __Status:__ IN PROGRESS
    - __Tools:__ _React.js Native | Sass | CSS3 | HTML5_
 
-### 2. Personal projects:
+### 2. Personal Projects:
 1. :pound: __Expense Tracker__
    - __Status:__ COMPLETE 
    - __Tools:__ _React.js | Sass | CSS3 | HTML5 | Firebase_

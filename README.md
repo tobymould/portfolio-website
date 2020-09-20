@@ -38,6 +38,3 @@ __React.js | Sass | CSS3 | HTML5 | Firebase__
 ### Challenges
 - None
 
-## Table of Contents:
-- Installation
-

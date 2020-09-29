@@ -36,5 +36,5 @@ __React.js | Sass | CSS3 | HTML5 | Firebase__
    - __Tools:__ _JavaScript | Sass | CSS3 | HTML5 | Firebase_
 
 ### Challenges
-- None
+- None yet
 
